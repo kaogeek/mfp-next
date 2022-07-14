@@ -1,0 +1,757 @@
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:image]
+  Add to your query: .includes([:image])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:3:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:translations]
+  Add to your query: .includes([:translations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:4:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:sdg_goals]
+  Add to your query: .includes([:sdg_goals])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:6:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:sdg_relations]
+  Add to your query: .includes([:sdg_relations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:6:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:sdg_global_targets]
+  Add to your query: .includes([:sdg_global_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:6:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:sdg_local_targets]
+  Add to your query: .includes([:sdg_local_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:6:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Debate => [:translations]
+  Add to your query: .includes([:translations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/debate_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Debate => [:sdg_goals]
+  Add to your query: .includes([:sdg_goals])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/debate_component.html.erb:3:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Debate => [:sdg_relations]
+  Add to your query: .includes([:sdg_relations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/debate_component.html.erb:3:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Debate => [:sdg_global_targets]
+  Add to your query: .includes([:sdg_global_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/debate_component.html.erb:3:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Debate => [:sdg_local_targets]
+  Add to your query: .includes([:sdg_local_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/debate_component.html.erb:3:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb__2277786346436830983_70310369542980'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Widget::Card => [:image]
+  Add to your query: .includes([:image])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_card.html.erb:6:in `block in _app_views_shared__card_html_erb___3131197312331324178_70310304299120'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_card.html.erb:3:in `_app_views_shared__card_html_erb___3131197312331324178_70310304299120'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_cards.html.erb:4:in `block in _app_views_shared__cards_html_erb___2917238940703264483_70310398092820'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_cards.html.erb:3:in `_app_views_shared__cards_html_erb___2917238940703264483_70310398092820'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:24:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Widget::Card => [:translations]
+  Add to your query: .includes([:translations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_card.html.erb:10:in `block in _app_views_shared__card_html_erb___3131197312331324178_70310304299120'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_card.html.erb:3:in `_app_views_shared__card_html_erb___3131197312331324178_70310304299120'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_cards.html.erb:4:in `block in _app_views_shared__cards_html_erb___2917238940703264483_70310398092820'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_cards.html.erb:3:in `_app_views_shared__cards_html_erb___2917238940703264483_70310398092820'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:24:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Legislation::Process => [:translations]
+  Add to your query: .includes([:translations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:7:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:4:in `block in _app_views_welcome__processes_html_erb___2440847279369924534_70310387138600'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `_app_views_welcome__processes_html_erb___2440847279369924534_70310387138600'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:30:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Legislation::Process => [:sdg_goals]
+  Add to your query: .includes([:sdg_goals])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:11:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:4:in `block in _app_views_welcome__processes_html_erb___2440847279369924534_70310387138600'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `_app_views_welcome__processes_html_erb___2440847279369924534_70310387138600'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:30:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Legislation::Process => [:sdg_relations]
+  Add to your query: .includes([:sdg_relations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:11:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:4:in `block in _app_views_welcome__processes_html_erb___2440847279369924534_70310387138600'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `_app_views_welcome__processes_html_erb___2440847279369924534_70310387138600'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:30:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Legislation::Process => [:sdg_global_targets]
+  Add to your query: .includes([:sdg_global_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:11:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:4:in `block in _app_views_welcome__processes_html_erb___2440847279369924534_70310387138600'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `_app_views_welcome__processes_html_erb___2440847279369924534_70310387138600'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:30:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:27[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Legislation::Process => [:sdg_local_targets]
+  Add to your query: .includes([:sdg_local_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:11:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:4:in `block in _app_views_welcome__processes_html_erb___2440847279369924534_70310387138600'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `_app_views_welcome__processes_html_erb___2440847279369924534_70310387138600'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:30:in `_app_views_welcome_index_html_erb___3549105318710885356_70310368195560'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:43[WARN] user: tee4cute
+GET /debates
+USE eager loading detected
+  SDG::Target => [:goal]
+  Add to your query: .includes([:goal])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/sdg/target.rb:25:in `i18n_key'
+  /Users/tee4cute/Programming/src/mfp-next/app/models/sdg/target.rb:11:in `title'
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/related.rb:46:in `code_and_title'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/concerns/sdg/options_for_select.rb:11:in `target_options'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/shared/advanced_search_component.rb:33:in `target_options'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/shared/advanced_search_component.html.erb:50:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/shared/advanced_search_component.html.erb:1:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/index.html.erb:43:in `_app_views_debates_index_html_erb___3654311147072693866_70310326476480'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:43[WARN] user: tee4cute
+GET /debates
+USE eager loading detected
+  SDG::LocalTarget => [:translations]
+  Add to your query: .includes([:translations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/related.rb:46:in `code_and_title'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/concerns/sdg/options_for_select.rb:11:in `target_options'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/shared/advanced_search_component.rb:33:in `target_options'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/shared/advanced_search_component.html.erb:50:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/shared/advanced_search_component.html.erb:1:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/index.html.erb:43:in `_app_views_debates_index_html_erb___3654311147072693866_70310326476480'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:43[WARN] user: tee4cute
+GET /debates
+USE eager loading detected
+  Debate => [:translations]
+  Add to your query: .includes([:translations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:8:in `block in _app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:1:in `_app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/index.html.erb:53:in `_app_views_debates_index_html_erb___3654311147072693866_70310326476480'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:43[WARN] user: tee4cute
+GET /debates
+USE eager loading detected
+  Debate => [:author]
+  Add to your query: .includes([:author])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:15:in `block in _app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:1:in `_app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/index.html.erb:53:in `_app_views_debates_index_html_erb___3654311147072693866_70310326476480'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:43[WARN] user: tee4cute
+GET /debates
+USE eager loading detected
+  Debate => [:sdg_goals]
+  Add to your query: .includes([:sdg_goals])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_tags.html.erb:3:in `_app_views_shared__tags_html_erb__4228898892927135694_70310362893440'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:45:in `block in _app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:1:in `_app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/index.html.erb:53:in `_app_views_debates_index_html_erb___3654311147072693866_70310326476480'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:43[WARN] user: tee4cute
+GET /debates
+USE eager loading detected
+  Debate => [:sdg_relations]
+  Add to your query: .includes([:sdg_relations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_tags.html.erb:3:in `_app_views_shared__tags_html_erb__4228898892927135694_70310362893440'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:45:in `block in _app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:1:in `_app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/index.html.erb:53:in `_app_views_debates_index_html_erb___3654311147072693866_70310326476480'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:43[WARN] user: tee4cute
+GET /debates
+USE eager loading detected
+  Debate => [:sdg_global_targets]
+  Add to your query: .includes([:sdg_global_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_tags.html.erb:3:in `_app_views_shared__tags_html_erb__4228898892927135694_70310362893440'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:45:in `block in _app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:1:in `_app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/index.html.erb:53:in `_app_views_debates_index_html_erb___3654311147072693866_70310326476480'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 16:18:43[WARN] user: tee4cute
+GET /debates
+USE eager loading detected
+  Debate => [:sdg_local_targets]
+  Add to your query: .includes([:sdg_local_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_tags.html.erb:3:in `_app_views_shared__tags_html_erb__4228898892927135694_70310362893440'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:45:in `block in _app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/_debate.html.erb:1:in `_app_views_debates__debate_html_erb__2049385316443884449_70310370034720'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/debates/index.html.erb:53:in `_app_views_debates_index_html_erb___3654311147072693866_70310326476480'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:image]
+  Add to your query: .includes([:image])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:3:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:translations]
+  Add to your query: .includes([:translations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:4:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:sdg_goals]
+  Add to your query: .includes([:sdg_goals])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:6:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:sdg_relations]
+  Add to your query: .includes([:sdg_relations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:6:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:sdg_global_targets]
+  Add to your query: .includes([:sdg_global_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:6:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Proposal => [:sdg_local_targets]
+  Add to your query: .includes([:sdg_local_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/proposal_component.html.erb:6:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Debate => [:translations]
+  Add to your query: .includes([:translations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/debate_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Debate => [:sdg_goals]
+  Add to your query: .includes([:sdg_goals])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/debate_component.html.erb:3:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Debate => [:sdg_relations]
+  Add to your query: .includes([:sdg_relations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/debate_component.html.erb:3:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Debate => [:sdg_global_targets]
+  Add to your query: .includes([:sdg_global_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/debate_component.html.erb:3:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Debate => [:sdg_local_targets]
+  Add to your query: .includes([:sdg_local_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/debate_component.html.erb:3:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:4:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/participation_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_feeds.html.erb:1:in `_app_views_welcome__feeds_html_erb___4351171108092850296_70250974604700'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:17:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Widget::Card => [:image]
+  Add to your query: .includes([:image])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_card.html.erb:6:in `block in _app_views_shared__card_html_erb__1514805702762051114_70250995514320'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_card.html.erb:3:in `_app_views_shared__card_html_erb__1514805702762051114_70250995514320'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_cards.html.erb:4:in `block in _app_views_shared__cards_html_erb___727147800499936744_70250995429240'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_cards.html.erb:3:in `_app_views_shared__cards_html_erb___727147800499936744_70250995429240'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:24:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Widget::Card => [:translations]
+  Add to your query: .includes([:translations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_card.html.erb:10:in `block in _app_views_shared__card_html_erb__1514805702762051114_70250995514320'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_card.html.erb:3:in `_app_views_shared__card_html_erb__1514805702762051114_70250995514320'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_cards.html.erb:4:in `block in _app_views_shared__cards_html_erb___727147800499936744_70250995429240'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/shared/_cards.html.erb:3:in `_app_views_shared__cards_html_erb___727147800499936744_70250995429240'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:24:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Legislation::Process => [:translations]
+  Add to your query: .includes([:translations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:7:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:4:in `block in _app_views_welcome__processes_html_erb__4268617010817365640_70250996379860'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `_app_views_welcome__processes_html_erb__4268617010817365640_70250996379860'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:30:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Legislation::Process => [:sdg_goals]
+  Add to your query: .includes([:sdg_goals])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:11:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:4:in `block in _app_views_welcome__processes_html_erb__4268617010817365640_70250996379860'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `_app_views_welcome__processes_html_erb__4268617010817365640_70250996379860'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:30:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Legislation::Process => [:sdg_relations]
+  Add to your query: .includes([:sdg_relations])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:11:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:4:in `block in _app_views_welcome__processes_html_erb__4268617010817365640_70250996379860'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `_app_views_welcome__processes_html_erb__4268617010817365640_70250996379860'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:30:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Legislation::Process => [:sdg_global_targets]
+  Add to your query: .includes([:sdg_global_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:11:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:4:in `block in _app_views_welcome__processes_html_erb__4268617010817365640_70250996379860'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `_app_views_welcome__processes_html_erb__4268617010817365640_70250996379860'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:30:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
+2022-07-14 17:25:18[WARN] user: tee4cute
+GET /
+USE eager loading detected
+  Legislation::Process => [:sdg_local_targets]
+  Add to your query: .includes([:sdg_local_targets])
+Call stack
+  /Users/tee4cute/Programming/src/mfp-next/app/models/concerns/sdg/relatable.rb:56:in `sdg_targets'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/sdg/tag_list_component.rb:11:in `render?'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:11:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/process_component.html.erb:2:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:9:in `block in call'
+  /Users/tee4cute/Programming/src/mfp-next/app/components/widget/feeds/feed_component.html.erb:8:in `call'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:4:in `block in _app_views_welcome__processes_html_erb__4268617010817365640_70250996379860'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `each'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/_processes.html.erb:2:in `_app_views_welcome__processes_html_erb__4268617010817365640_70250996379860'
+  /Users/tee4cute/Programming/src/mfp-next/app/views/welcome/index.html.erb:30:in `_app_views_welcome_index_html_erb___738036957598162578_70250973783860'
+  /Users/tee4cute/Programming/src/mfp-next/config/initializers/wicked_pdf.rb:10:in `render'
+  /Users/tee4cute/Programming/src/mfp-next/app/controllers/application_controller.rb:51:in `switch_locale'
+
