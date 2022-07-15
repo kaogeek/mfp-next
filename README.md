@@ -14,13 +14,11 @@
 [![Accessibility conformance](https://img.shields.io/badge/accessibility-WAI:AA-green.svg)](https://www.w3.org/WAI/eval/Overview)
 [![A11y issues checked with Rocket Validator](https://rocketvalidator.com/badges/checked_with_rocket_validator.svg?url=https://rocketvalidator.com)](https://rocketvalidator.com/opensource)
 
-This is the opensource code repository cloned from CONSUL (https://github.com/consul/consul).
+This is the opensource code repository cloned from **CONSUL** (https://github.com/consul/consul).
 
 ## Configuration for development and test environments
 
-**NOTE**: For more detailed instructions check the [docs](https://docs.consulproject.org)
-
-Prerequisites: install git, Ruby 2.7.6, CMake, pkg-config, shared-mime-info, Node.js and PostgreSQL (>=9.5).
+**Prerequisites:** install *git*, *Ruby 2.7.6*, *CMake*, *pkg-config*, *shared-mime-info*, *Node.js* and *PostgreSQL (>=9.5)*, first before proceeding to the next steps. Some of them could be installed by using the following commands.
 
 ```bash
 #bundler
