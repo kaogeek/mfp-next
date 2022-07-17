@@ -103,7 +103,7 @@ th:
           error: "An error has occured. Please go to 'My account' page to manually disable recommendations for debates"
       search_form:
         button: Search
-        placeholder: Search debates...
+        placeholder: ค้นหาข้อเสนอ ...
         title: Search
       start_debate: Start a debate
       title: Debates
@@ -214,6 +214,7 @@ th:
       participation_title: Participation
       privacy: Privacy Policy
     header:
+      home: หน้าหลัก
       administration_menu: Menu
       administration: Administration
       collaborative_legislation: Collaborative legislation
@@ -223,10 +224,10 @@ th:
       moderation: Moderation
       valuation: Valuation
       officing: Polling officers
-      help: Help
+      help: ช่วยเหลือ
       my_account_link: My account
       my_activity_link: My content
-      open_gov: Open government
+      open_gov: รัฐเปิดเผย
       proposals: Proposals
       poll_questions: Voting
       budgets: Participatory budgeting
@@ -734,12 +735,12 @@ th:
       districts_list: "Districts list"
       categories: "Categories"
     target_blank: " (link opens in new window)"
-    you_are_in: "You are in"
+    you_are_in: "คุณกำลังอยู่ใน "
     unflag: Unflag
     unfollow_entity: "Unfollow %{entity}"
     outline:
       searcher: Searcher
-    go_to_page: "Go to page of "
+    go_to_page: "ไปที่ "
     share: Share
     orbit:
       previous_slide: Previous Slide

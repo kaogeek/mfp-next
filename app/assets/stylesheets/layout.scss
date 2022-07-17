@@ -134,7 +134,7 @@ button,
 .button-gray {
   @extend .button;
   background: #f0f0f0 !important;
-  color: $black !important;
+  color: $text-color-reduce !important;
 }
 
 .button {
@@ -570,7 +570,8 @@ body > header,
   }
 
   .top-bar {
-    @extend %brand-background;
+    // Set top-bar bg to white for MFP-NEXT
+    // @extend %brand-background;
   }
 }
 
@@ -614,6 +615,7 @@ body > header,
       @include breakpoint(medium) {
         font-size: $small-font-size;
         padding: rem-calc(8) rem-calc(16);
+        margin-left: 0.75rem;
       }
     }
 
@@ -622,8 +624,11 @@ body > header,
       text-align: left;
 
       @include breakpoint(medium) {
-        @include brand-text;
-        background: $body-background;
+        // Override style for MFP-NEXT
+        // @include brand-text;
+        // background: $body-background;
+        color: $white;
+        background: $brand;
         text-align: center;
       }
     }
@@ -758,9 +763,16 @@ body > header,
   display: flex;
   flex-direction: column;
 
+  // Add style for MFP-NEXT
+  font-family: $header-font-family;
+
   @include breakpoint(medium) {
-    background: $body-background;
-    color: $text;
+    // Override style for MFP-NEXT
+    // background: $body-background;
+    // color: $text;
+    background: #f0f0f0;
+    color: $text-color-reduce;
+
     flex-direction: row;
     padding-bottom: 0;
 
@@ -792,7 +804,8 @@ body > header,
 
     @include breakpoint(medium) {
       display: block;
-      font-weight: bold;
+      // Override style for MFP-NEXT
+      // font-weight: bold;
       width: auto;
 
       &:hover {
@@ -816,7 +829,9 @@ body > header,
   }
 
   .input-group {
-    padding-top: $line-height / 4;
+    // Override style for MFP-NEXT
+    // padding-top: $line-height / 4;
+    padding-top: $line-height / 2.5;
 
     @include breakpoint(medium) {
       margin-bottom: 0;
@@ -825,6 +840,14 @@ body > header,
 
   .input-group-field {
     margin-bottom: 0 !important;
+    // Add style for MFP-NEXT
+    border-radius: 0.4rem 0 0 0.4rem;
+    font-family: $body-font-family;
+
+    // Add style for MFP-NEXT
+    &::placeholder {
+      color: $text-color-reduce;
+    }
   }
 
   .input-group-button {

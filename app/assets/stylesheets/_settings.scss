@@ -280,14 +280,18 @@ $breadcrumbs-item-separator-color: $medium-gray !default;
 
 //$button-font-family: inherit !default;
 $button-font-family: $header-font-family !default;
-$button-padding: 0.85em 1em !default;
+// Override button padding for MFP-NEXT.
+// $button-padding: 0.85em 1em !default;
+$button-padding: 0.4em 1.1em !default;
 $button-margin: 0 0 $global-margin 0 !default;
 $button-fill: solid !default;
 $button-background: $primary-color !default;
 $button-background-hover: scale-color($button-background, $lightness: -15%) !default;
 $button-color: $white !default;
 $button-color-alt: $black !default;
-$button-radius: $global-radius !default;
+// Override button border radius for MFP-NEXT.
+// $button-radius: $global-radius !default;
+$button-radius: 0.4rem;
 $button-hollow-border-width: 1px !default;
 $button-sizes: (
   tiny: 0.6rem,
