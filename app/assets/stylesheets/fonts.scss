@@ -1,4 +1,95 @@
 // Fonts
+
+/*
+  ==================================================
+  Anakotmai
+  ==================================================
+  will be used as header font for visuals & branding.
+*/
+
+// --- Light ---
+@font-face {
+  font-family: 'Anakotmai';
+  src: url('mfp/anakotmai-light.woff2') format('woff2'),
+       url('mfp/anakotmai-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anakotmai';
+  src: url('mfp/anakotmai-light.woff2') format('woff2'),
+       url('mfp/anakotmai-light.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+// --- Normal ---
+@font-face {
+  font-family: 'Anakotmai';
+  src: url('mfp/anakotmai-medium.woff2') format('woff2'),
+       url('mfp/anakotmai-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anakotmai';
+  src: url('mfp/anakotmai-medium.woff2') format('woff2'),
+       url('mfp/anakotmai-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// --- Bold ---
+@font-face {
+  font-family: 'Anakotmai';
+  src: url('mfp/anakotmai-bold.woff2') format('woff2'),
+       url('mfp/anakotmai-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anakotmai';
+  src: url('mfp/anakotmai-bold.woff2') format('woff2'),
+       url('mfp/anakotmai-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*
+  ==================================================
+  Pracharath
+  ==================================================
+  will be used as body/content font for legibility.
+*/
+
+@font-face {
+  font-family: 'Pracharath';
+  src: url('mfp/pracharath.woff2') format('woff2'),
+       url('mfp/pracharath.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Pracharath';
+  src: url('mfp/pracharath-bld.woff2') format('woff2'),
+       url('mfp/pracharath-bld.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+/*
+=====================
+ALL FONTS FROM CONSUL
+--------------------
+will be ignored
+=====================
+
 //
 // 01. Source Sans Pro (https://www.google.com/fonts/specimen/Source+Sans+Pro)
 // 02. Lato (https://www.google.com/fonts/specimen/Lato)
@@ -125,3 +216,5 @@
   font-weight: 500;
   font-style: normal;
 }
+
+*/

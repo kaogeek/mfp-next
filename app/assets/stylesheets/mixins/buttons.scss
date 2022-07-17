@@ -1,7 +1,10 @@
 @import "mixins/colors";
 
 @mixin base-button {
-  font-size: $base-font-size;
+  // font-size: $base-font-size;
+  // Scale down to offset Pracharath vs Anakotmai base font size.
+  // Anakotmai's base size is quite bigger than Pracharath's.
+  font-size: $base-font-size * 0.76;
 
   &:focus,
   &:hover {

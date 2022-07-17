@@ -121,7 +121,8 @@ $table-header:   #ecf1f6;
       a {
         color: inherit;
         display: inline-block;
-        font-family: "Lato" !important;
+        // TODO: Need to be edited: "Lato" is CONSUL's font.
+        // font-family: "Lato" !important;
         font-size: rem-calc(24);
         font-weight: lighter;
         line-height: 1;

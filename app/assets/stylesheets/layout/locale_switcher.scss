@@ -26,7 +26,7 @@
     }
 
     select {
-      background: #001d33;
+      background: darken($dark, 25%);
       border: 0;
       border-radius: rem-calc(4);
       color: #fff;

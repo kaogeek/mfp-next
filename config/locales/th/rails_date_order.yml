@@ -1,0 +1,6 @@
+th:
+  date:
+    order:
+      - :year
+      - :month
+      - :day
