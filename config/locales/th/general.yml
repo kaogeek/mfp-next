@@ -109,7 +109,7 @@ th:
       title: Debates
       section_header:
         icon_alt: Debates icon
-        title: Debates
+        title: ข้อเสนอถึงพรรค
         help: Help with debates
       section_footer:
         title: Help with debates
@@ -218,7 +218,7 @@ th:
       administration_menu: Menu
       administration: Administration
       collaborative_legislation: Collaborative legislation
-      debates: ชุมชนก้าวไกล
+      debates: ข้อเสนอถึงพรรค
       locale: "ภาษา:"
       management: Management
       moderation: Moderation

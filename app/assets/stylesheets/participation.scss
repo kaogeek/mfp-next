@@ -755,8 +755,11 @@
   padding-top: $line-height;
 
   h1 {
-    font-size: rem-calc(24);
-    text-transform: uppercase;
+    // Override styles for MFP-NEXT
+    // font-size: rem-calc(24);
+    // text-transform: uppercase;
+    font-size: rem-calc(32);
+    font-weight: normal;
   }
 }
 
