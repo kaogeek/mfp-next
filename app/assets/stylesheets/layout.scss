@@ -131,6 +131,12 @@ button,
   }
 }
 
+.button-gray {
+  @extend .button;
+  background: #f0f0f0 !important;
+  color: $black !important;
+}
+
 .button {
   @extend %button;
   @include inverted-selection;

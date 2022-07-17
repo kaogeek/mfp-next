@@ -14,7 +14,8 @@
 $black: #222 !default;
 $white: #fdfdfd !default;
 
-$body-font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important !default;
+//$body-font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important !default;
+$body-font-family: "Pracharath", sans-serif !default;
 
 $global-radius: rem-calc(3) !default;
 $global-width: rem-calc(1200) !default;
@@ -52,7 +53,11 @@ $show-header-for-stacked: true !default;
 $body-margin: calc(50vw - #{$global-width / 2}) !default;
 $full-width-margin: unquote("#{$global-width / 2} - 50vw") !default;
 
-$base-font-size:      rem-calc(17) !default;
+// $base-font-size:      rem-calc(17) !default;
+// Scale up to offset Pracharath's font size.
+// Its base font size is smaller than Source Sans Pro
+// used by CONSUL.
+$base-font-size:      rem-calc(18) !default;
 $base-line:           rem-calc(26) !default;
 $line-height:         rem-calc(24) !default;
 $tiny-font-size:      rem-calc(12) !default;

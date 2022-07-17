@@ -80,7 +80,8 @@ $black: #0a0a0a !default;
 $white: #fefefe !default;
 $body-background: $white !default;
 $body-font-color: $black !default;
-$body-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+//$body-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$body-font-family: "Pracharath", sans-serif !default;
 $body-antialiased: true !default;
 $global-margin: 1rem !default;
 $global-padding: 1rem !default;
@@ -128,7 +129,8 @@ $block-grid-max: 8 !default;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family !default;
+//$header-font-family: $body-font-family !default;
+$header-font-family: "Anakotmai", "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $header-font-weight: $global-weight-normal !default;
 $header-font-style: normal !default;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace !default;
@@ -276,7 +278,8 @@ $breadcrumbs-item-separator-color: $medium-gray !default;
 // 11. Button
 // ----------
 
-$button-font-family: inherit !default;
+//$button-font-family: inherit !default;
+$button-font-family: $header-font-family !default;
 $button-padding: 0.85em 1em !default;
 $button-margin: 0 0 $global-margin 0 !default;
 $button-fill: solid !default;
