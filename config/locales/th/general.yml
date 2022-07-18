@@ -90,7 +90,7 @@ th:
       orders:
         confidence_score: highest rated
         created_at: newest
-        hot_score: most active
+        hot_score: เป็นที่สนใจ
         most_commented: most commented
         relevance: relevance
         recommendations: recommendations
