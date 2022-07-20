@@ -14,7 +14,7 @@
 
   button {
     background: #fff;
-    border: 2px solid;
+    // border: 2px solid;
     border-radius: rem-calc(3);
     color: $text-light;
     display: inline-block;
@@ -40,7 +40,7 @@
       &:hover,
       &:active {
         background: $like;
-        border: 2px solid $like;
+        // border: 2px solid $like;
       }
     }
   }
@@ -52,7 +52,7 @@
       &:hover,
       &:active {
         background: $unlike;
-        border: 2px solid $unlike;
+        // border: 2px solid $unlike;
       }
     }
   }
@@ -84,12 +84,12 @@
 
   .in-favor .voted {
     background: $like;
-    border: 2px solid $like;
+    // border: 2px solid $like;
   }
 
   .against .voted {
     background: $unlike;
-    border: 2px solid $unlike;
+    // border: 2px solid $unlike;
   }
 
   .no-voted {

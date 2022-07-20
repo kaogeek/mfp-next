@@ -88,12 +88,12 @@ th:
     index:
       featured_debates: Featured
       orders:
-        confidence_score: highest rated
-        created_at: newest
+        confidence_score: คะแนนสูงสุด
+        created_at: ล่าสุด
         hot_score: เป็นที่สนใจ
         most_commented: most commented
         relevance: relevance
-        recommendations: recommendations
+        recommendations: แนะนำ
       recommendations:
         without_results: There are no debates related to your interests
         without_interests: Follow proposals so we can give you recommendations
@@ -702,10 +702,10 @@ th:
         destroy:
           notice: "You have stopped following this investment project! <br> You will no longer receive notifications related to this project."
       proposal:
-          create:
-            notice: "Now you are following this citizen proposal! <br> We will notify you of changes as they occur so that you are up-to-date."
-          destroy:
-            notice: "You have stopped following this citizen proposal! <br> You will no longer receive notifications related to this proposal."
+        create:
+          notice: "Now you are following this citizen proposal! <br> We will notify you of changes as they occur so that you are up-to-date."
+        destroy:
+          notice: "You have stopped following this citizen proposal! <br> You will no longer receive notifications related to this proposal."
     print:
       print_button: Print this info
     search: Search
@@ -751,9 +751,9 @@ th:
       cards: Cards
       list: List
     recommended_index:
-        title: Recommendations
-        see_more: See more recommendations
-        hide: Hide recommendations
+      title: Recommendations
+      see_more: See more recommendations
+      hide: Hide recommendations
     translations:
       select_language_prompt: Choose language
       remove_language: Remove language

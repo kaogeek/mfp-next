@@ -853,15 +853,17 @@ body > header,
   .input-group-button {
     line-height: $line-height * 1.5;
     padding-bottom: 0;
+    position: absolute;
+    right: rem-calc(4);
 
     button {
-      background: $border;
+      background: $brand;
       border: 1px solid #ccc;
       border-left: 0;
       
       // Override style for MFP-NEXT.
       // color: $text;
-      color: $text-color-reduce;
+      // color: $text-color-reduce;
 
       height: $line-height * 1.5;
       line-height: $line-height * 1.5;
@@ -870,7 +872,7 @@ body > header,
 
     // Override style for MFP-NEXT.
     &:last-child > * {
-      border-radius: 0 0.4rem 0.4rem 0 !important;
+      border-radius: 0.4rem !important;
     }
   }
 
