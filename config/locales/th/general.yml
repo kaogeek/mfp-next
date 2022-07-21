@@ -70,13 +70,13 @@ th:
         submit_button: Start a debate
     debate:
       comments:
-        one: 1 comment
-        other: "%{count} comments"
-        zero: No comments
+        one: 1 ความคิดเห็น
+        other: "%{count} ความคิดเห็น"
+        zero: ไม่มีความคิดเห็น
       votes:
-        one: 1 vote
-        other: "%{count} votes"
-        zero: No votes
+        one: 1 โหวต
+        other: "%{count} โหวต"
+        zero: ไม่มีโหวต
     edit:
       editing: Edit debate
       form:
@@ -92,7 +92,7 @@ th:
         created_at: ล่าสุด
         hot_score: เป็นที่สนใจ
         most_commented: most commented
-        relevance: relevance
+        relevance: เกี่ยวข้อง
         recommendations: แนะนำ
       recommendations:
         without_results: There are no debates related to your interests
@@ -103,9 +103,9 @@ th:
           error: "An error has occured. Please go to 'My account' page to manually disable recommendations for debates"
       search_form:
         button: Search
-        placeholder: ค้นหาข้อเสนอ ...
+        placeholder: ค้นหา...
         title: Search
-      start_debate: Start a debate
+      start_debate: เขียนข้อเสนอ
       title: Debates
       section_header:
         icon_alt: Debates icon
@@ -675,13 +675,13 @@ th:
       date_4: "Last year"
       date_5: "Customized"
       from: "From"
-      general: "With the text"
+      general: "ค้นหา"
       goal: "By SDG"
       goal_blank: "Select a goal"
-      search: "Filter"
+      search: "ค้นหา"
       target: "By target"
       target_blank: "Select a target"
-      title: "Advanced search"
+      title: "ค้นหาทั้งหมด"
       to: "To"
     author_info:
       author_deleted: User deleted
@@ -763,7 +763,7 @@ th:
         one: "1 language in use"
         other: "%{count} languages in use"
     optional: "Optional fields"
-    required: "Required fields"
+    required: "เขียนพรรคก้าวไกลที่คุณอยากเห็น!"
   social:
     facebook: "%{org} Facebook"
     twitter: "%{org} Twitter"

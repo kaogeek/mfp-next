@@ -248,8 +248,8 @@ th:
         terms_of_service: "Terms of service"
         title: "Title"
       debate/translation:
-        title: "Debate title"
-        description: "Initial debate text"
+        title: "หัวข้อ"
+        description: "เขียนข้อเสนอ"
       proposal:
         author: "Author"
         title: "Title"

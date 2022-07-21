@@ -42,7 +42,13 @@
       &::after {
         background: $body-background;
         content: "";
-        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% calc(100% + 1px), 0 50%);
+        clip-path: polygon(
+          50% 0,
+          100% 0,
+          100% 100%,
+          50% calc(100% + 1px),
+          0 50%
+        );
         display: block;
         position: absolute;
         right: calc(#{$icon-size-with-padding} - #{$rounding-error});
@@ -86,7 +92,8 @@
         font-size: rem-calc(44);
 
         &::after {
-          right: $icon-size-with-padding + $polygon-size + $heading-icon-size / 2;
+          right: $icon-size-with-padding + $polygon-size + $heading-icon-size /
+            2;
         }
 
         &::before {
@@ -116,10 +123,9 @@
 }
 
 @mixin public-form {
-
   .required-fields {
     @include full-width-background($adjust-padding: true);
-    background: $light;
+    // background: $light;
     margin-bottom: $line-height;
     padding-top: $line-height;
   }

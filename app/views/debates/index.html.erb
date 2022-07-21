@@ -9,7 +9,7 @@
 <% end %>
 
 <main>
-  <% if @search_terms || @advanced_search_terms %>
+  <!-- <% if @search_terms || @advanced_search_terms %>
     <%= render Shared::SearchResultsSummaryComponent.new(
       results: @debates,
       search_terms: @search_terms,
@@ -17,7 +17,9 @@
     ) %>
   <% else %>
     <%= render "shared/section_header", i18n_namespace: "debates.index.section_header", image: "debates" %>
-  <% end %>
+  <% end %> -->
+
+  <%= render "shared/section_header", i18n_namespace: "debates.index.section_header", image: "debates" %>
 
   <% if feature?("user.recommendations") && @recommended_debates.present? %>
     <%= render "shared/recommended_index", recommended: @recommended_debates,
@@ -36,13 +38,13 @@
 
       <div class="row">
         <div class="small-12 column">
-          <%= render "view_mode" %>
+          <!-- <%= render "view_mode" %> -->
         </div>
       </div>
 
-      <%= render Shared::AdvancedSearchComponent.new %>
+      <!-- <%= render Shared::AdvancedSearchComponent.new %> -->
 
-      <%= render "shared/order_links", i18n_namespace: "debates.index" %>
+      <!-- <%= render "shared/order_links", i18n_namespace: "debates.index" %> -->
 
       <div class="show-for-small-only">
         <%= link_to t("debates.index.start_debate"), new_debate_path, class: "button expanded" %>
@@ -61,7 +63,7 @@
       <% end %>
       <%= paginate @debates %>
 
-      <% unless @search_terms || @advanced_search_terms %>
+      <!-- <% unless @search_terms || @advanced_search_terms %>
         <div id="section_help" class="margin" data-magellan-target="section_help">
           <p class="lead">
             <strong><%= t("debates.index.section_footer.title") %></strong>
@@ -72,7 +74,7 @@
                     org: link_to(setting["org_name"], new_user_registration_path))) %></p>
           </p>
         </div>
-      <% end %>
+      <% end %> -->
     </div>
 
     <div class="small-12 medium-3 column">
