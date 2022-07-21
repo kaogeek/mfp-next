@@ -829,15 +829,31 @@ body > header,
     // padding-top: $line-height / 4;
     padding-top: $line-height / 2.5;
 
+    // Add style for MFP-NEXT
+    align-items: center;
+
     @include breakpoint(medium) {
       margin-bottom: 0;
+    }
+
+    // Add style for MFP-NEXT
+    label {
+      width: 100%;
+
+      @include breakpoint(medium) {
+        width: rem-calc(265);
+      }
+
+      input {
+        padding-right: rem-calc(15 + 38);
+      }
     }
   }
 
   .input-group-field {
     margin-bottom: 0 !important;
     // Add style for MFP-NEXT
-    border-radius: 0.4rem 0 0 0.4rem;
+    border-radius: rem-calc(8);
     font-family: $body-font-family;
 
     // Add style for MFP-NEXT
@@ -849,8 +865,10 @@ body > header,
   .input-group-button {
     line-height: $line-height * 1.5;
     padding-bottom: 0;
+
+    // Override styles for MFP-NEXT
     position: absolute;
-    right: rem-calc(4);
+    right: rem-calc(6);
 
     button {
       // Override styles for MFP-NEXT
@@ -858,13 +876,16 @@ body > header,
       background: $brand;
       border: 1px solid #ccc;
       border-left: 0;
+      height: $line-height * 1.2;
+      line-height: $line-height * 1.2;
+      padding: 0.85rem 0.65rem;
 
       // Override style for MFP-NEXT.
       // color: $text;
       // color: $text-color-reduce;
 
-      height: $line-height * 1.5;
-      line-height: $line-height * 1.5;
+      // height: $line-height * 1.5;
+      // line-height: $line-height * 1.5;
       padding-top: 0;
     }
 
