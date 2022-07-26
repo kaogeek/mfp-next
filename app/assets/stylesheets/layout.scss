@@ -130,7 +130,7 @@ button,
     outline: $outline-focus;
   }
 }
-
+// ??????
 .button-gray {
   @extend .button;
   background: #f0f0f0 !important;
@@ -349,16 +349,24 @@ button,
   top: $line-height / 2;
 }
 
-.back,
-.icon-angle-left {
+.back{
   clear: both;
-  color: $text-medium;
-  display: inline-block;
-  padding-right: $line-height / 2;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 70px;
+  .icon-angle-left {
+    padding-right: $line-height ;
+    font-size: 2rem;
+  }
+
 }
 
 .back:not([class^="icon-"]) {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .tabs-content {
@@ -450,7 +458,7 @@ button,
 .help-text {
   line-height: rem-calc(20);
   margin-top: 0;
-
+  margin-left: 20px;
   strong {
     font-style: normal;
   }
@@ -581,9 +589,7 @@ body > header,
 }
 
 .top-bar {
-  // Override styles for MFP-NEXT
-  // background-color: inherit;
-  background-color: #fff;
+  background-color: inherit;
   padding: 0;
 
   @include breakpoint(medium) {
@@ -849,19 +855,15 @@ body > header,
   .input-group-button {
     line-height: $line-height * 1.5;
     padding-bottom: 0;
-    position: absolute;
-    right: rem-calc(4);
 
     button {
-      // Override styles for MFP-NEXT
-      // background: $border;
-      background: $brand;
+      background: $border;
       border: 1px solid #ccc;
       border-left: 0;
 
       // Override style for MFP-NEXT.
       // color: $text;
-      // color: $text-color-reduce;
+      color: $text-color-reduce;
 
       height: $line-height * 1.5;
       line-height: $line-height * 1.5;
@@ -870,7 +872,7 @@ body > header,
 
     // Override style for MFP-NEXT.
     &:last-child > * {
-      border-radius: 0.4rem !important;
+      border-radius: 0 0.4rem 0.4rem 0 !important;
     }
   }
 
@@ -892,7 +894,7 @@ body > header,
 .submenu {
   border-bottom: 1px solid $border;
   clear: both;
-  margin-bottom: $line-height;
+  margin-bottom: $line-height / 2;
 
   a {
     color: inherit;
@@ -1028,11 +1030,182 @@ footer {
 // --------------
 
 .auth-page {
+  .wrapper{
+    .right_right{
+      
+      height: 100vh;
+      background: rgb(244, 244, 244);
+      .column{
+        background: rgb(244, 244, 244);
+      }
+    }
+    .left_left{
+      .column{
+        background: rgb(255, 255, 255);
+      }
+    }
+    .forget_password{
+      margin-top: 10px;
+      margin-bottom: 18px;
+      font-size: 17.5px;
+    }
+    .forget_password_login{
+      margin-top: 35px;
+      margin-bottom: 18px;
+      font-size: 17.5px;
+    }
+    .confirmations{
+      display: block;
+      text-align: center;
+      color: black;
+    }
+    .edit_user{
+      text-align: left;
+    }
+  }
   .footer {
-    margin-top: 0;
+    margin-top: auto;
+  }
+  .height_password{
+    background-color: red;
+    height: 100vh;
+  }
+}
+.login_button{
+  color: rgb(0, 0, 0);
+}
+.right{
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  height: 100vh;
+  background: rgb(244, 244, 244);
+}
+.footer_forget_password{
+  text-align: center;
+}
+.title_forget_password{
+  display:flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.img_login{
+  display: grid;
+  grid-template-rows: 500px 300px;
+  color: $black;
+  margin-left: 50px;
+  .top{
+    display: grid;
+    align-content: space-between;
+    img{
+      width: 500px;
+      margin-bottom: 30px;
+    }
+
+
+  }
+  .bottom{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-end;
+    color: rgb(0, 0, 0);
+    h3{
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: 'CSChatThaiUI';
+      src: url('CSChatThaiUI.eot?#iefix') format('embedded-opentype'),  url('CSChatThaiUI.woff') format('woff'), url('CSChatThaiUI.ttf')  format('truetype'), url('CSChatThaiUI.svg#CSChatThaiUI') format('svg');
+      padding-bottom: 5px;
+    }
+    h5{
+      font-size: 0.75rem;
+      font-family: 'CSChatThaiUI';
+      src: url('CSChatThaiUI.eot?#iefix') format('embedded-opentype'),  url('CSChatThaiUI.woff') format('woff'), url('CSChatThaiUI.ttf')  format('truetype'), url('CSChatThaiUI.svg#CSChatThaiUI') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+}
+@media only screen and(max-width:1940px) {
+
+  .img_login{
+    display: grid;
+    grid-auto-rows: minmax(350px, 2fr) minmax(max-content, 2fr) minmax(20%, 60vmax);
+    .top{
+      img{
+        width: 400px;
+      }
+    }
+  }
+  .wrapper{
+    .right_right{
+      .column{
+        
+        background: rgb(244, 244, 244);
+      }
+    }
+    .left_left{
+      .column{
+        height: 100vh;
+        background: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+@media only screen and(max-width:1700px){
+  .img_login{
+    display: grid;
+    grid-auto-rows: minmax(350px, 2fr) minmax(max-content, 2fr) minmax(20%, 60vmax);
+    .top{
+      img{
+        width: 400px;
+      }
+    }
+  }
+
+  .wrapper{
+    .right_right{
+      .column{
+        
+        background: rgb(244, 244, 244);
+      }
+    }
+    .left_left{
+      .column{
+        height: 100vh;
+        background: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+@media only screen and(max-width:1500px){
+  .img_login{
+    display: grid;
+    grid-auto-rows: minmax(300px, 2fr) minmax(max-content, 2fr) minmax(20%, 60vmax);
+  }
+}
+.register_organisation{
+  background: rgb(255, 255, 255);
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  text-align: center;
+  a{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: bold;
   }
 }
 
+.register_bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .auth-image {
   background: $brand image-url("auth_bg.jpg");
   background-repeat: no-repeat;
@@ -1058,18 +1231,56 @@ footer {
     }
   }
 }
-
+.title_organizations{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
 .auth-form {
   @include breakpoint(medium) {
     padding-top: $line-height * 4;
+  }
+  .forget_password_page{
+    padding-top: 7rem;
+    height: 60vh;
+  }
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .title_all{
+    text-align: left;
   }
 
   p,
   a,
   .checkbox {
-    font-size: $small-font-size;
+    font-size: 15px;
   }
 }
+.text_footer{
+  font-size: 16.2px;
+  color: #000;
+}
+.auth-divider-login{
+  margin-top: $line-height * 1.5;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: rgb(4, 17, 49);
+  span {
+    box-decoration-break: clone;
+    font-weight: bold;
+    padding: 0 $line-height / 2;
+    position: relative;
+    top: -$line-height / 2;
+  }
+}
+.account{
+  margin-top: 30px;
+  text-align: center;
+}
+
 
 .auth-divider {
   border-top: 1px solid $border;
@@ -1093,7 +1304,8 @@ form {
   label {
     font-size: $base-font-size;
     font-weight: bold;
-    line-height: $line-height;
+    line-height: 2.5rem;
+    margin-left: 20px;
   }
 
   .checkbox-label {
@@ -1121,7 +1333,7 @@ form {
     background: #f8f8f8;
     height: $input-height;
     margin-bottom: rem-calc(16);
-
+    border-radius: 12px;
     &.error {
       margin-bottom: rem-calc(1);
     }
@@ -1248,6 +1460,9 @@ form {
     background-color: $alert-bg;
     border-color: $alert-border;
     color: $color-alert;
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-bottom: 29px;
   }
 
   .close {
@@ -1504,12 +1719,7 @@ table {
     }
 
     &:nth-child(even) {
-      background: adjust-color(
-        $table-background,
-        $red: -3,
-        $green: -1,
-        $blue: -2
-      );
+      background: adjust-color($table-background, $red: -3, $green: -1, $blue: -2);
     }
   }
 
@@ -1535,22 +1745,24 @@ table {
 .button.button-facebook,
 .button.button-google,
 .button.button-wordpress {
-  color: $text;
+  color: rgb(0, 0, 0);
   font-weight: bold;
-
+  text-align: left;
   &::before {
     font-size: rem-calc(24);
-    margin-right: $font-icon-margin;
+    margin-right: 1rem;
+
   }
 }
 
 .button.button-twitter {
   @include has-fa-icon(twitter, brands);
-  background: #ecf7fc;
-  border-left: 3px solid #45b0e3;
-
+  background: #ffffff;
+  border-radius: 25px;
   &::before {
     color: #45b0e3;
+    margin-left: 20px
+
   }
 }
 
@@ -1576,7 +1788,6 @@ table {
 .ssb-twitter {
   @include has-fa-icon(twitter, brands);
   background: #45b0e3;
-
   &:hover,
   &:focus {
     color: #40a2d1;
@@ -1585,18 +1796,17 @@ table {
 
 .button.button-facebook {
   @include has-fa-icon(facebook-f, brands);
-  background: #ebeef4;
-  border-left: 3px solid #3b5998;
-
+  background: #ffffff;
+  border-radius: 25px;
   &::before {
     color: #3b5998;
+    margin-left: 20px
   }
 }
 
 .ssb-facebook {
   @include has-fa-icon(facebook-f, brands);
   background: #3b5998;
-
   &:hover,
   &:focus {
     color: #354f88;
@@ -1605,11 +1815,11 @@ table {
 
 .button.button-google {
   @include has-fa-icon(google, brands);
-  background: #fcedea;
-  border-left: 3px solid #de4c34;
-
+  background: #ffffff;
+  border-radius: 25px;
   &::before {
-    color: #de4c34;
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    margin-left: 20px
   }
 }
 
@@ -1617,7 +1827,6 @@ table {
   @include has-fa-icon(wordpress, brands);
   background: #dcdde3;
   border-left: 3px solid #2f2f33;
-
   &::before {
     color: #2f2f33;
   }
@@ -2655,12 +2864,7 @@ table {
   }
 
   .gradient {
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.01) 1%,
-      rgba(0, 0, 0, 1) 100%
-    );
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 1) 100%);
     height: 100%;
     position: absolute;
     width: 100%;

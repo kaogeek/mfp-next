@@ -9,21 +9,36 @@
   <body class="auth-page">
     <%= raw setting["html.per_page_code_body"] %>
     <div class="wrapper">
-      <div class="auth-image small-12 medium-3 column">
-        <h1 class="logo margin">
-          <%= link_to root_path do %>
-            <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: setting["org_name"]) %>
-          <% end %>
-        </h1>
+      <div class="left_left">
+        <div class="small-12 medium-4 column">
+          <h1 class="logo margin">
+            <div class="img_login">
+                <div class="top">
+                  <%= back_link_to %>
+                    <%= link_to root_path do %>
+                      <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: setting["org_name"]) %>
+                    <% end %>
+                </div>
+                <div class="bottom">
+                  <h3>ช่วยอ่านตรงนี้สักนิด</h3>
+                  <h5>1.เขียนข้อเสนออย่างสร้างสรววค์</h5>
+                  <h5>2.อย่าเขียนอะไรที่ผิดกฏหมายหรือพาดพิงชื่อบุคคลให้เกิดความเสียหาย</h5>
+                  <h5>3.งดใช้ถ้อยคำหยาบคาย เสี่ยงก่อดราม่า</h5>
+                  <h5>4.ถ้าผิดกฏ แอดมินขออนุญาติจัดการให้มีความเหมาะสม</h5>
+                </div>
+            </div>
+          </h1>
+        </div>
       </div>
+      <div class="right_right">
+        <div class="small-12 medium-8 column" >
+          <div class="row" >
+            <div class="small-12 medium-9 large-7 small-centered column" >
+              <div class="auth-form margin" >
+                <%= render "layouts/flash" %>
 
-      <div class="small-12 medium-9 column">
-        <div class="row">
-          <div class="small-12 medium-9 large-7 small-centered column">
-            <div class="auth-form margin">
-              <%= render "layouts/flash" %>
-
-              <%= yield %>
+                <%= yield %>
+              </div>
             </div>
           </div>
         </div>

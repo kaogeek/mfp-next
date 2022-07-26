@@ -10,7 +10,6 @@
   <%= render "shared/social_media_meta_tags",
               social_url: root_url %>
 <% end %>
-
 <%= render "shared/header", header: @header %>
 
 <main>
@@ -20,7 +19,6 @@
     <% if @cards.any? %>
       <div class="small-12 column <%= "large-8" if feed_processes_enabled? %>">
         <h2 class="title"><%= t("welcome.cards.title") %></h2>
-
         <%= render "shared/cards", cards: @cards %>
       </div>
     <% end %>

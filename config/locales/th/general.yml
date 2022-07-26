@@ -286,7 +286,7 @@ th:
     info:
       sign_in: "Sign in with:"
       sign_up: "Sign up with:"
-    or_fill: "Or fill the following form:"
+    or_fill: "หรือกรอกแบบฟอร์มต่อไปนี้:"
   proposals:
     create:
       form:
@@ -686,7 +686,7 @@ th:
     author_info:
       author_deleted: User deleted
       email_deleted: Email deleted
-    back: Go back
+    back: ย้อนกลับ
     check: Select
     check_all: All
     check_none: None
