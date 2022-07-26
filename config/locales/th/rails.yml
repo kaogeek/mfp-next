@@ -1,53 +1,53 @@
 th:
   date:
     abbr_day_names:
-    - Sun
-    - Mon
-    - Tue
-    - Wed
-    - Thu
-    - Fri
-    - Sat
+      - Sun
+      - Mon
+      - Tue
+      - Wed
+      - Thu
+      - Fri
+      - Sat
     abbr_month_names:
-    -
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Oct
-    - Nov
-    - Dec
+      -
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
     day_names:
-    - Sunday
-    - Monday
-    - Tuesday
-    - Wednesday
-    - Thursday
-    - Friday
-    - Saturday
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     formats:
       default: "%Y-%m-%d"
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    -
-    - January
-    - February
-    - March
-    - April
-    - May
-    - June
-    - July
-    - August
-    - September
-    - October
-    - November
-    - December
+      -
+      - January
+      - February
+      - March
+      - April
+      - May
+      - June
+      - July
+      - August
+      - September
+      - October
+      - November
+      - December
   datetime:
     distance_in_words:
       about_x_hours:
@@ -97,41 +97,41 @@ th:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: must be accepted
-      blank: can't be blank
-      present: must be blank
-      confirmation: doesn't match %{attribute}
-      empty: can't be empty
-      equal_to: must be equal to %{count}
-      even: must be even
-      exclusion: is reserved
-      greater_than: must be greater than %{count}
-      greater_than_or_equal_to: must be greater than or equal to %{count}
-      inclusion: is not included in the list
-      invalid: is invalid
-      less_than: must be less than %{count}
-      less_than_or_equal_to: must be less than or equal to %{count}
-      model_invalid: "Validation failed: %{errors}"
-      not_a_number: is not a number
-      not_an_integer: must be an integer
-      odd: must be odd
-      required: must exist
-      taken: has already been taken
+      accepted: ต้องยอมรับ
+      blank: ว่างเปล่าไม่ได้
+      present: ต้องว่าง
+      confirmation: ไม่ตรงกัน %{attribute}
+      empty: ว่างเปล่าไม่ได้
+      equal_to: ต้องเท่ากับ %{count}
+      even: จะต้องเท่ากัน
+      exclusion: สงวนไว้
+      greater_than: ต้องมากกว่า %{count}
+      greater_than_or_equal_to: ต้องมากกว่าหรือเท่ากับ %{count}
+      inclusion: ไม่รวมอยู่ในรายการ
+      invalid: ไม่ถูกต้อง
+      less_than: ต้องน้อยกว่า %{count}
+      less_than_or_equal_to: ต้องน้อยกว่าหรือเท่ากับ %{count}
+      model_invalid: "การยืนยันล้มเหลว: %{errors}"
+      not_a_number: ไม่ใช่ตัวเลข
+      not_an_integer: ต้องเป็นจำนวนเต็ม
+      odd: ต้องแปลก
+      required: ต้องมี
+      taken: ถูกถ่ายไปแล้ว
       too_long:
-        one: is too long (maximum is 1 character)
-        other: is too long (maximum is %{count} characters)
+        one: ยาวเกินไป (สูงสุดคือ 1 อักษร)
+        other: ยาวเกินไป (สูงสุดคือ %{count} อักษร)
       too_short:
-        one: is too short (minimum is 1 character)
-        other: is too short (minimum is %{count} characters)
+        one: สั้นเกินไป (ขั้นต่ำคือ 1 อักษร)
+        other: สั้นเกินไป (ขั้นต่ำคือ %{count} อักษร)
       wrong_length:
-        one: is the wrong length (should be 1 character)
-        other: is the wrong length (should be %{count} characters)
-      other_than: must be other than %{count}
+        one: คือความยาวที่ไม่ถูกต้อง (ควรเป็น 1 ตัวอักษร)
+        other: มีความยาวไม่ถูกต้อง (ควรเป็น %{count} ตัวอักษร)
+      other_than: จะต้องเป็นอย่างอื่นนอกจาก %{count}
     template:
-      body: "There were problems with the following fields:"
+      body: "มีปัญหากับฟิลด์ต่อไปนี้:"
       header:
-        one: 1 error prohibited this %{model} from being saved
-        other: "%{count} errors prohibited this %{model} from being saved"
+        one: 1 ข้อผิดพลาดห้าม %{model} นี้ไม่ให้ถูกบันทึก
+        other: "%{count} ข้อผิดพลาดห้าม %{model} นี้ไม่ให้ถูกบันทึก"
   helpers:
     select:
       prompt: Please select

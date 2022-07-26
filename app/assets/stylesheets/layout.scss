@@ -988,6 +988,14 @@ footer {
 
   .footer-sections {
     padding-left: 0;
+    color: #fff;
+
+    &.privacy-policy {
+      a {
+        color: #f57832;
+        text-decoration: none;
+      }
+    }
   }
 
   .title {
@@ -997,7 +1005,7 @@ footer {
 }
 
 .footer {
-  background: #f1f1f1;
+  background: #212121;
   clear: both;
   margin-top: $line-height * 2;
   padding-bottom: $line-height;
@@ -1005,6 +1013,20 @@ footer {
 
   .public & {
     @include full-width-background;
+  }
+
+  .subtitle {
+    color: #9b9b9b;
+    width: 50%;
+  }
+
+  .copy-right {
+    float: right;
+    color: #fff;
+  }
+
+  .social {
+    color: #f57832;
   }
 }
 

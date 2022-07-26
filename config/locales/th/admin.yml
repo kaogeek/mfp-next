@@ -1,23 +1,23 @@
 th:
   admin:
     header:
-      title: Administration
+      title: การบริหาร
     actions:
-      actions: Actions
-      block_author: "Block author"
-      confirm_action: "Are you sure? %{action} \"%{name}\""
-      confirm_delete: "Are you sure? This action will delete \"%{name}\" and can't be undone."
-      confirm_hide: Confirm moderation
-      delete: "Delete"
-      hide: Hide
+      actions: การกระทำ
+      block_author: "ผู้เขียนบล็อก"
+      confirm_action: "คุณแน่ใจไหม? %{action} \"%{name}\""
+      confirm_delete: "คุณแน่ใจไหม? การดำเนินการนี้จะลบ \"%{name}\" aไม่สามารถยกเลิกได้"
+      confirm_hide: ยืนยันการดูแล
+      delete: "ลบ"
+      hide: ซ่อน
       label: "%{action} %{name}"
-      restore: Restore
-      mark_featured: Featured
-      unmark_featured: Unmark featured
-      edit: Edit
-      configure: Configure
+      restore: คืนค่า
+      mark_featured: จุดเด่น
+      unmark_featured: เลิกทำเครื่องหมายรายการเด่น
+      edit: แก้ไข
+      configure: กำหนดค่า
     officing_booth:
-      title: "You are officing the booth located at %{booth}. If this is not correct, do not continue and call the help phone number. Thank you."
+      title: "คุณกำลังออกบูธที่ %{booth} หากไม่ถูกต้อง โปรดอย่าดำเนินการต่อและโทรไปที่หมายเลขโทรศัพท์ช่วยเหลือ ขอขอบคุณ"
     banners:
       index:
         title: Banners
@@ -43,7 +43,7 @@ th:
       edit:
         editing: Edit banner
         form:
-          submit_button: Save changes
+          submit_button: บันทึกการเปลี่ยนแปลง
       new:
         creating: Create banner
       update:
@@ -225,7 +225,7 @@ th:
         main_call_to_action: "Main call to action (optional)"
         main_call_to_action_description: "This link will appear on main banner of this participatory budget when this phase is enabled and encourages your user to perform a specific action like creating a proposal, voting for existing ones, or learn more about the process."
         name_help_text: "This is the title of the phase users will read on the header whenever this phase is active."
-        save_changes: Save changes
+        save_changes: บันทึกการเปลี่ยนแปลง
       index:
         title: "%{budget} phases"
     budget_investments:
@@ -568,7 +568,7 @@ th:
           notice: Process deleted successfully
         edit:
           back: Back
-          submit_button: Save changes
+          submit_button: บันทึกการเปลี่ยนแปลง
         form:
           enabled: Enabled
           process: Process
@@ -636,7 +636,7 @@ th:
           notice: Draft deleted successfully
         edit:
           back: Back
-          submit_button: Save changes
+          submit_button: บันทึกการเปลี่ยนแปลง
           warning: You've edited the text, don't forget to click on Save to permanently save the changes.
           markdown_changes_message: "You've edited the text without saving it. Do you confirm to leave the page?"
         form:
@@ -677,7 +677,7 @@ th:
         edit:
           back: Back
           title: "Edit “%{question_title}”"
-          submit_button: Save changes
+          submit_button: บันทึกการเปลี่ยนแปลง
         form:
           add_option: Add option
           value_placeholder: Add a closed answer
@@ -1388,7 +1388,7 @@ th:
         coordinates_help: Coordinates that will generate a clickable area on an HTML image map
       edit:
         form:
-          submit_button: Save changes
+          submit_button: บันทึกการเปลี่ยนแปลง
         editing: Editing geozone
         back: Go back
       new:
@@ -1437,7 +1437,7 @@ th:
         stats_title: Stats
         summary:
           comment_votes: Comment votes
-          comments: Comments
+          comments: Comments หหห
           debate_votes: Debate votes
           debates: Debates
           proposal_votes: Proposal votes
@@ -1727,7 +1727,7 @@ th:
         working: "The script is running. The administrator who executed it will receive an email when it is finished."
         delete_generated_content: "Generated content has been successfully deleted."
       output_files: "Output files:"
-      related_content: "Related content"
+      related_content: "เนื้อหาที่เกี่ยวข้อง"
       related_content_description: "Adds automatically generated related content to proposals and participatory budget projects."
       script_info: "You will receive an email in %{email} when the script finishes running."
       script_name: "Script name:"

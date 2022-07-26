@@ -63,7 +63,7 @@
       <% end %>
       <%= paginate @debates %>
 
-      <% unless @search_terms || @advanced_search_terms %>
+       <!-- <% unless @search_terms || @advanced_search_terms %>
         <div id="section_help" class="margin" data-magellan-target="section_help">
           <p class="lead">
             <strong><%= t("debates.index.section_footer.title") %></strong>
@@ -74,7 +74,7 @@
                     org: link_to(setting["org_name"], new_user_registration_path))) %></p>
           </p>
         </div>
-      <% end %>
+      <% end %> -->
     </div>
 
     <div class="small-12 medium-3 column">

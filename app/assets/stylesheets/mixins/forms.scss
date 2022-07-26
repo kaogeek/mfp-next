@@ -165,11 +165,12 @@
   }
 
   .actions {
-    border: 6px solid $border;
+    // Override styles for MFP-NEXT
+    // border: 6px solid $border;
+    // margin-top: $line-height * 2;
     border-radius: rem-calc(12);
     margin-left: auto;
     margin-right: auto;
-    margin-top: $line-height * 2;
     padding: $line-height * 2 $line-height;
     text-align: center;
 

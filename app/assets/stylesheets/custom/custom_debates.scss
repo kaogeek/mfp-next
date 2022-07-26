@@ -1,14 +1,16 @@
 main {
   &.debate-new {
-    .help-header {
-      margin-left: rem-calc(-15);
-      margin-right: rem-calc(-15);
-      .row {
-        .column {
-          h1 {
-            &::after {
-              display: none;
-            }
+    .debate-form {
+      .actions {
+        input[type="submit"] {
+          width: 100%;
+
+          @include breakpoint(medium) {
+            width: 70%;
+          }
+
+          @include breakpoint(large) {
+            width: 55%;
           }
         }
       }

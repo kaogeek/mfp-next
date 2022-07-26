@@ -1,12 +1,8 @@
 <div class="row account">
   <div class="small-12 column">
     <div class="float-right text-right">
-      <%= link_to t("account.show.change_credentials_link"), edit_user_registration_path, class: "button hollow" %>
-      <br>
-      <%= link_to t("account.show.erase_account_link"), users_registrations_delete_form_path, class: "delete" %>
+      
     </div>
-
-    <%= avatar_image(@account, seed: @account.id, size: 100, class: "margin-bottom") %>
 
     <h1 class="inline-block"><%= t("account.show.title") %></h1>
 
@@ -15,21 +11,24 @@
 
       <div class="row">
         <div class="small-12 medium-7 column">
+          <div class="username-display">
+            <%= avatar_image(@account, seed: @account.id, size: 100, class: "margin-bottom") %>
+
+            <div class="small-12 medium-10 username-group">
+              <% if @account.organization? %>
+                <%= f.fields_for :organization do |fo| %>
+                  <%= fo.text_field :name, autofocus: true, maxlength: Organization.name_max_length %>
+                  <%= fo.text_field :responsible_name, autofocus: true, maxlength: Organization.responsible_name_max_length %>
+                <% end %>
+                <%= f.phone_field :phone_number %>
+
+              <% else %>
+                <%= f.text_field :username, maxlength: User.username_max_length %>
+              <% end %>
+            </div>
+          </div>
 
           <h2><%= t("account.show.personal") %></h2>
-
-          <div class="small-12 medium-10">
-            <% if @account.organization? %>
-              <%= f.fields_for :organization do |fo| %>
-                <%= fo.text_field :name, autofocus: true, maxlength: Organization.name_max_length %>
-                <%= fo.text_field :responsible_name, autofocus: true, maxlength: Organization.responsible_name_max_length %>
-              <% end %>
-              <%= f.phone_field :phone_number %>
-
-            <% else %>
-              <%= f.text_field :username, maxlength: User.username_max_length %>
-            <% end %>
-          </div>
 
           <div>
             <%= f.check_box :public_activity %>
@@ -85,15 +84,21 @@
             <% end %>
           <% end %>
 
-          <%= f.submit t("account.show.save_changes_submit"), class: "button margin-top" %>
+          <%= f.submit t("account.show.save_changes_submit"), class: "button margin-top save-change-btn" %>
         </div>
 
         <div class="user-permissions small-12 medium-5 column">
+          <div class="change-detail">
+            <%= link_to t("account.show.change_credentials_link"), edit_user_registration_path, class: "button hollow change" %>
+            <br>
+            <%= link_to t("account.show.erase_account_link"), users_registrations_delete_form_path, class: "delete" %>
+          </div>
+
           <h2><%= t("account.show.user_permission_title") %></h2>
 
           <p><%= t("account.show.user_permission_info") %></p>
 
-          <ul>
+          <ul class="participation-list">
             <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_debates") %></li>
             <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_proposal") %></li>
             <li>
@@ -122,10 +127,10 @@
             <div>
               <span class="verify-account">
                 <% if current_user.level_three_verified? %>
-                  <p class="already-verified">
-                    <span class="icon-check"></span>
-                    <%= t("account.show.verified_account") %>
-                  </p>
+                <div class="already-verified-btn">
+                  <span class="icon-check"></span>
+                  <%= t("account.show.verified_account") %>
+                </div>
                 <% elsif current_user.level_two_verified? %>
                   <%= link_to t("account.show.finish_verification"), verification_path, class: "button success" %>
                 <% else %>

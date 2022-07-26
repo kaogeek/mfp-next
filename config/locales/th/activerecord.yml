@@ -244,7 +244,7 @@ th:
       debate:
         author: "Author"
         description: "Opinion"
-        tag_list: "Topics"
+        tag_list: "ติด tag"
         terms_of_service: "Terms of service"
         title: "Title"
       debate/translation:

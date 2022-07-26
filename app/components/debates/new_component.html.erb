@@ -1,7 +1,5 @@
 <main class="debate-new">
-  <!-- <%= back_link_to debates_path, t("debates.index.section_header.title") %> -->
-
-  <%= render "shared/section_header", i18n_namespace: "debates.index.section_header", image: "debates" %>
+  <%= back_link_to debates_path, t("debates.index.section_header.title") %>
 
   <!-- <%= header do %>
     <%= link_to help_path(anchor: "debates"), title: t("shared.target_blank"), target: "_blank" do %>
@@ -18,7 +16,7 @@
       <li><%= t("debates.new.recommendation_three") %></li>
       <li><%= t("debates.new.recommendation_four") %></li>
     </ul>
-  </aside> -->
+  </aside>  -->
 
   <%= render Debates::FormComponent.new(debate) %>
 </main>

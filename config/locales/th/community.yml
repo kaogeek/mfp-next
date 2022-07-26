@@ -26,9 +26,9 @@ th:
         edit: Edit topic
         destroy: Delete topic
         comments:
-          one: 1 comment
-          other: "%{count} comments"
-          zero: No comments
+          one: 1 ความคิดเห็น
+          other: "%{count} ความคิดเห็น"
+          zero: ไม่มีความคิดเห็น
       author: Author
       back: Back to %{community} %{proposal}
     topic:
