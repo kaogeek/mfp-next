@@ -79,7 +79,7 @@ th:
         tag_category_label: "Categories"
         tags_instructions: "Tag this proposal. You can choose from proposed categories or add your own"
         tags_label: Tags
-        tags_placeholder: "Enter the tags you would like to use, separated by commas (',')"
+        tags_placeholder: "ป้อนแท็กที่คุณต้องการใช้ โดยคั่นด้วยเครื่องหมายจุลภาค (',')"
         map_location: "Map location"
         map_location_instructions: "Navigate the map to the location and place the marker."
         map_remove_marker: "Remove map marker"

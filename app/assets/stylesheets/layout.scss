@@ -23,6 +23,11 @@
 // 23. Maps
 // 24. Homepage
 // 25. LocalCensusRecords
+// Override for MFP-NEXT
+// 26. font Anakotmai
+// 27. font Pracharath
+// 28. font Tag label
+// 29. font custom-info
 //
 
 // 01. Global styles
@@ -347,6 +352,11 @@ button,
 
 .close-button {
   top: $line-height / 2;
+}
+
+// Override class for MFP-NEXT
+.back {
+  @extend .custom-font-anakotmai;
 }
 
 .back,
@@ -987,13 +997,59 @@ footer {
   }
 
   .footer-sections {
-    padding-left: 0;
-    color: #fff;
+    // Override class for MFP-NEXT
+    &.row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
 
-    &.privacy-policy {
-      a {
-        color: #f57832;
-        text-decoration: none;
+      @include breakpoint(medium) {
+        flex-direction: row;
+      }
+
+      .column:first-child:not(:last-child) {
+        width: 100%;
+        text-align: center;
+
+        @include breakpoint(medium) {
+          width: 50%;
+          text-align: left;
+        }
+
+        @include breakpoint(large) {
+          width: 60%;
+          text-align: left;
+        }
+
+        p a {
+          color: #f57832;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .column:last-child:not(:first-child) {
+        width: 100%;
+        text-align: center;
+        flex: 0 0 auto;
+
+        @include breakpoint(medium) {
+          width: 50%;
+          text-align: right;
+        }
+
+        @include breakpoint(large) {
+          width: 40%;
+          text-align: right;
+        }
+
+        @include breakpoint(medium down) {
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -1015,16 +1071,6 @@ footer {
     @include full-width-background;
   }
 
-  .subtitle {
-    color: #9b9b9b;
-    width: 50%;
-  }
-
-  .copy-right {
-    float: right;
-    color: #fff;
-  }
-
   .social {
     color: #f57832;
   }
@@ -1034,6 +1080,55 @@ footer {
   border-top: 1px solid $text-light;
   font-size: $small-font-size;
   padding-top: $line-height / 2;
+
+  // Override class for MFP-NEXT
+  &.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
+
+    .column:first-child:not(:last-child) {
+      width: 100%;
+      text-align: center;
+      color: #9b9b9b;
+
+      @include breakpoint(medium) {
+        width: 50%;
+        text-align: left;
+      }
+
+      @include breakpoint(large) {
+        width: 60%;
+        text-align: left;
+      }
+    }
+
+    .column:last-child:not(:first-child) {
+      width: 100%;
+      text-align: center;
+      flex: 0 0 auto;
+      color: #fff;
+
+      @include breakpoint(medium) {
+        width: 50%;
+        text-align: right;
+      }
+
+      @include breakpoint(large) {
+        width: 40%;
+        text-align: right;
+      }
+
+      @include breakpoint(medium down) {
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 // 04. Tags
@@ -1949,6 +2044,8 @@ table {
     margin: $line-height / 4 0;
     padding: $line-height / 4;
     position: relative;
+    // Override extend for MFP-NEXT
+    @extend .custom-info;
 
     &:empty {
       display: none;
@@ -2064,6 +2161,8 @@ table {
   display: inline-block;
   font-size: $small-font-size;
   line-height: rem-calc(32); // Same as avatar height
+  // Override extend for MFP-NEXT
+  @extend .custom-font-anakotmai;
 
   .user-name {
     color: $text;
@@ -2764,4 +2863,42 @@ table {
       margin-right: $line-height / 4;
     }
   }
+}
+
+// 26. font Anakotmai
+// ------------------------
+.custom-font-anakotmai {
+  font-family: $header-font-family;
+}
+
+// 27. font Pracharath
+// ------------------------
+
+.custom-font-pracharath {
+  font-family: $body-font-family;
+}
+
+// 28. font Tag label
+// ------------------------
+
+label:not([for*="search_text"]) {
+  margin-left: 8px;
+  margin-bottom: 8px;
+  @extend .custom-font-anakotmai;
+}
+
+// 29. font custom-info
+// ------------------------
+
+.custom-info {
+  @extend .custom-font-anakotmai;
+  font-weight: 100;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #a77e2d !important;
+  color: #ffffff !important;
+}
+input[type="checkbox"]:after {
+  box-shadow: none !important;
 }

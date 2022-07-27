@@ -4,7 +4,7 @@ th:
       title: การบริหาร
     actions:
       actions: การกระทำ
-      block_author: "ผู้เขียนบล็อก"
+      block_author: "บล็อก"
       confirm_action: "คุณแน่ใจไหม? %{action} \"%{name}\""
       confirm_delete: "คุณแน่ใจไหม? การดำเนินการนี้จะลบ \"%{name}\" aไม่สามารถยกเลิกได้"
       confirm_hide: ยืนยันการดูแล
@@ -12,8 +12,8 @@ th:
       hide: ซ่อน
       label: "%{action} %{name}"
       restore: คืนค่า
-      mark_featured: จุดเด่น
-      unmark_featured: เลิกทำเครื่องหมายรายการเด่น
+      mark_featured: ติดดาว
+      unmark_featured: ยกเลิกติดดาว
       edit: แก้ไข
       configure: กำหนดค่า
     officing_booth:
@@ -43,7 +43,7 @@ th:
       edit:
         editing: Edit banner
         form:
-          submit_button: บันทึกการเปลี่ยนแปลง
+          submit_button: เปลี่ยนแปลงข้อเสนอ
       new:
         creating: Create banner
       update:
@@ -225,7 +225,7 @@ th:
         main_call_to_action: "Main call to action (optional)"
         main_call_to_action_description: "This link will appear on main banner of this participatory budget when this phase is enabled and encourages your user to perform a specific action like creating a proposal, voting for existing ones, or learn more about the process."
         name_help_text: "This is the title of the phase users will read on the header whenever this phase is active."
-        save_changes: บันทึกการเปลี่ยนแปลง
+        save_changes: เปลี่ยนแปลงข้อเสนอ
       index:
         title: "%{budget} phases"
     budget_investments:
@@ -568,7 +568,7 @@ th:
           notice: Process deleted successfully
         edit:
           back: Back
-          submit_button: บันทึกการเปลี่ยนแปลง
+          submit_button: เปลี่ยนแปลงข้อเสนอ
         form:
           enabled: Enabled
           process: Process
@@ -636,7 +636,7 @@ th:
           notice: Draft deleted successfully
         edit:
           back: Back
-          submit_button: บันทึกการเปลี่ยนแปลง
+          submit_button: เปลี่ยนแปลงข้อเสนอ
           warning: You've edited the text, don't forget to click on Save to permanently save the changes.
           markdown_changes_message: "You've edited the text without saving it. Do you confirm to leave the page?"
         form:
@@ -677,7 +677,7 @@ th:
         edit:
           back: Back
           title: "Edit “%{question_title}”"
-          submit_button: บันทึกการเปลี่ยนแปลง
+          submit_button: เปลี่ยนแปลงข้อเสนอ
         form:
           add_option: Add option
           value_placeholder: Add a closed answer
@@ -1388,7 +1388,7 @@ th:
         coordinates_help: Coordinates that will generate a clickable area on an HTML image map
       edit:
         form:
-          submit_button: บันทึกการเปลี่ยนแปลง
+          submit_button: เปลี่ยนแปลงข้อเสนอ
         editing: Editing geozone
         back: Go back
       new:

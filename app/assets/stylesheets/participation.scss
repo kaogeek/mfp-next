@@ -194,6 +194,8 @@
     font-size: $small-font-size;
     margin-bottom: $line-height / 2;
     position: relative;
+    // Override extend for MFP-NEXT
+    @extend .custom-info;
 
     span:not(.label) {
       line-height: rem-calc(32); // Same as avatar height
@@ -513,7 +515,6 @@
   .sdg-target-tag-list {
     a {
       font-size: $tiny-font-size;
-      border-radius: rem-calc(14);
     }
   }
 
@@ -547,6 +548,8 @@
     color: $text-medium;
     font-size: $small-font-size;
     margin: rem-calc(6) 0 0;
+    // Override extend for MFP-NEXT
+    @extend .custom-info;
 
     .icon-comments {
       font-size: rem-calc(16);
@@ -616,6 +619,8 @@
       font-weight: bold;
       float: right;
       line-height: $line-height * 2;
+      // Override extend for MFP-NEXT
+      @extend .custom-font-anakotmai;
 
       @include breakpoint(medium) {
         display: block;
@@ -872,6 +877,8 @@
 .featured-proposals,
 .enquiries-list {
   padding: $line-height / 2 0;
+  margin-bottom: 15px;
+  border-radius: rem-calc(12);
 
   @include breakpoint(medium) {
     margin-left: 0 !important;

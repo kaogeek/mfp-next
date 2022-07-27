@@ -2,7 +2,7 @@
   <!-- <%= render "shared/errors", resource: debate %> -->
 
   <fieldset class="required-fields">
-    <legend><%= t("shared.required") %></legend>
+    <!-- <legend class="custom-font-anakotmai"><%= t("shared.required") %></legend> -->
 
     <%= render "shared/globalize_locales", resource: debate %>
 
@@ -34,10 +34,25 @@
               data: { js_url: suggest_tags_path },
               class: "tag-autocomplete" %> -->
 
-           <%= f.text_field :tag_list, value: debate.tag_list.to_s,
-              placeholder: t("debates.form.tags_placeholder"),
-              data: { js_url: suggest_tags_path },
-              class: "tag-autocomplete" %>
+    <label>
+      Multi-select
+      <input mbsc-input id="my-input" data-dropdown="true" data-tags="true" />
+    </label>
+    <select id="multiple-select" multiple>
+        <option value="1">Books</option>
+        <option value="2">Movies, Music & Games</option>
+        <option value="3">Electronics & Computers</option>
+        <option value="4">Home, Garden & Tools</option>
+        <option value="5">Health & Beauty</option>
+        <option value="6">Toys, Kids & Baby</option>
+        <option value="7">Clothing & Jewelry</option>
+        <option value="8">Sports & Outdoors</option>
+    </select>
+
+      <%= f.text_field :tag_list, value: debate.tag_list.to_s,
+        placeholder: t("debates.form.tags_placeholder"),
+        data: { js_url: suggest_tags_path },
+        class: "tag-autocomplete" %>
     </div>
 
     <%= render SDG::RelatedListSelectorComponent.new(f) %>
@@ -58,3 +73,29 @@
     <%= f.submit(class: "button", value: t("debates.#{action_name}.form.submit_button")) %>
   </div>
 <% end %>
+
+<script>
+  // function getData() {
+  // var text = document.getElementById('test');
+  // document.getElementById('debate_tag_list').value = text.value;
+  // }
+
+  // const select = document.querySelector('select')
+  // select.onchange = (e) => {
+  // const selectedVals = [...e.target.selectedOptions].map(o => o.value)
+  // console.log(selectedVals)
+  // }
+
+  $(document).ready(function() {
+    // console.log($('#test').attr('id'));
+  });
+
+  $(".chosen-select").chosen({
+    no_results_text: "Oops, nothing found!"
+  })
+
+  $('#multiple-select').mobiscroll().select({
+    inputElement: document.getElementById('my-input'),
+    touchUi: false
+});
+</script>
