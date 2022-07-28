@@ -1166,8 +1166,235 @@ footer {
 // --------------
 
 .auth-page {
+  .wrapper {
+    .right_right {
+      height: 100vh;
+      background: rgb(244, 244, 244);
+      .column {
+        background: rgb(244, 244, 244);
+      }
+    }
+    .left_left {
+      .column {
+        background: rgb(255, 255, 255);
+      }
+    }
+    .forget_password {
+      margin-top: 10px;
+      margin-bottom: 18px;
+      font-size: 17.5px;
+    }
+    .forget_password_login {
+      margin-top: 35px;
+      margin-bottom: 18px;
+      font-size: 21px;
+    }
+    .confirmations {
+      display: block;
+      text-align: center;
+      color: black;
+    }
+    .edit_user {
+      text-align: left;
+    }
+  }
+
   .footer {
     margin-top: 0;
+  }
+}
+
+.login_button {
+  font: normal normal normal 18px/30px Pracharath;
+  letter-spacing: 0px;
+  color: #2a3d4f;
+  opacity: 1;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  background: rgb(244, 244, 244);
+}
+
+.footer_forget_password {
+  text-align: center;
+}
+
+.title_forget_password {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.img_login {
+  display: grid;
+  grid-template-rows: 500px 300px;
+  color: $black;
+  margin-left: 50px;
+
+  .top {
+    display: grid;
+    align-content: space-between;
+
+    img {
+      width: 476px;
+      height: 136px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-end;
+    color: rgb(0, 0, 0);
+
+    h3 {
+      font-size: 22px;
+      font-weight: normal;
+      font-family: "Anakotmai";
+      padding-bottom: 5px;
+    }
+
+    h5 {
+      font-size: 18px;
+      font-family: "Pracharath";
+      font-weight: lighter;
+    }
+  }
+}
+
+@media only screen and(max-width:1940px) {
+  .img_login {
+    display: grid;
+    grid-auto-rows: minmax(350px, 2fr) minmax(max-content, 2fr)
+      minmax(20%, 60vmax);
+
+    .top {
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  .wrapper {
+    .right_right {
+      .column {
+        background: rgb(244, 244, 244);
+      }
+    }
+
+    .left_left {
+      .column {
+        height: 100vh;
+        background: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:1700px) {
+  .img_login {
+    display: grid;
+    grid-auto-rows: minmax(350px, 2fr) minmax(max-content, 2fr)
+      minmax(20%, 60vmax);
+
+    .top {
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  .wrapper {
+    .right_right {
+      .column {
+        background: rgb(244, 244, 244);
+      }
+    }
+
+    .left_left {
+      .column {
+        height: 100vh;
+        background: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:1523px) {
+  .img_login {
+    display: grid;
+    grid-auto-rows: minmax(300px, 2fr) minmax(max-content, 2fr)
+      minmax(20%, 60vmax);
+  }
+}
+
+.register_organisation {
+  background: rgb(255, 255, 255);
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  text-align: center;
+
+  a {
+    color: rgb(0, 0, 0);
+    font-family: "Anakotmai";
+    font-weight: normal;
+  }
+}
+
+@media only screen and(max-width:1027px) {
+  .wrapper {
+    .left_left {
+      .img_login {
+        display: grid;
+        grid-template-rows: 400px 400px;
+
+        .top {
+          img {
+            width: 300px;
+            height: 85px;
+            margin-bottom: 30px;
+          }
+        }
+
+        .bottom {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+.register_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+
+  .checkbox-label {
+    .checkbox {
+      font-size: 16px;
+      font-family: "Pracharath";
+    }
+  }
+}
+
+.small-centered {
+  input[type="submit"] {
+    font-size: 21px;
+    border-radius: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1197,15 +1424,115 @@ footer {
   }
 }
 
+.title_organizations {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
 .auth-form {
   @include breakpoint(medium) {
     padding-top: $line-height * 4;
   }
 
+  .forget_password_page {
+    padding-top: 7rem;
+    height: 60vh;
+  }
+
+  h2 {
+    font-size: 42px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .title_all {
+    text-align: left;
+  }
+
+  .line_remember_login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    a {
+      line-height: 2.5rem;
+    }
+  }
+
+  .account {
+    font-size: 18px;
+  }
+
   p,
-  a,
   .checkbox {
-    font-size: $small-font-size;
+    font-size: 18px;
+  }
+}
+
+.text_footer {
+  font-size: 16.2px;
+  color: #000;
+}
+
+.auth-divider-login {
+  margin-top: $line-height * 1.5;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: rgb(4, 17, 49);
+  font-family: "Anakotmai";
+
+  span {
+    box-decoration-break: clone;
+    font-weight: bold;
+    padding: 0 $line-height / 2;
+    position: relative;
+    top: -$line-height / 2;
+    color: #2a3d4f;
+  }
+}
+
+.account {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  .title_header {
+    padding-left: 46px;
+    display: flex;
+    padding-bottom: 30px;
+    .inline-block {
+      padding-left: 30px;
+    }
+  }
+
+  .edit_account {
+    .personal_details {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: baseline;
+      align-content: stretch;
+      background-color: #ffffff;
+      padding-top: 30px;
+      padding-left: 50px;
+      padding-bottom: 30px;
+
+      .checkbox-label {
+        span {
+          color: rgb(0, 0, 0);
+          font-size: 24px;
+          font-family: "Pracharath";
+        }
+      }
+
+      input[type="submit"] {
+        width: 369px;
+        height: 72.97px;
+        font-size: 28px;
+      }
+    }
   }
 }
 
@@ -1386,6 +1713,9 @@ form {
     background-color: $alert-bg;
     border-color: $alert-border;
     color: $color-alert;
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-bottom: 29px;
   }
 
   .close {
@@ -1424,6 +1754,11 @@ form {
 // ----------------
 
 .account {
+  .inline-block {
+    font-size: 35px;
+    text-align: left;
+    font-family: "Anakotmai";
+  }
   select {
     height: $line-height * 2;
     margin-right: $line-height / 2;
@@ -1451,14 +1786,93 @@ form {
       vertical-align: top;
     }
   }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .save-change-btn {
+    top: 1270px;
+    left: 83px;
+    width: 250px;
+    height: 45px;
+    font-size: medium;
+  }
+
+  .username-display {
+    display: flex;
+
+    .username-group {
+      padding-left: 25px;
+    }
+  }
+
+  .change-detail {
+    height: 124px;
+    padding-bottom: 170px;
+
+    .button.hollow.change {
+      color: black;
+      font-size: 24px;
+      font-family: "Anakotmai";
+    }
+
+    .change {
+      width: 384px;
+      height: 55px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 2px solid #f57832;
+      border-radius: 7px;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0;
+      margin-left: auto;
+      font-size: medium;
+    }
+
+    a {
+      font-size: 21px;
+      font-family: "Anakotmai";
+      color: #f57832;
+    }
+
+    .delete {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      border-bottom: none;
+      margin-top: -25px;
+      font-size: large;
+    }
+  }
+
+  .participation-list {
+    text-align: left;
+    padding-left: 15px;
+    .icon-check {
+      padding-right: 12px;
+      color: #f57832;
+    }
+  }
 }
 
 .avatar,
 .admin-avatar,
 .moderator-avatar,
-.initialjs-avatar {
+.initialjs-avatar.margin-bottom {
   border-radius: rem-calc(1000);
   position: relative;
+  width: 130px;
+  height: 130px;
 }
 
 .author-deleted,
@@ -1689,6 +2103,7 @@ table {
 
   &::before {
     color: #45b0e3;
+    margin-left: 20px;
   }
 }
 
@@ -1723,18 +2138,17 @@ table {
 
 .button.button-facebook {
   @include has-fa-icon(facebook-f, brands);
-  background: #ebeef4;
-  border-left: 3px solid #3b5998;
-
+  background: #ffffff;
+  border-radius: 25px;
   &::before {
     color: #3b5998;
+    margin-left: 20px;
   }
 }
 
 .ssb-facebook {
   @include has-fa-icon(facebook-f, brands);
   background: #3b5998;
-
   &:hover,
   &:focus {
     color: #354f88;
@@ -1743,11 +2157,18 @@ table {
 
 .button.button-google {
   @include has-fa-icon(google, brands);
-  background: #fcedea;
-  border-left: 3px solid #de4c34;
-
+  background: #ffffff;
+  border-radius: 25px;
   &::before {
-    color: #de4c34;
+    background: conic-gradient(
+        from -45deg,
+        #ea4335 110deg,
+        #4285f4 90deg 180deg,
+        #34a853 180deg 270deg,
+        #fbbc05 270deg
+      )
+      73% 55%/150% 150% no-repeat;
+    margin-left: 20px;
   }
 }
 
@@ -1942,17 +2363,40 @@ table {
   }
 }
 
-.verify-account {
-  padding-right: $line-height / 2;
+.box-bottom {
+  height: 99px;
+  background: #ffceb2 0% 0% no-repeat padding-box;
+  border: 1px solid #f57832;
+  border-radius: 19px;
+  opacity: 1;
 
-  .already-verified {
-    color: $check;
-    line-height: $line-height * 2;
+  .verify-account {
+    padding-right: $line-height / 2;
 
-    .icon-check {
-      font-size: rem-calc(24);
-      line-height: rem-calc(45);
-      vertical-align: middle;
+    .already-verified-btn {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 37px;
+
+      p {
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Anakotmai";
+        color: #f57832;
+      }
+    }
+
+    .already-verified {
+      color: $check;
+      line-height: $line-height * 2;
+
+      .icon-check {
+        align-content: center;
+        font-size: rem-calc(24);
+        line-height: rem-calc(45);
+        vertical-align: middle;
+      }
     }
   }
 }
@@ -2893,12 +3337,4 @@ label:not([for*="search_text"]) {
 .custom-info {
   @extend .custom-font-anakotmai;
   font-weight: 100;
-}
-
-input[type="checkbox"]:checked {
-  background-color: #a77e2d !important;
-  color: #ffffff !important;
-}
-input[type="checkbox"]:after {
-  box-shadow: none !important;
 }

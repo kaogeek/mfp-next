@@ -57,7 +57,7 @@ th:
       oldest: เก่าสุด
       most_commented: แสดงความคิดเห็นมากที่สุด
     show:
-      return_to_commentable: "ลับไป "
+      return_to_commentable: "กลับไป"
   comments_helper:
     comment_button: เผยแพร่ความคิดเห็น
     comment_link: ความคิดเห็น
@@ -287,7 +287,7 @@ th:
     info:
       sign_in: "Sign in with:"
       sign_up: "Sign up with:"
-    or_fill: "Or fill the following form:"
+    or_fill: "หรือกรอกอีเมลและรหัสผ่านที่สมัครไว้:"
   proposals:
     create:
       form:
@@ -423,8 +423,8 @@ th:
       author_deleted: User deleted
       code: "Proposal code:"
       comments:
-        one: 1 comment
-        other: "%{count} comments"
+        one: 1 ความคิดเห็น
+        other: "%{count} ความคิดเห็น"
         zero: ไม่มีความคิดเห็น
       comments_tab: Comments
       dashboard_proposal_link: Dashboard
@@ -663,8 +663,8 @@ th:
     filter: "Filter"
     save: "Save"
     delete: "Delete"
-    "yes": "Yes"
-    "no": "No"
+    "yes": "ใช่"
+    "no": "ไม่ใช่"
     search_results: "ผลการค้นหา"
     advanced_search:
       date: "ตามวันที่"
@@ -909,7 +909,7 @@ th:
     success: "คุณได้เพิ่มเนื้อหาที่เกี่ยวข้องใหม่"
     is_related: "มันเป็นเนื้อหาที่เกี่ยวข้อง?"
     score_positive: "ใช่"
-    score_negative: "ไม่"
+    score_negative: "ไม่ใช่"
     content_title:
       proposal: "Proposal"
       debate: "Debate"

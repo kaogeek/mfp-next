@@ -34,20 +34,41 @@
               data: { js_url: suggest_tags_path },
               class: "tag-autocomplete" %> -->
 
-    <label>
-      Multi-select
-      <input mbsc-input id="my-input" data-dropdown="true" data-tags="true" />
-    </label>
-    <select id="multiple-select" multiple>
-        <option value="1">Books</option>
-        <option value="2">Movies, Music & Games</option>
-        <option value="3">Electronics & Computers</option>
-        <option value="4">Home, Garden & Tools</option>
-        <option value="5">Health & Beauty</option>
-        <option value="6">Toys, Kids & Baby</option>
-        <option value="7">Clothing & Jewelry</option>
-        <option value="8">Sports & Outdoors</option>
-    </select>
+              <label for="select_mul"><%= t("activerecord.attributes.debate.category") %></label>
+              <div class="multiSelect">
+                <select id="select_mul" multiple class="multiSelect_field">
+                  <option value="ผู้แทนฯ ที่คุณอยากเห็น
+                  กระบวนการคัดเลือกว่าที่ผู้สมัคร/การอบรมและพัฒนา/ส.ส.เขต/ส.ส.บัญชีรายชื่อ">ผู้แทนฯ ที่คุณอยากเห็น
+                  กระบวนการคัดเลือกว่าที่ผู้สมัคร/การอบรมและพัฒนา/ส.ส.เขต/ส.ส.บัญชีรายชื่อ</option>
+                  <option value="อของพรรค
+                  ช่องทางการสื่อสารต่างๆ ทั้ง Online Offline On Air/ Social Media พรรคและคนก้าวไกล /คอนเทนท์/ภาพ/วิดีโอ/ สื่อหาเสียง">อของพรรค
+                  ช่องทางการสื่อสารต่างๆ ทั้ง Online Offline On Air/ Social Media พรรคและคนก้าวไกล /คอนเทนท์/ภาพ/วิดีโอ/ สื่อหาเสียง</option>
+                  <option value="การรณรงค์สื่อสารนโยบาย 
+                  การจัดทำนโยบาย/ช่องทางการเสนอนโยบาย/กลุ่มเป้าหมาย/การสื่อสารนโยบาย/การผลักดันนโยบาย">การรณรงค์สื่อสารนโยบาย 
+                  การจัดทำนโยบาย/ช่องทางการเสนอนโยบาย/กลุ่มเป้าหมาย/การสื่อสารนโยบาย/การผลักดันนโยบาย</option>
+                  <option value="งานสภา
+                  ร่างกฎหมาย/การอภิปราย/กรรมาธิการ/ การทำงานกับพรรคร่วมฝ่ายค้าน">งานสภา
+                  ร่างกฎหมาย/การอภิปราย/กรรมาธิการ/ การทำงานกับพรรคร่วมฝ่ายค้าน</option>
+                  <option value="การทำงานพื้นที่ 
+                  การเข้าถึงประชาชน/การแก้ปัญหาในพื้นที่/การทำงานกับหน่วยราชการและผู้นำชุมชน">การทำงานพื้นที่ 
+                  การเข้าถึงประชาชน/การแก้ปัญหาในพื้นที่/การทำงานกับหน่วยราชการและผู้นำชุมชน</option>
+                  <option value="การสร้างเครือข่ายและกิจกรรมสมาชิก
+                  การแจ้งข่าวสาร/การมีส่วนร่วมของสมาชิกพรรค/การขยายฐานสมาชิก/แคมเปญการรับสมัครสมาชิก/วิธีการรับสมัครสมาชิก">การสร้างเครือข่ายและกิจกรรมสมาชิก
+                  การแจ้งข่าวสาร/การมีส่วนร่วมของสมาชิกพรรค/การขยายฐานสมาชิก/แคมเปญการรับสมัครสมาชิก/วิธีการรับสมัครสมาชิก</option>
+                  <option value="ระดมทุน 
+                  ช่องทางรับบริจาค/วิธีการระดมทุน/แคมเปญการระดมทุน">ระดมทุน 
+                  ช่องทางรับบริจาค/วิธีการระดมทุน/แคมเปญการระดมทุน</option>
+                </select>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconX">
+                  <g stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </g>
+                </symbol>
+              </svg>
+
 
       <%= f.text_field :tag_list, value: debate.tag_list.to_s,
         placeholder: t("debates.form.tags_placeholder"),
@@ -75,27 +96,105 @@
 <% end %>
 
 <script>
-  // function getData() {
-  // var text = document.getElementById('test');
-  // document.getElementById('debate_tag_list').value = text.value;
-  // }
+$(document).ready(function () {
+  $(function selectMult() {
+    $(".multiSelect").each(function (e) {
+      var self = $(this);
+      var field = self.find(".multiSelect_field");
+      var fieldOption = field.find("option");
+      var placeholder = field.attr("data-placeholder");
 
-  // const select = document.querySelector('select')
-  // select.onchange = (e) => {
-  // const selectedVals = [...e.target.selectedOptions].map(o => o.value)
-  // console.log(selectedVals)
-  // }
+      field.hide().after(`<div class="multiSelect_dropdown"></div>
+                                <ul class="multiSelect_list"></ul>
+                                <span class="multiSelect_arrow"></span>`);
 
-  $(document).ready(function() {
-    // console.log($('#test').attr('id'));
+      fieldOption.each(function (e) {
+        $(".multiSelect_list").append(
+          `<li id="${$(this)
+            .text()
+            .toLowerCase()}" class="multiSelect_option" data-value="` +
+            $(this).val() +
+            `">
+                  <a class="multiSelect_text">` +
+            $(this).text() +
+            `</a>
+              </li>`
+        );
+      });
+
+      var dropdown = self.find(".multiSelect_dropdown");
+      var list = self.find(".multiSelect_list");
+      var option = self.find(".multiSelect_option");
+      var optionText = self.find(".multiSelect_text");
+
+      dropdown.attr("data-multiple", "true");
+      list.css("top", dropdown.height() + 5);
+
+      option.click(function (e) {
+        var self = $(this);
+        e.stopPropagation();
+        self.addClass("-selected");
+        field
+          .find("option:contains(" + self.children().text() + ")")
+          .prop("selected", true);
+        xxxx = dropdown;
+        if (dropdown.children()) {
+        }
+        dropdown
+          .append(function (e) {
+            return $(
+              '<span class="multiSelect_choice">' +
+                self.children().text() +
+                '<svg class="multiSelect_deselect -iconX"><use href="#iconX"></use></svg></span>'
+            ).click(function (e) {
+              var self = $(this);
+              e.stopPropagation();
+              self.remove();
+              list
+                .find(".multiSelect_option:contains(" + self.text() + ")")
+                .removeClass("-selected");
+              list
+                .css("top", dropdown.height() + 5)
+                .find(".multiSelect_noselections")
+                .remove();
+              field
+                .find("option:contains(" + self.text() + ")")
+                .prop("selected", false);
+              if (dropdown.children(":visible").length === 0) {
+                dropdown.removeClass("-hasValue");
+              }
+            });
+          })
+          .addClass("-hasValue");
+        list.css("top", dropdown.height() + 5);
+        if (!option.not(".-selected").length) {
+          list.append(
+            '<h5 class="multiSelect_noselections">ไม่มีการเลือก</h5>'
+          );
+        }
+      });
+
+      dropdown.click(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        dropdown.toggleClass("-open");
+        list
+          .toggleClass("-open")
+          .scrollTop(0)
+          .css("top", dropdown.height() + 5);
+      });
+
+      $(document).on("click touch", function (e) {
+        if (dropdown.hasClass("-open")) {
+          dropdown.toggleClass("-open");
+          list.removeClass("-open");
+        }
+      });
+    });
   });
 
-  $(".chosen-select").chosen({
-    no_results_text: "Oops, nothing found!"
-  })
-
-  $('#multiple-select').mobiscroll().select({
-    inputElement: document.getElementById('my-input'),
-    touchUi: false
+  //function setData() {
+  //  var contents = $('#debate_tag_list').value += ;
+  //}
 });
 </script>

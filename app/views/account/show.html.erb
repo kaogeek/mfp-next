@@ -1,20 +1,23 @@
+
 <div class="row account">
-  <div class="small-12 column">
+  <div class="small-12 medium-12 large-12 column">
     <div class="float-right text-right">
       
     </div>
-
-    <h1 class="inline-block"><%= t("account.show.title") %></h1>
-
+    <div class = "title_header">
+      <%= image_tag(image_path_for("Group_12935.png"), class: "float-left", alt: setting["org_name"]) %>
+      <h1 class="inline-block"><%= t("account.show.title") %></h1>
+    </div>
+  
     <%= form_for @account, as: :account, url: account_path do |f| %>
       <%= render "shared/errors", resource: @account %>
 
-      <div class="row">
+      <div class="row edit_account">
         <div class="small-12 medium-7 column">
           <div class="username-display">
             <%= avatar_image(@account, seed: @account.id, size: 100, class: "margin-bottom") %>
 
-            <div class="small-12 medium-10 username-group">
+            <div class="small-12 medium-8 username-group">
               <% if @account.organization? %>
                 <%= f.fields_for :organization do |fo| %>
                   <%= fo.text_field :name, autofocus: true, maxlength: Organization.name_max_length %>
@@ -23,68 +26,69 @@
                 <%= f.phone_field :phone_number %>
 
               <% else %>
-                <%= f.text_field :username, maxlength: User.username_max_length %>
+                <%= f.text_field :username, maxlength: User.username_max_length, label: t("account.show.username") %>
               <% end %>
             </div>
           </div>
-
-          <h2><%= t("account.show.personal") %></h2>
-
-          <div>
-            <%= f.check_box :public_activity %>
-          </div>
-
-          <div>
-            <%= f.check_box :public_interests %>
-          </div>
-
-          <% if @account.email.present? %>
-            <h2><%= t("account.show.notifications") %></h2>
+          <div class ="personal_details">
+            <h2><%= t("account.show.personal") %></h2>
 
             <div>
-              <%= f.check_box :email_on_comment %>
+              <%= f.check_box :public_activity,label: t("account.show.activities_public") %>
             </div>
 
             <div>
-              <%= f.check_box :email_on_comment_reply %>
+              <%= f.check_box :public_interests,label: t("account.show.follow_public") %>
             </div>
 
-            <div>
-              <%= f.check_box :newsletter %>
-            </div>
+            <% if @account.email.present? %>
+              <h2><%= t("account.show.notifications") %></h2>
 
-            <div>
-              <%= f.check_box :email_digest %>
-            </div>
-
-            <div>
-              <%= f.check_box :email_on_direct_message %>
-            </div>
-          <% end %>
-
-          <% if @account.official_level == 1 %>
-            <div>
-              <%= f.check_box :official_position_badge %>
-            </div>
-          <% end %>
-
-          <% if feature?("user.recommendations") %>
-            <h2><%= t("account.show.recommendations") %></h2>
-
-            <% if feature?("user.recommendations_on_debates") %>
               <div>
-                <%= f.check_box :recommended_debates %>
+                <%= f.check_box :email_on_comment,label: t("account.show.when_someone_comments_on_my_contents") %>
+              </div>
+
+              <div>
+                <%= f.check_box :email_on_comment_reply,label: t("account.show.when_someone_replies_to_my_comments") %>
+              </div>
+
+              <div>
+                <%= f.check_box :newsletter,label: t("account.show.when_someone_replies_to_my_comments") %>
+              </div>
+
+              <div>
+                <%= f.check_box :email_digest,label: t("account.show.receive_relevant_information_by_email") %>
+              </div>
+
+              <div>
+                <%= f.check_box :email_on_direct_message,label: t("account.show.receive_emails_about_direct_messages") %>
               </div>
             <% end %>
 
-            <% if feature?("user.recommendations_on_proposals") %>
+            <% if @account.official_level == 1 %>
               <div>
-                <%= f.check_box :recommended_proposals %>
+                <%= f.check_box :official_position_badge %>
               </div>
             <% end %>
-          <% end %>
 
-          <%= f.submit t("account.show.save_changes_submit"), class: "button margin-top save-change-btn" %>
+            <% if feature?("user.recommendations") %>
+              <h2><%= t("account.show.recommendations") %></h2>
+
+              <% if feature?("user.recommendations_on_debates") %>
+                <div>
+                  <%= f.check_box :recommended_debates,label: t("account.show.recommend_debates_to_me") %>
+                </div>
+              <% end %>
+
+              <% if feature?("user.recommendations_on_proposals") %>
+                <div>
+                  <%= f.check_box :recommended_proposals,label: t("account.show.recommend_proposals_to_me") %>
+                </div>
+              <% end %>
+            <% end %>
+
+            <%= f.submit t("account.show.save_changes_submit"), class: "button margin-top save-change-btn" %>
+          </div>
         </div>
 
         <div class="user-permissions small-12 medium-5 column">
@@ -94,13 +98,14 @@
             <%= link_to t("account.show.erase_account_link"), users_registrations_delete_form_path, class: "delete" %>
           </div>
 
-          <h2><%= t("account.show.user_permission_title") %></h2>
+          <h2 class="change_detail_title"><%= t("account.show.user_permission_title") %></h2>
 
           <p><%= t("account.show.user_permission_info") %></p>
 
           <ul class="participation-list">
             <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_debates") %></li>
             <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_proposal") %></li>
+
             <li>
               <% if current_user.level_two_or_three_verified? %>
                 <span class="icon-check"></span>
@@ -124,12 +129,12 @@
           </p>
 
           <% unless @account.organization? %>
-            <div>
+            <div class ="box-bottom">
               <span class="verify-account">
                 <% if current_user.level_three_verified? %>
                 <div class="already-verified-btn">
                   <span class="icon-check"></span>
-                  <%= t("account.show.verified_account") %>
+                  <p><%= t("account.show.verified_account")%></p>
                 </div>
                 <% elsif current_user.level_two_verified? %>
                   <%= link_to t("account.show.finish_verification"), verification_path, class: "button success" %>

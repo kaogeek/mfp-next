@@ -22,8 +22,8 @@
   margin-bottom: $line-height / 3;
   padding: $line-height / 4 $line-height / 3;
   text-decoration: none;
-  // Override extend for MFP-NEXT
-  @extend .custom-font-anakotmai;
+  // // Override style for MFP-NEXT
+  font-family: $header-font-family;
 
   &:hover {
     background: #e0e0e0;
