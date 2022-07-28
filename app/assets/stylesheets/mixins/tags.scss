@@ -15,17 +15,18 @@
 
 %tag {
   background: #ececec;
-  border-radius: rem-calc(6);
+  border-radius: rem-calc(14);
   color: $text;
   display: inline-block;
   font-size: $small-font-size;
   margin-bottom: $line-height / 3;
   padding: $line-height / 4 $line-height / 3;
   text-decoration: none;
+  // // Override style for MFP-NEXT
+  font-family: $header-font-family;
 
   &:hover {
     background: #e0e0e0;
     text-decoration: none;
   }
 }
-

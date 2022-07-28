@@ -14,7 +14,7 @@
 
   button {
     background: #fff;
-    border: 2px solid;
+    // border: 2px solid;
     border-radius: rem-calc(3);
     color: $text-light;
     display: inline-block;
@@ -40,7 +40,7 @@
       &:hover,
       &:active {
         background: $like;
-        border: 2px solid $like;
+        // border: 2px solid $like;
       }
     }
   }
@@ -52,7 +52,7 @@
       &:hover,
       &:active {
         background: $unlike;
-        border: 2px solid $unlike;
+        // border: 2px solid $unlike;
       }
     }
   }
@@ -70,11 +70,20 @@
     line-height: $line-height * 2;
     padding-right: $line-height / 2;
     vertical-align: top;
+    // Override extend for MFP-NEXT
+    @extend .custom-font-anakotmai;
 
     @include breakpoint(medium) {
       display: block;
       line-height: $line-height;
       padding-right: 0;
+      // Override style for MFP-NEXT
+      font-size: $small-font-size * 1.2;
+    }
+
+    @include breakpoint(large) {
+      // Override style for MFP-NEXT
+      font-size: $small-font-size * 1.5;
     }
   }
 
@@ -84,12 +93,12 @@
 
   .in-favor .voted {
     background: $like;
-    border: 2px solid $like;
+    // border: 2px solid $like;
   }
 
   .against .voted {
     background: $unlike;
-    border: 2px solid $unlike;
+    // border: 2px solid $unlike;
   }
 
   .no-voted {

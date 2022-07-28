@@ -1,7 +1,10 @@
 @import "mixins/colors";
 
 @mixin base-button {
-  font-size: $base-font-size;
+  // font-size: $base-font-size;
+  // Scale down to offset Pracharath vs Anakotmai base font size.
+  // Anakotmai's base size is quite bigger than Pracharath's.
+  font-size: $base-font-size * 0.76;
 
   &:focus,
   &:hover {
@@ -60,7 +63,7 @@
     width: 1.75em;
   }
 
-  &[aria-pressed=true] {
+  &[aria-pressed="true"] {
     background: $primary-color;
     padding-right: 2.5em;
     text-align: left;
@@ -70,7 +73,7 @@
     }
   }
 
-  &[aria-pressed=false] {
+  &[aria-pressed="false"] {
     background: $dark-gray;
     padding-left: 2.5em;
     text-align: right;

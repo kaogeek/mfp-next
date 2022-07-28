@@ -1,6 +1,5 @@
-<%= back_link_to %>
 
-<h2><%= t("devise_views.users.registrations.edit.edit") %></h2>
+<h2 class = "edit_user"><%= t("devise_views.users.registrations.edit.edit") %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "shared/errors", resource: resource %>
@@ -34,11 +33,12 @@
       <%= f.password_field :current_password,
         label: t("devise_views.users.registrations.edit.current_password_label"),
         autocomplete: "off",
-        hint: t("devise_views.users.registrations.edit.need_current") %>
+        hint: t("devise_views.users.registrations.edit.need_current")
+        %>
     </div>
 
-    <div class="small-12 column">
-      <%= f.submit t("devise_views.users.registrations.edit.update_submit"), class: "button" %>
+    <div class="small-12 medium-6 small-centered">
+      <%= f.submit t("devise_views.users.registrations.edit.update_submit"), class: "button expanded" %>
     </div>
   </div>
 <% end %>

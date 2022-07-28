@@ -3,11 +3,11 @@
   <div class="small-12 column">
     <%= back_link_to %>
 
-    <div class="float-right">
+    <div class="float-right custom-font-anakotmai">
       <%= link_to t("debates.edit.show_link"), @debate %>
     </div>
 
-    <h1><%= t("debates.edit.editing") %></h1>
+    <h1 style="margin-top: 15px;"><%= t("debates.edit.editing") %></h1>
 
     <%= render "form" %>
   </div>

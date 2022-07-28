@@ -15,8 +15,8 @@ th:
   views:
     pagination:
       current: You're on page
-      first: First
-      last: Last
-      next: Next
-      previous: Previous
+      first: หน้าสุด
+      last: หลังสุด
+      next: ถัดไป
+      previous: ก่อนหน้า
       truncate: "&hellip;"

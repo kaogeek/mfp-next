@@ -1,0 +1,60 @@
+.debate-new,
+.debate-edit {
+  .debate-form {
+    .actions {
+      input[type="submit"] {
+        width: 100%;
+
+        @include breakpoint(medium) {
+          width: 70%;
+        }
+
+        @include breakpoint(large) {
+          width: 55%;
+        }
+      }
+    }
+  }
+}
+
+.debates-list {
+  .debate {
+    .panel {
+      .row {
+        flex-direction: column;
+
+        @include breakpoint(medium) {
+          display: flex;
+          align-items: stretch;
+          flex-direction: row;
+        }
+
+        .column {
+          &:first-child:not(:last-child) {
+          }
+
+          &:last-child:not(:first-child) {
+            display: inline-grid;
+
+            .votes {
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: column;
+              justify-content: center;
+              padding: 0 rem-calc(10);
+
+              @include breakpoint(medium down) {
+                padding: rem-calc(12) rem-calc(14);
+              }
+
+              @include breakpoint(small down) {
+                flex-direction: row;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,12 +3,22 @@
     <%= render "shared/remote_translations_button", remote_translations: @remote_translations %>
   <% end %>
 
+  <% if false %>
+  <!--
+  ****************************
+  HIDE FOR PROJECT `MFP-NEXT`
+  ---------------------------
+  Only TH locale is provided
+  ****************************
+
   <div class="top-links">
     <%= render "shared/locale_switcher" %>
     <div class="hide-for-small-only">
       <%= render "shared/top_links" %>
     </div>
   </div>
+  -->
+  <% end %>
 
   <div class="top-bar">
     <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
@@ -25,10 +35,10 @@
     </h1>
 
     <div id="responsive-menu">
-      <div class="top-bar-right">
+      <div class="top-bar-right custom-font-anakotmai">
         <ul class="menu" data-responsive-menu="medium-dropdown">
           <%= render "shared/admin_login_items" %>
-          <%= render "layouts/notification_item" %>
+          <!-- <%= render "layouts/notification_item" %> -->
           <%= render "devise/menu/login_items" %>
         </ul>
 
