@@ -5,8 +5,8 @@ th:
         see_all: See all
         see_complete: See complete
         comments_count:
-          one: "%{count} comment"
-          other: "%{count} comments"
+          one: "%{count} ความคิดเห็น"
+          other: "%{count} ความคิดเห็น"
         replies_count:
           one: "%{count} reply"
           other: "%{count} replies"
@@ -19,8 +19,8 @@ th:
         comments_about: Comments about
         see_in_context: See in context
         comments_count:
-          one: "%{count} comment"
-          other: "%{count} comments"
+          one: "%{count} ความคิดเห็น"
+          other: "%{count} ความคิดเห็น"
       show:
         title: Comment
       version_chooser:
@@ -93,9 +93,9 @@ th:
           leave_comment: Leave your answer
       question:
         comments:
-          zero: No comments
-          one: "%{count} comment"
-          other: "%{count} comments"
+          zero: ไม่มีความคิดเห็น
+          one: "%{count} ความคิดเห็น"
+          other: "%{count} ความคิดเห็น"
         debate: Debate
       show:
         answer_question: Submit answer
@@ -135,13 +135,13 @@ th:
         one: "%{count} proposal"
         other: "%{count} proposals"
       comments:
-        zero: "No comments"
-        one: "%{count} comment"
+        zero: "ไม่มีความคิดเห็น"
+        one: "%{count} ความคิดเห็น"
         other: "%{count} comments"
       download: "Download summary"
       top_comments:
-        zero: "No comments"
-        one: "%{count} comment"
+        zero: "ไม่มีความคิดเห็น"
+        one: "%{count} ความคิดเห็น"
         other: "Top comments"
       most_voted_comments: "Most voted comments"
       no_allegation: "There are no comments"

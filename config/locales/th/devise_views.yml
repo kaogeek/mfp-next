@@ -1,9 +1,15 @@
 th:
   devise_views:
+    rule:
+      title: ช่วยอ่านตรงนี้สักนิด
+      rule_1: 1.เขียนข้อเสนออย่างสร้างสรววค์
+      rule_2: 2.อย่าเขียนอะไรที่ผิดกฏหมายหรือพาดพิงชื่อบุคคลให้เกิดความเสียหาย
+      rule_3: 3.งดใช้ถ้อยคำหยาบคาย เสี่ยงก่อดราม่า
+      rule_4: 4.ถ้าผิดกฏ แอดมินขออนุญาติจัดการให้มีความเหมาะสม
     confirmations:
       new:
-        submit: Re-send instructions
-        title: Re-send confirmation instructions
+        submit: ส่งคำแนะนำอีกครั้ง
+        title: ส่งอีเมลยืนยันอีกครั้ง
       show:
         instructions: Confirming the account with email %{email}
         new_password_confirmation_label: Repeat access password
@@ -40,8 +46,20 @@ th:
         new:
           password_confirmation_label: Confirm password
           responsible_name_note: This would be the person representing the association/collective in whose name the proposals are presented
-          submit: Register
-          title: Register as an organisation or collective
+          submit: ลงทะเบียน
+          title: ลงทะเบียนเป็นองค์กรหรือกลุ่ม
+          name_organizations: ชื่อองค์กร
+          person_in_charge_of_the_group: ผู้รับผิดชอบกลุ่ม
+          email: อีเมล์
+          phone: หมายเลขโทรศัพท์
+          password: รหัสผ่าน
+          confirm_password: ยืนยันรหัสผ่าน
+          placeholder_name_organizations: ชื่อที่ปรากฏข้างโพสต์ของคุณ
+          placeholder_person_incharge_of_the_group: บุคคลนี้จะเป็นแทนสมาคม/กลุ่มที่เสนอชื่อไว้
+          placeholder_email: โปรดใส่ Email ที่ใช้ในการเข้าระบบ
+          placeholder_phone: หมายเลขโทรศัพท์ขององค์กร
+          placeholder_password: โปรดใส่รหัสผ่าน
+          placeholder_confirm_password: โปรดใส่รหัสผ่านอีกครั้ง
         success:
           back_to_index: I understand; go back to main page
           instructions_1: "<strong>We will contact you soon</strong> to verify that you do in fact represent this collective."
@@ -55,23 +73,29 @@ th:
         password_confirmation_label: Confirm new password
         password_label: New password
         title: Change your password
+        email: อีเมลที่ใช้สมัคร
+        placeholder_email: กรอกอีเมลที่สมัครไว้
+        submit: ลงทะเบียน
+        edit_password: อีเมล
       new:
+        password: ลืมรหัสผ่าน
         send_submit: Send instructions
         title: Forgotten password?
     sessions:
       new:
-        remember_me: Remember me
-        submit: Enter
-        title: Sign in
+        remember_me: จดจำฉัน
+        submit: เข้าสู่ระบบ
+        title: เข้าสู่ระบบ
     shared:
       links:
         login: Enter
-        new_confirmation: Haven't received instructions to activate your account?
-        new_password: Forgotten your password?
+        new_confirmation: ไม่ได้รับคำแนะนำในการเปิดใช้งานบัญชีของคุณ?
+        new_confirmation_organization: ป้อนยังไม่ได้รับคำแนะนำในการเปิดใช้งานบัญชีของคุณ?
+        new_password: ลืมรหัสผ่าน?
         new_unlock: Haven't received unlocking instructions?
         signin_with_provider: Sign in with %{provider}
-        signup: Don't have an account? %{signup_link}
-        signup_link: Sign up
+        signup: ไม่มีบัญชี? %{signup_link}
+        signup_link: ลงชื่อ
     unlocks:
       new:
         email_label: Email
@@ -86,25 +110,34 @@ th:
           submit: Erase my account
           title: Erase account
         edit:
-          current_password_label: Current password
-          edit: Edit
-          email_label: Email
-          leave_blank: Leave blank if you do not wish to modify
-          need_current: We need your current password to confirm the changes
-          password_confirmation_label: Confirm new password
-          password_label: New password
-          update_submit: Update
+          current_password_label: รหัสผ่านปัจจุบัน
+          edit: แก้ไข
+          email_label: อีเมล
+          leave_blank: สามารถปล่อยเป็นช่องว่างได้ถ้าไม่มีการเปลี่ยนแปลงรหัสผ่าน
+          need_current: ต้องการการยืนยันรหัสผ่านปัจจุบันเพื่อทำการเปลี่ยนแปลงข้อมูล
+          password_confirmation_label: ยืนยันรหัสผ่าน
+          password_label: รหัสผ่านใหม่
+          update_submit: เปลี่ยนแปลง
           waiting_for: "Awaiting confirmation of:"
         new:
           cancel: Cancel login
           organization_signup: Do you represent an organisation or collective? %{signup_link}
-          organization_signup_link: Sign up here
-          password_confirmation_label: Confirm password
-          submit: Register
-          terms: By registering you accept the %{terms}
-          terms_link: terms and conditions of use
+          organization_signup_link: ลงทะเบียนสำหรับตัวแทนขององค์กร
+          login_username: อีเมล์หรือผู้ใช้
+          username: ชื่อผู้ใช้
+          email: อีเมล
+          password: รหัสผ่าน
+          password_confirmation_label: ยืนยันรหัสผ่าน
+          placeholder_login_username: โปรดใส่ Email ที่คุณสมัคร
+          placeholder_username: ชื่อที่ปรากฏข้างโพสต์ของคุณ
+          placeholder_email: อีเมล์หรือผู้ใช้
+          placeholder_password: โปรดใส่รหัสผ่าน
+          placeholder_confirm_password: โปรดใส่รหัสผ่านอีกครั้ง
+          submit: ลงทะเบียน
+          terms: การลงทะเบียนถือว่าคุณยอมรับ %{terms}
+          terms_link: ข้อกำหนดและเงื่อนไขการใช้งาน
           terms_title: By registering you accept the terms and conditions of use
-          title: Register
+          title: ลงทะเบียน
           username_is_available: Username available
           username_is_not_available: Username already in use
           username_note: Name that appears next to your posts

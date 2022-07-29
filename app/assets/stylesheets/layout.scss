@@ -23,6 +23,11 @@
 // 23. Maps
 // 24. Homepage
 // 25. LocalCensusRecords
+// Override for MFP-NEXT
+// 26. font Anakotmai
+// 27. font Pracharath
+// 28. font Tag label
+// 29. font custom-info
 //
 
 // 01. Global styles
@@ -210,7 +215,6 @@ button,
 }
 
 .float-right-medium {
-
   @include breakpoint(medium) {
     float: right !important;
   }
@@ -348,6 +352,11 @@ button,
 
 .close-button {
   top: $line-height / 2;
+}
+
+// Override class for MFP-NEXT
+.back {
+  @extend .custom-font-anakotmai;
 }
 
 .back,
@@ -536,7 +545,6 @@ body > header,
   }
 
   .remote-translations-button {
-
     &.callout {
       margin: 0;
       padding: rem-calc(6);
@@ -576,7 +584,6 @@ body > header,
 }
 
 .proposal-dashboard > header {
-
   @include breakpoint($global-width) {
     margin-left: $body-margin;
     margin-right: $body-margin;
@@ -584,7 +591,9 @@ body > header,
 }
 
 .top-bar {
-  background-color: inherit;
+  // Override styles for MFP-NEXT
+  // background-color: inherit;
+  background-color: #fff;
   padding: 0;
 
   @include breakpoint(medium) {
@@ -635,14 +644,12 @@ body > header,
   }
 
   .has-submenu {
-
     &.is-active a {
       font-weight: bold;
     }
   }
 
   .menu {
-
     @include breakpoint(small only) {
       border-bottom: 1px solid $border;
       margin-bottom: $line-height;
@@ -704,7 +711,6 @@ body > header,
 }
 
 .dropdown.menu > li {
-
   a {
     background: none;
   }
@@ -833,15 +839,31 @@ body > header,
     // padding-top: $line-height / 4;
     padding-top: $line-height / 2.5;
 
+    // Add style for MFP-NEXT
+    align-items: center;
+
     @include breakpoint(medium) {
       margin-bottom: 0;
+    }
+
+    // Add style for MFP-NEXT
+    label {
+      width: 100%;
+
+      @include breakpoint(medium) {
+        width: rem-calc(265);
+      }
+
+      input {
+        padding-right: rem-calc(15 + 38);
+      }
     }
   }
 
   .input-group-field {
     margin-bottom: 0 !important;
     // Add style for MFP-NEXT
-    border-radius: 0.4rem 0 0 0.4rem;
+    border-radius: rem-calc(8);
     font-family: $body-font-family;
 
     // Add style for MFP-NEXT
@@ -854,23 +876,32 @@ body > header,
     line-height: $line-height * 1.5;
     padding-bottom: 0;
 
+    // Override styles for MFP-NEXT
+    position: absolute;
+    right: rem-calc(6);
+
     button {
-      background: $border;
+      // Override styles for MFP-NEXT
+      // background: $border;
+      background: $brand;
       border: 1px solid #ccc;
       border-left: 0;
-      
+      height: $line-height * 1.2;
+      line-height: $line-height * 1.2;
+      padding: 0.85rem 0.65rem;
+
       // Override style for MFP-NEXT.
       // color: $text;
-      color: $text-color-reduce;
+      // color: $text-color-reduce;
 
-      height: $line-height * 1.5;
-      line-height: $line-height * 1.5;
+      // height: $line-height * 1.5;
+      // line-height: $line-height * 1.5;
       padding-top: 0;
     }
 
     // Override style for MFP-NEXT.
     &:last-child > * {
-      border-radius: 0 0.4rem 0.4rem 0 !important;
+      border-radius: 0.4rem !important;
     }
   }
 
@@ -883,7 +914,6 @@ body > header,
 }
 
 .top-bar-right {
-
   .is-active {
     font-weight: bold;
     text-decoration: underline;
@@ -893,7 +923,7 @@ body > header,
 .submenu {
   border-bottom: 1px solid $border;
   clear: both;
-  margin-bottom: $line-height / 2;
+  margin-bottom: $line-height;
 
   a {
     color: inherit;
@@ -926,7 +956,7 @@ body > header,
   }
 }
 
-.search-form-header [type=text] {
+.search-form-header [type="text"] {
   max-width: none;
 }
 
@@ -967,7 +997,61 @@ footer {
   }
 
   .footer-sections {
-    padding-left: 0;
+    // Override class for MFP-NEXT
+    &.row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
+
+      @include breakpoint(medium) {
+        flex-direction: row;
+      }
+
+      .column:first-child:not(:last-child) {
+        width: 100%;
+        text-align: center;
+
+        @include breakpoint(medium) {
+          width: 50%;
+          text-align: left;
+        }
+
+        @include breakpoint(large) {
+          width: 60%;
+          text-align: left;
+        }
+
+        p a {
+          color: #f57832;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .column:last-child:not(:first-child) {
+        width: 100%;
+        text-align: center;
+        flex: 0 0 auto;
+
+        @include breakpoint(medium) {
+          width: 50%;
+          text-align: right;
+        }
+
+        @include breakpoint(large) {
+          width: 40%;
+          text-align: right;
+        }
+
+        @include breakpoint(medium down) {
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 
   .title {
@@ -977,7 +1061,7 @@ footer {
 }
 
 .footer {
-  background: #f1f1f1;
+  background: #212121;
   clear: both;
   margin-top: $line-height * 2;
   padding-bottom: $line-height;
@@ -986,12 +1070,65 @@ footer {
   .public & {
     @include full-width-background;
   }
+
+  .social {
+    color: #f57832;
+  }
 }
 
 .subfooter {
   border-top: 1px solid $text-light;
   font-size: $small-font-size;
   padding-top: $line-height / 2;
+
+  // Override class for MFP-NEXT
+  &.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
+
+    .column:first-child:not(:last-child) {
+      width: 100%;
+      text-align: center;
+      color: #9b9b9b;
+
+      @include breakpoint(medium) {
+        width: 50%;
+        text-align: left;
+      }
+
+      @include breakpoint(large) {
+        width: 60%;
+        text-align: left;
+      }
+    }
+
+    .column:last-child:not(:first-child) {
+      width: 100%;
+      text-align: center;
+      flex: 0 0 auto;
+      color: #fff;
+
+      @include breakpoint(medium) {
+        width: 50%;
+        text-align: right;
+      }
+
+      @include breakpoint(large) {
+        width: 40%;
+        text-align: right;
+      }
+
+      @include breakpoint(medium down) {
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 // 04. Tags
@@ -1029,9 +1166,235 @@ footer {
 // --------------
 
 .auth-page {
+  .wrapper {
+    .right_right {
+      height: 100vh;
+      background: rgb(244, 244, 244);
+      .column {
+        background: rgb(244, 244, 244);
+      }
+    }
+    .left_left {
+      .column {
+        background: rgb(255, 255, 255);
+      }
+    }
+    .forget_password {
+      margin-top: 10px;
+      margin-bottom: 18px;
+      font-size: 17.5px;
+    }
+    .forget_password_login {
+      margin-top: 35px;
+      margin-bottom: 18px;
+      font-size: 21px;
+    }
+    .confirmations {
+      display: block;
+      text-align: center;
+      color: black;
+    }
+    .edit_user {
+      text-align: left;
+    }
+  }
 
   .footer {
     margin-top: 0;
+  }
+}
+
+.login_button {
+  font: normal normal normal 18px/30px Pracharath;
+  letter-spacing: 0px;
+  color: #2a3d4f;
+  opacity: 1;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  background: rgb(244, 244, 244);
+}
+
+.footer_forget_password {
+  text-align: center;
+}
+
+.title_forget_password {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.img_login {
+  display: grid;
+  grid-template-rows: 500px 300px;
+  color: $black;
+  margin-left: 50px;
+
+  .top {
+    display: grid;
+    align-content: space-between;
+
+    img {
+      width: 476px;
+      height: 136px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-end;
+    color: rgb(0, 0, 0);
+
+    h3 {
+      font-size: 22px;
+      font-weight: normal;
+      font-family: "Anakotmai";
+      padding-bottom: 5px;
+    }
+
+    h5 {
+      font-size: 18px;
+      font-family: "Pracharath";
+      font-weight: lighter;
+    }
+  }
+}
+
+@media only screen and(max-width:1940px) {
+  .img_login {
+    display: grid;
+    grid-auto-rows: minmax(350px, 2fr) minmax(max-content, 2fr)
+      minmax(20%, 60vmax);
+
+    .top {
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  .wrapper {
+    .right_right {
+      .column {
+        background: rgb(244, 244, 244);
+      }
+    }
+
+    .left_left {
+      .column {
+        height: 100vh;
+        background: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:1700px) {
+  .img_login {
+    display: grid;
+    grid-auto-rows: minmax(350px, 2fr) minmax(max-content, 2fr)
+      minmax(20%, 60vmax);
+
+    .top {
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  .wrapper {
+    .right_right {
+      .column {
+        background: rgb(244, 244, 244);
+      }
+    }
+
+    .left_left {
+      .column {
+        height: 100vh;
+        background: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:1523px) {
+  .img_login {
+    display: grid;
+    grid-auto-rows: minmax(300px, 2fr) minmax(max-content, 2fr)
+      minmax(20%, 60vmax);
+  }
+}
+
+.register_organisation {
+  background: rgb(255, 255, 255);
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  text-align: center;
+
+  a {
+    color: rgb(0, 0, 0);
+    font-family: "Anakotmai";
+    font-weight: normal;
+  }
+}
+
+@media only screen and(max-width:1027px) {
+  .wrapper {
+    .left_left {
+      .img_login {
+        display: grid;
+        grid-template-rows: 400px 400px;
+
+        .top {
+          img {
+            width: 300px;
+            height: 85px;
+            margin-bottom: 30px;
+          }
+        }
+
+        .bottom {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+.register_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+
+  .checkbox-label {
+    .checkbox {
+      font-size: 16px;
+      font-family: "Pracharath";
+    }
+  }
+}
+
+.small-centered {
+  input[type="submit"] {
+    font-size: 21px;
+    border-radius: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1061,16 +1424,115 @@ footer {
   }
 }
 
-.auth-form {
+.title_organizations {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
 
+.auth-form {
   @include breakpoint(medium) {
     padding-top: $line-height * 4;
   }
 
+  .forget_password_page {
+    padding-top: 7rem;
+    height: 60vh;
+  }
+
+  h2 {
+    font-size: 42px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .title_all {
+    text-align: left;
+  }
+
+  .line_remember_login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    a {
+      line-height: 2.5rem;
+    }
+  }
+
+  .account {
+    font-size: 18px;
+  }
+
   p,
-  a,
   .checkbox {
-    font-size: $small-font-size;
+    font-size: 18px;
+  }
+}
+
+.text_footer {
+  font-size: 16.2px;
+  color: #000;
+}
+
+.auth-divider-login {
+  margin-top: $line-height * 1.5;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: rgb(4, 17, 49);
+  font-family: "Anakotmai";
+
+  span {
+    box-decoration-break: clone;
+    font-weight: bold;
+    padding: 0 $line-height / 2;
+    position: relative;
+    top: -$line-height / 2;
+    color: #2a3d4f;
+  }
+}
+
+.account {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  .title_header {
+    padding-left: 46px;
+    display: flex;
+    padding-bottom: 30px;
+    .inline-block {
+      padding-left: 30px;
+    }
+  }
+
+  .edit_account {
+    .personal_details {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: baseline;
+      align-content: stretch;
+      background-color: #ffffff;
+      padding-top: 30px;
+      padding-left: 50px;
+      padding-bottom: 30px;
+
+      .checkbox-label {
+        span {
+          color: rgb(0, 0, 0);
+          font-size: 24px;
+          font-family: "Pracharath";
+        }
+      }
+
+      input[type="submit"] {
+        width: 369px;
+        height: 72.97px;
+        font-size: 28px;
+      }
+    }
   }
 }
 
@@ -1093,7 +1555,6 @@ footer {
 // ---------
 
 form {
-
   label {
     font-size: $base-font-size;
     font-weight: bold;
@@ -1121,7 +1582,7 @@ form {
     }
   }
 
-  [type]:not([type="button"], [type=checkbox], [type=file], [type=radio], [type=submit]) {
+  [type]:not([type="button"], [type="checkbox"], [type="file"], [type="radio"], [type="submit"]) {
     background: #f8f8f8;
     height: $input-height;
     margin-bottom: rem-calc(16);
@@ -1140,7 +1601,7 @@ form {
     margin-right: 0;
   }
 
-  [type=file] {
+  [type="file"] {
     margin: $line-height / 2 0 $line-height / 2 $line-height / 4;
   }
 
@@ -1166,7 +1627,6 @@ form {
 }
 
 .translatable-fields {
-
   &.highlight {
     display: inline-block;
     padding-top: $line-height;
@@ -1253,6 +1713,9 @@ form {
     background-color: $alert-bg;
     border-color: $alert-border;
     color: $color-alert;
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-bottom: 29px;
   }
 
   .close {
@@ -1281,7 +1744,6 @@ form {
 }
 
 .callout {
-
   &.highlight,
   &.light {
     border: 0;
@@ -1292,7 +1754,11 @@ form {
 // ----------------
 
 .account {
-
+  .inline-block {
+    font-size: 35px;
+    text-align: left;
+    font-family: "Anakotmai";
+  }
   select {
     height: $line-height * 2;
     margin-right: $line-height / 2;
@@ -1320,14 +1786,93 @@ form {
       vertical-align: top;
     }
   }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .save-change-btn {
+    top: 1270px;
+    left: 83px;
+    width: 250px;
+    height: 45px;
+    font-size: medium;
+  }
+
+  .username-display {
+    display: flex;
+
+    .username-group {
+      padding-left: 25px;
+    }
+  }
+
+  .change-detail {
+    height: 124px;
+    padding-bottom: 170px;
+
+    .button.hollow.change {
+      color: black;
+      font-size: 24px;
+      font-family: "Anakotmai";
+    }
+
+    .change {
+      width: 384px;
+      height: 55px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 2px solid #f57832;
+      border-radius: 7px;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0;
+      margin-left: auto;
+      font-size: medium;
+    }
+
+    a {
+      font-size: 21px;
+      font-family: "Anakotmai";
+      color: #f57832;
+    }
+
+    .delete {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      border-bottom: none;
+      margin-top: -25px;
+      font-size: large;
+    }
+  }
+
+  .participation-list {
+    text-align: left;
+    padding-left: 15px;
+    .icon-check {
+      padding-right: 12px;
+      color: #f57832;
+    }
+  }
 }
 
 .avatar,
 .admin-avatar,
 .moderator-avatar,
-.initialjs-avatar {
+.initialjs-avatar.margin-bottom {
   border-radius: rem-calc(1000);
   position: relative;
+  width: 130px;
+  height: 130px;
 }
 
 .author-deleted,
@@ -1341,7 +1886,6 @@ form {
 }
 
 .user-permissions {
-
   p {
     span {
       color: $text-medium;
@@ -1397,7 +1941,6 @@ form {
   position: relative;
 
   @include breakpoint(medium) {
-
     .mark-notification {
       position: absolute;
       right: 12px;
@@ -1415,7 +1958,6 @@ form {
   }
 
   &:hover {
-
     a {
       text-decoration: none;
     }
@@ -1504,7 +2046,6 @@ table {
   }
 
   tr {
-
     td {
       line-height: $line-height;
       padding: $line-height / 2 $line-height / 4;
@@ -1515,7 +2056,12 @@ table {
     }
 
     &:nth-child(even) {
-      background: adjust-color($table-background, $red: -3, $green: -1, $blue: -2);
+      background: adjust-color(
+        $table-background,
+        $red: -3,
+        $green: -1,
+        $blue: -2
+      );
     }
   }
 
@@ -1525,7 +2071,6 @@ table {
 }
 
 .table-for-mobile {
-
   @include breakpoint(medium down) {
     th,
     td {
@@ -1558,6 +2103,7 @@ table {
 
   &::before {
     color: #45b0e3;
+    margin-left: 20px;
   }
 }
 
@@ -1592,18 +2138,17 @@ table {
 
 .button.button-facebook {
   @include has-fa-icon(facebook-f, brands);
-  background: #ebeef4;
-  border-left: 3px solid #3b5998;
-
+  background: #ffffff;
+  border-radius: 25px;
   &::before {
     color: #3b5998;
+    margin-left: 20px;
   }
 }
 
 .ssb-facebook {
   @include has-fa-icon(facebook-f, brands);
   background: #3b5998;
-
   &:hover,
   &:focus {
     color: #354f88;
@@ -1612,11 +2157,18 @@ table {
 
 .button.button-google {
   @include has-fa-icon(google, brands);
-  background: #fcedea;
-  border-left: 3px solid #de4c34;
-
+  background: #ffffff;
+  border-radius: 25px;
   &::before {
-    color: #de4c34;
+    background: conic-gradient(
+        from -45deg,
+        #ea4335 110deg,
+        #4285f4 90deg 180deg,
+        #34a853 180deg 270deg,
+        #fbbc05 270deg
+      )
+      73% 55%/150% 150% no-repeat;
+    margin-left: 20px;
   }
 }
 
@@ -1651,7 +2203,6 @@ table {
 }
 
 @include breakpoint(medium) {
-
   .ssb-telegram,
   .ssb-whatsapp_app {
     display: none !important;
@@ -1670,7 +2221,6 @@ table {
 // ---------
 
 .help {
-
   li {
     border-bottom: 1px solid $border;
     font-weight: bold;
@@ -1715,7 +2265,6 @@ table {
 // ----------------
 
 .verification {
-
   @include breakpoint(medium) {
     .left + .left {
       margin-left: $line-height / 2;
@@ -1723,7 +2272,6 @@ table {
   }
 
   .date-of-birth {
-
     select {
       float: left;
       width: 30%;
@@ -1815,17 +2363,40 @@ table {
   }
 }
 
-.verify-account {
-  padding-right: $line-height / 2;
+.box-bottom {
+  height: 99px;
+  background: #ffceb2 0% 0% no-repeat padding-box;
+  border: 1px solid #f57832;
+  border-radius: 19px;
+  opacity: 1;
 
-  .already-verified {
-    color: $check;
-    line-height: $line-height * 2;
+  .verify-account {
+    padding-right: $line-height / 2;
 
-    .icon-check {
-      font-size: rem-calc(24);
-      line-height: rem-calc(45);
-      vertical-align: middle;
+    .already-verified-btn {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 37px;
+
+      p {
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Anakotmai";
+        color: #f57832;
+      }
+    }
+
+    .already-verified {
+      color: $check;
+      line-height: $line-height * 2;
+
+      .icon-check {
+        align-content: center;
+        font-size: rem-calc(24);
+        line-height: rem-calc(45);
+        vertical-align: middle;
+      }
     }
   }
 }
@@ -1905,7 +2476,6 @@ table {
 
 .comment-body,
 .notification-body {
-
   img {
     margin-right: $line-height / 2;
   }
@@ -1918,6 +2488,8 @@ table {
     margin: $line-height / 4 0;
     padding: $line-height / 4;
     position: relative;
+    // Override extend for MFP-NEXT
+    @extend .custom-info;
 
     &:empty {
       display: none;
@@ -1949,14 +2521,12 @@ table {
     }
 
     &.collapsed {
-
       .collapse-children {
         display: none;
       }
     }
 
     &:not(.collapsed) {
-
       .show-children {
         display: none;
       }
@@ -2019,7 +2589,6 @@ table {
     display: inline-block;
     padding-left: rem-calc(8);
     width: 100%;
-
   }
 
   .comment-form {
@@ -2036,6 +2605,8 @@ table {
   display: inline-block;
   font-size: $small-font-size;
   line-height: rem-calc(32); // Same as avatar height
+  // Override extend for MFP-NEXT
+  @extend .custom-font-anakotmai;
 
   .user-name {
     color: $text;
@@ -2044,7 +2615,6 @@ table {
 }
 
 .comment-votes {
-
   button,
   form {
     color: $text-light;
@@ -2089,7 +2659,6 @@ table {
 // ---------
 
 .flag-content {
-
   button {
     @include link;
   }
@@ -2116,14 +2685,12 @@ table {
 // ------------
 
 .activity {
-
   .retired {
     text-decoration: line-through;
   }
 }
 
 .public-interests {
-
   li {
     margin-right: $line-height / 4;
 
@@ -2135,7 +2702,6 @@ table {
 }
 
 .following {
-
   .follow-list {
     list-style-type: circle;
     padding: $line-height / 2;
@@ -2160,7 +2726,6 @@ table {
   }
 
   .interests {
-
     @include breakpoint(medium) {
       border-left: 1px solid #ececec;
       padding-left: $line-height;
@@ -2188,7 +2753,6 @@ table {
   .debates,
   .proposals,
   .budget-investments {
-
     @include breakpoint(medium) {
       margin-bottom: 0;
     }
@@ -2268,7 +2832,6 @@ table {
   }
 
   .carousel-image {
-
     .card .orbit {
       height: rem-calc(480);
 
@@ -2279,7 +2842,6 @@ table {
 
     .debates,
     .proposals {
-
       a {
         display: block;
         margin-top: $line-height;
@@ -2334,7 +2896,6 @@ table {
   }
 
   a {
-
     &:hover {
       text-decoration: none;
     }
@@ -2364,7 +2925,6 @@ table {
 // -------------
 
 .documents {
-
   h2 {
     font-size: rem-calc(24);
 
@@ -2498,7 +3058,6 @@ table {
 // -----------------
 
 .button {
-
   &.upload-image {
     @include has-fa-icon(image, solid);
   }
@@ -2539,14 +3098,12 @@ table {
 }
 
 .leaflet-bar a {
-
   &.leaflet-disabled {
     color: #525252;
   }
 }
 
 .leaflet-container {
-
   .leaflet-control-attribution {
     background: rgba(255, 255, 255, 0.9);
   }
@@ -2569,11 +3126,8 @@ table {
 .custom-page,
 .sdg-goal-show,
 .sdg-goals-index {
-
   a {
-
     p {
-
       &.description {
         color: $text;
         word-wrap: break-word;
@@ -2637,7 +3191,6 @@ table {
 
   h2,
   h3 {
-
     &.title {
       display: inline-block;
       border-top: 4px solid $brand;
@@ -2657,9 +3210,7 @@ table {
 }
 
 .feeds-list {
-
   a {
-
     &.see-all {
       border-bottom: 1px solid $border;
       display: block;
@@ -2690,7 +3241,12 @@ table {
   }
 
   .gradient {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.01) 1%,
+      rgba(0, 0, 0, 1) 100%
+    );
     height: 100%;
     position: absolute;
     width: 100%;
@@ -2744,7 +3300,6 @@ table {
 
 .local-census-record-new,
 .local-census-record-edit {
-
   .date-of-birth {
     select {
       float: left;
@@ -2752,4 +3307,34 @@ table {
       margin-right: $line-height / 4;
     }
   }
+}
+
+// 26. font Anakotmai
+// ------------------------
+.custom-font-anakotmai {
+  font-family: $header-font-family;
+}
+
+// 27. font Pracharath
+// ------------------------
+
+.custom-font-pracharath {
+  font-family: $body-font-family;
+}
+
+// 28. font Tag label
+// ------------------------
+
+label:not([for*="search_text"]) {
+  margin-left: 8px;
+  margin-bottom: 8px;
+  @extend .custom-font-anakotmai;
+}
+
+// 29. font custom-info
+// ------------------------
+
+.custom-info {
+  @extend .custom-font-anakotmai;
+  font-weight: 100;
 }

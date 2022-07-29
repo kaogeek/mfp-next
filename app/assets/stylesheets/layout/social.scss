@@ -1,9 +1,15 @@
 .social {
   @include grid-column;
-  text-align: right;
+  // Override styles for MFP-NEXT
+  // text-align: right;
+  text-align: center;
 
   @include breakpoint(medium) {
-    width: 1 * 100% / 3;
+    // Override styles for MFP-NEXT
+    // width: 1 * 100% / 3;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   ul {
