@@ -35,29 +35,29 @@
               class: "tag-autocomplete" %> -->
 
               <label for="select_mul"><%= t("activerecord.attributes.debate.category") %></label>
-              <div class="multiSelect">
+              <div id="category" class="multiSelect">
                 <select id="select_mul" multiple class="multiSelect_field">
-                  <option value="ผู้แทนฯ ที่คุณอยากเห็น
-                  กระบวนการคัดเลือกว่าที่ผู้สมัคร/การอบรมและพัฒนา/ส.ส.เขต/ส.ส.บัญชีรายชื่อ">ผู้แทนฯ ที่คุณอยากเห็น
-                  กระบวนการคัดเลือกว่าที่ผู้สมัคร/การอบรมและพัฒนา/ส.ส.เขต/ส.ส.บัญชีรายชื่อ</option>
-                  <option value="อของพรรค
-                  ช่องทางการสื่อสารต่างๆ ทั้ง Online Offline On Air/ Social Media พรรคและคนก้าวไกล /คอนเทนท์/ภาพ/วิดีโอ/ สื่อหาเสียง">อของพรรค
-                  ช่องทางการสื่อสารต่างๆ ทั้ง Online Offline On Air/ Social Media พรรคและคนก้าวไกล /คอนเทนท์/ภาพ/วิดีโอ/ สื่อหาเสียง</option>
-                  <option value="การรณรงค์สื่อสารนโยบาย 
-                  การจัดทำนโยบาย/ช่องทางการเสนอนโยบาย/กลุ่มเป้าหมาย/การสื่อสารนโยบาย/การผลักดันนโยบาย">การรณรงค์สื่อสารนโยบาย 
-                  การจัดทำนโยบาย/ช่องทางการเสนอนโยบาย/กลุ่มเป้าหมาย/การสื่อสารนโยบาย/การผลักดันนโยบาย</option>
-                  <option value="งานสภา
-                  ร่างกฎหมาย/การอภิปราย/กรรมาธิการ/ การทำงานกับพรรคร่วมฝ่ายค้าน">งานสภา
-                  ร่างกฎหมาย/การอภิปราย/กรรมาธิการ/ การทำงานกับพรรคร่วมฝ่ายค้าน</option>
-                  <option value="การทำงานพื้นที่ 
-                  การเข้าถึงประชาชน/การแก้ปัญหาในพื้นที่/การทำงานกับหน่วยราชการและผู้นำชุมชน">การทำงานพื้นที่ 
-                  การเข้าถึงประชาชน/การแก้ปัญหาในพื้นที่/การทำงานกับหน่วยราชการและผู้นำชุมชน</option>
-                  <option value="การสร้างเครือข่ายและกิจกรรมสมาชิก
-                  การแจ้งข่าวสาร/การมีส่วนร่วมของสมาชิกพรรค/การขยายฐานสมาชิก/แคมเปญการรับสมัครสมาชิก/วิธีการรับสมัครสมาชิก">การสร้างเครือข่ายและกิจกรรมสมาชิก
-                  การแจ้งข่าวสาร/การมีส่วนร่วมของสมาชิกพรรค/การขยายฐานสมาชิก/แคมเปญการรับสมัครสมาชิก/วิธีการรับสมัครสมาชิก</option>
-                  <option value="ระดมทุน 
-                  ช่องทางรับบริจาค/วิธีการระดมทุน/แคมเปญการระดมทุน">ระดมทุน 
-                  ช่องทางรับบริจาค/วิธีการระดมทุน/แคมเปญการระดมทุน</option>
+                  <option value="ผู้แทนฯ ที่คุณอยากเห็น">
+                    ผู้แทนฯ ที่คุณอยากเห็น
+                  </option>
+                  <option value="สื่อของพรรค">
+                    สื่อของพรรค
+                  </option>
+                  <option value="การรณรงค์สื่อสารนโยบาย">
+                    การรณรงค์สื่อสารนโยบาย
+                  </option>
+                  <option value="งานสภา">
+                    งานสภา
+                  </option>
+                  <option value="การทำงานพื้นที่">
+                    การทำงานพื้นที่
+                  </option>
+                  <option value="การสร้างเครือข่ายและกิจกรรมสมาชิก">
+                    การสร้างเครือข่ายและกิจกรรมสมาชิก
+                  </option>
+                  <option value="ระดมทุน">
+                    ระดมทุน
+                  </option>
                 </select>
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -70,13 +70,15 @@
               </svg>
 
 
-      <%= f.text_field :tag_list, value: debate.tag_list.to_s,
-        placeholder: t("debates.form.tags_placeholder"),
-        data: { js_url: suggest_tags_path },
-        class: "tag-autocomplete" %>
+      <div style="display: none;">
+        <%= f.text_field :tag_list, value: debate.tag_list.to_s,
+          placeholder: t("debates.form.tags_placeholder"),
+          data: { js_url: suggest_tags_path },
+          class: "tag-autocomplete" %>
+      </div>
     </div>
 
-    <%= render SDG::RelatedListSelectorComponent.new(f) %>
+      <%= render SDG::RelatedListSelectorComponent.new(f) %>
   </fieldset>
 
   <div class="actions">
@@ -85,24 +87,23 @@
         <%= f.check_box :terms_of_service,
           title: t("form.accept_terms_title"),
           label: t("form.accept_terms",
-                   policy: link_to(t("form.policy"), "/privacy", target: "blank"),
-                   conditions: link_to(t("form.conditions"), "/conditions", target: "blank")
+                   policy: link_to(t("form.policy"), "https://www.moveforwardparty.org/privacy-policy/", target: "blank"),
+                   conditions: link_to(t("form.conditions"), "https://www.moveforwardparty.org/privacy-policy/", target: "blank")
                   ) %>
       </div>
     <% end %>
 
-    <%= f.submit(class: "button", value: t("debates.#{action_name}.form.submit_button")) %>
+    <%= f.submit(class: "button send-debates", value: t("debates.#{action_name}.form.submit_button")) %>
   </div>
 <% end %>
 
 <script>
 $(document).ready(function () {
-  $(function selectMult() {
-    $(".multiSelect").each(function (e) {
-      var self = $(this);
-      var field = self.find(".multiSelect_field");
-      var fieldOption = field.find("option");
-      var placeholder = field.attr("data-placeholder");
+    $(".multiSelect").each((e) => {
+      const self = $(this);
+      const field = self.find(".multiSelect_field");
+      const fieldOption = field.find("option");
+      const placeholder = field.attr("data-placeholder");
 
       field.hide().after(`<div class="multiSelect_dropdown"></div>
                                 <ul class="multiSelect_list"></ul>
@@ -110,10 +111,9 @@ $(document).ready(function () {
 
       fieldOption.each(function (e) {
         $(".multiSelect_list").append(
-          `<li id="${$(this)
-            .text()
-            .toLowerCase()}" class="multiSelect_option" data-value="` +
-            $(this).val() +
+          `<li id="${($(this).text().trim()
+          .toLowerCase()).replace(/\s/g, '')}" class="multiSelect_option" data-value="` +
+            $(this).val().trim() +
             `">
                   <a class="multiSelect_text">` +
             $(this).text() +
@@ -122,32 +122,30 @@ $(document).ready(function () {
         );
       });
 
-      var dropdown = self.find(".multiSelect_dropdown");
-      var list = self.find(".multiSelect_list");
-      var option = self.find(".multiSelect_option");
-      var optionText = self.find(".multiSelect_text");
+      const dropdown = self.find(".multiSelect_dropdown");
+      const list = self.find(".multiSelect_list");
+      const option = self.find(".multiSelect_option");
+      const optionText = self.find(".multiSelect_text");
 
       dropdown.attr("data-multiple", "true");
       list.css("top", dropdown.height() + 5);
 
       option.click(function (e) {
-        var self = $(this);
+        const self = $(this);
         e.stopPropagation();
         self.addClass("-selected");
         field
           .find("option:contains(" + self.children().text() + ")")
           .prop("selected", true);
-        xxxx = dropdown;
-        if (dropdown.children()) {
-        }
+        
         dropdown
           .append(function (e) {
             return $(
-              '<span class="multiSelect_choice">' +
+              '<span class="multiSelect_choice"'+'data-value="'+self.children().text().replace(/\s/g, '')+'">' +
                 self.children().text() +
                 '<svg class="multiSelect_deselect -iconX"><use href="#iconX"></use></svg></span>'
             ).click(function (e) {
-              var self = $(this);
+              const self = $(this);
               e.stopPropagation();
               self.remove();
               list
@@ -163,6 +161,11 @@ $(document).ready(function () {
               if (dropdown.children(":visible").length === 0) {
                 dropdown.removeClass("-hasValue");
               }
+              if($('#category span.multiSelect_choice').length < 1) {
+                $('.send-debates').attr('disabled', true)
+              } else {
+                $('.send-debates').attr('disabled', false)
+              }
             });
           })
           .addClass("-hasValue");
@@ -171,6 +174,11 @@ $(document).ready(function () {
           list.append(
             '<h5 class="multiSelect_noselections">ไม่มีการเลือก</h5>'
           );
+        }
+        if($('#category span.multiSelect_choice').length < 1) {
+          $('.send-debates').attr('disabled', true)
+        } else {
+          $('.send-debates').attr('disabled', false)
         }
       });
 
@@ -191,10 +199,72 @@ $(document).ready(function () {
         }
       });
     });
-  });
 
-  //function setData() {
-  //  var contents = $('#debate_tag_list').value += ;
-  //}
+    $('.send-debates').on('click', (e) => {
+      let categories = [];
+      $('#category span.multiSelect_choice').map((index, elem) => { 
+        categories.push($(elem).attr('data-value').trim())
+      })
+      $('#debate_tag_list').val(categories)
+    });
+
+    if($('#debate_tag_list').val()){
+      $('.send-debates').attr('disabled', false)
+      $(".multiSelect").each(function (e) {
+        const self = $(this);
+        const field = self.find(".multiSelect_field");
+        const fieldOption = field.find("option");
+        const placeholder = field.attr("data-placeholder");
+
+        const dropdown = self.find(".multiSelect_dropdown");
+        const list = self.find(".multiSelect_list");
+        const option = self.find(".multiSelect_option");
+        const optionText = self.find(".multiSelect_text");
+
+        $('#debate_tag_list').val().split(',').map((elem) => {
+          dropdown.attr("data-multiple", "true");
+          const self = $('.multiSelect_list li#'+elem.trim().replace(/\s/g, ''));
+          if(self.length){
+            self.addClass("-selected");
+            field
+            .find("option:contains(" + self.children().text() + ")")
+            .prop("selected", true);
+          dropdown
+          .append(function (e) {
+            return $(
+              '<span class="multiSelect_choice"'+'data-value="'+self.children().text()+'">' +
+                self.children().text() +
+                '<svg class="multiSelect_deselect -iconX"><use href="#iconX"></use></svg></span>'
+            )        .click(function (e) {
+              const self = $(this);
+              e.stopPropagation();
+              self.remove();
+              list
+                .find(".multiSelect_option:contains(" + self.text() + ")")
+                .removeClass("-selected");
+              list
+                .css("top", dropdown.height() + 5)
+                .find(".multiSelect_noselections")
+                .remove();
+              field
+                .find("option:contains(" + self.text() + ")")
+                .prop("selected", false);
+              if (dropdown.children(":visible").length === 0) {
+                dropdown.removeClass("-hasValue");
+              }
+              if($('#category span.multiSelect_choice').length < 1) {
+                $('.send-debates').attr('disabled', true)
+              } else {
+                $('.send-debates').attr('disabled', false)
+              }
+            });
+          })
+          .addClass("-hasValue");
+          }
+        })
+      });
+    } else {
+      $('.send-debates').attr('disabled', true)
+    }
 });
 </script>
