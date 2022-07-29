@@ -32,8 +32,8 @@ th:
         one: "Comment"
         other: "Comments"
       debate:
-        one: "Debate"
-        other: "Debates"
+        one: "ข้อเสนอ"
+        other: "ข้อเสนอ"
       tag:
         one: "Tag"
         other: "Tags"

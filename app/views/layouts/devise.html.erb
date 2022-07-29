@@ -8,24 +8,20 @@
   <div class="page-login">
     <body class="auth-page">
       <%= raw setting["html.per_page_code_body"] %>
-      <div class="wrapper">
+      <div class="wrapper_devise">
         <div class="left_left">
-          <div class="small-12 medium-4 column">
+          <div class="small-12 medium-8 column">
             <h1 class="logo margin">
               <div class="img_login">
                   <div class="top">
-                    <%= back_link_to class: "back_login" %>
-                      <%= link_to root_path do %>
-                        <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: setting["org_name"]) %>
-                      <% end %>
+                    <%= back_link_to debates_path class: "back_login" %>
+                    <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: setting["org_name"]) %>
                   </div>
-                  <div class="bottom">
-                    <h3><%= t("devise_views.rule.title") %></h3>
-                    <h5><%= t("devise_views.rule.rule_1") %></h5>
-                    <h5><%= t("devise_views.rule.rule_2") %></h5>
-                    <h5><%= t("devise_views.rule.rule_3") %></h5>
-                    <h5><%= t("devise_views.rule.rule_4") %></h5>
-                  </div>
+                  <h3 class ="title_login_header" ><%= t("devise_views.rule.title") %></h3>
+                  <h5 class ="title_login"><%= t("devise_views.rule.rule_1") %></h5>
+                  <h5 class ="title_login"><%= t("devise_views.rule.rule_2") %></h5>
+                  <h5 class ="title_login"><%= t("devise_views.rule.rule_3") %></h5>
+                  <h5 class ="title_login"><%= t("devise_views.rule.rule_4") %></h5>
               </div>
             </h1>
           </div>
@@ -33,7 +29,7 @@
         <div class="right_right">
           <div class="small-12 medium-8 column" >
             <div class="row" >
-              <div class="small-12 medium-9 large-7 small-centered column" >
+              <div class="small-12 medium-9  small-centered column" >
                 <div class="auth-form margin" >
                   <%= render "layouts/flash" %>
 
