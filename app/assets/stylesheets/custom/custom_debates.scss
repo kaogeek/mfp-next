@@ -18,6 +18,47 @@
 }
 
 .debates-list {
+  .advanced-search-form {
+    .date-filters {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      @include breakpoint(medium) {
+        flex-direction: row;
+      }
+
+      .filter {
+        width: 100%;
+
+        @include breakpoint(medium) {
+          width: 33.33%;
+        }
+      }
+
+      .custom-date-filters {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(medium) {
+          flex-direction: row;
+          width: 66.66%;
+          align-items: flex-end;
+        }
+
+        .filter {
+          width: 100%;
+
+          @include breakpoint(medium) {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
   .debate {
     .panel {
       .row {
@@ -55,6 +96,18 @@
           }
         }
       }
+    }
+  }
+}
+
+.trending-tag {
+  .tag-cloud {
+    a {
+      width: 100%;
+      text-align: center;
+      border-radius: 22px;
+      padding: 12px;
+      border: $input-border;
     }
   }
 }

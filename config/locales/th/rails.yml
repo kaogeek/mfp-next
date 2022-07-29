@@ -136,9 +136,9 @@ th:
     select:
       prompt: Please select
     submit:
-      create: Create %{model}
-      submit: Save %{model}
-      update: Update %{model}
+      create: ส่ง%{model}
+      submit: บันทึก%{model}
+      update: บันทึก%{model}
   number:
     currency:
       format:

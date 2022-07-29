@@ -183,7 +183,7 @@ th:
       proposals: "Proposals"
       proposals_description: "Citizens' proposals are an opportunity for neighbours and collectives to decide directly how they want their society to be, after getting sufficient support and submitting to a citizens' vote"
       polls: "Polls"
-      polls_description:  "Citizens' polls are a participatory mechanism by which citizens with voting rights can make direct decisions"
+      polls_description: "Citizens' polls are a participatory mechanism by which citizens with voting rights can make direct decisions"
       budgets: "Participatory budgeting"
       budgets_description: "With participatory budgets, citizens decide which projects presented by their neighbours will receive a part of the budget"
       legislation: "Collaborative Legislation"

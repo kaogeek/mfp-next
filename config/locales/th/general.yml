@@ -8,7 +8,7 @@ th:
       personal: Personal details
       public_interests_my_title_list: Tags of elements you follow
       public_interests_user_title_list: Tags of elements this user follows
-      save_changes_submit: เปลี่ยนแปลงข้อเสนอ
+      save_changes_submit: บันทึกข้อเสนอ
       recommendations: Recommendations
       title: My account
       user_permission_info: With your account you can...
@@ -67,7 +67,7 @@ th:
   debates:
     create:
       form:
-        submit_button: Start a debate
+        submit_button: ส่งข้อเสนอ
     debate:
       comments:
         one: 1 ความคิดเห็น
@@ -80,7 +80,7 @@ th:
     edit:
       editing: แก้ไขข้อเสนอ
       form:
-        submit_button: เปลี่ยนแปลงข้อเสนอ
+        submit_button: บันทึกข้อเสนอ
       show_link: ดูข้อเสนอ
     form:
       tags_instructions: Tag this debate.
@@ -96,7 +96,7 @@ th:
         recommendations: แนะนำ
       recommendations:
         without_results: There are no debates related to your interests
-        without_interests: Follow proposals so we can give you recommendations
+        without_interests: ไม่พบกระทู้ที่เกี่ยวข้อง
         disable: "Recommendations for debates will stop showing if you dismiss them. You can enable them again in 'My account' page"
         actions:
           success: "Recommendations for debates are now disabled for this account"
@@ -125,7 +125,7 @@ th:
       recommendation_three: Ruthless criticism is very welcome. This is a space for reflection. But we recommend that you stick to elegance and intelligence. The world is a better place with these virtues in it.
       recommendation_two: Any debate or comment suggesting illegal action will be deleted, as well as those intending to sabotage the debate spaces. Anything else is allowed.
       recommendations_title: Recommendations for creating a debate
-      start_new: Start a debate
+      start_new: ส่งข้อเสนอ
     show:
       author_deleted: User deleted
       comments:
@@ -139,7 +139,7 @@ th:
       author: ผู้เขียน
     update:
       form:
-        submit_button: เปลี่ยนแปลงข้อเสนอ
+        submit_button: บันทึกข้อเสนอ
   errors:
     messages:
       allowed_file_content_types: "content type must be one of %{types}"
@@ -306,7 +306,7 @@ th:
     edit:
       editing: Edit proposal
       form:
-        submit_button: เปลี่ยนแปลงข้อเสนอ
+        submit_button: บันทึกข้อเสนอ
       show_link: View proposal
     retire_form:
       title: Withdraw proposal
@@ -343,7 +343,7 @@ th:
         recommendations: recommendations
       recommendations:
         without_results: There are not proposals related to your interests
-        without_interests: Follow proposals so we can give you recommendations
+        without_interests: ไม่พบกระทู้ที่เกี่ยวข้อง
         disable: "Recommendations for proposals will stop showing if you dismiss them. You can enable them again in 'My account' page"
         actions:
           success: "Recommendations for proposals are now disabled for this account"
@@ -366,8 +366,8 @@ th:
         placeholder: Search proposals...
         title: Search
       search_results:
-        one: " containing the term <strong>'%{search_term}'</strong>"
-        other: " containing the term <strong>'%{search_term}'</strong>"
+        one: "คำว่า <strong>'%{search_term}'</strong>"
+        other: "คำว่า <strong>'%{search_term}'</strong>"
       select_order_long: "You are viewing proposals according to:"
       start_proposal: Create a proposal
       title: Proposals
@@ -442,7 +442,7 @@ th:
       draft: Proposal in draft. Cannot yet get supports, nor does it appear in the list of proposals.
     update:
       form:
-        submit_button: เปลี่ยนแปลงข้อเสนอ
+        submit_button: บันทึกข้อเสนอ
   dashboard:
     menu:
       my_proposal: Edit my proposal
@@ -731,7 +731,7 @@ th:
         message: "You are seeing %{limit} of %{count} proposals containing the term '%{query}'"
         see_all: "See all"
     tags_cloud:
-      tags: Trending
+      tags: หมวดหมู่
       districts: "Districts"
       districts_list: "Districts list"
       categories: "Categories"
@@ -788,11 +788,11 @@ th:
     manage:
       all: "You do not have permission to carry out the action '%{action}' on %{subject}."
   users:
-    login_to_comment: "You must %{signin} or %{signup} to leave a comment."
-    login_to_continue: "You must %{signin} or %{signup} to continue."
-    signin: "sign in"
-    signup: "sign up"
-    verify_account: "verify your account"
+    login_to_comment: "คุณต้อง %{signin} หรือ %{signup} เพื่อแสดงความคิดเห็น"
+    login_to_continue: "คุณต้อง %{signin} หรือ %{signup} เพื่อจะดำเนินการต่อ"
+    signin: "เข้าสู่ระบบ"
+    signup: "ลงชื่อ"
+    verify_account: "ตรวจสอบบัญชีของคุณ"
     direct_messages:
       new:
         direct_messages_bloqued: "This user has decided not to receive direct messages"
@@ -808,17 +808,17 @@ th:
       deleted_budget_investment: This investment project has been deleted
       proposals: Proposals
       proposals_status: Status
-      debates: Debates
+      debates: ข้อเสนอ
       budget_investments: Budget investments
-      comments: Comments
+      comments: ความคิดเห็น
       actions: Actions
       filters:
         comments:
-          one: 1 Comment
-          other: "%{count} Comments"
+          one: 1 ความคิดเห็น
+          other: "%{count} ความคิดเห็น"
         debates:
-          one: 1 Debate
-          other: "%{count} Debates"
+          one: 1 ข้อเสนอ
+          other: "%{count} ข้อเสนอ"
         proposals:
           one: 1 Proposal
           other: "%{count} Proposals"
@@ -895,7 +895,7 @@ th:
       user_permission_verify_my_account: Verify my account
   invisible_captcha:
     sentence_for_humans: "If you are human, ignore this field"
-    timestamp_error_message: "Sorry, that was too quick! Please resubmit."
+    timestamp_error_message: "ขออภัย มันเร็วเกินไป! กรุณาส่งใหม่"
   related_content:
     title: "เนื้อหาที่เกี่ยวข้อง"
     add: "เพิ่มเนื้อหาที่เกี่ยวข้อง"
