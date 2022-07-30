@@ -63,7 +63,7 @@
     width: 1.75em;
   }
 
-  &[aria-pressed=true] {
+  &[aria-pressed="true"] {
     background: $primary-color;
     padding-right: 2.5em;
     text-align: left;
@@ -73,7 +73,7 @@
     }
   }
 
-  &[aria-pressed=false] {
+  &[aria-pressed="false"] {
     background: $dark-gray;
     padding-left: 2.5em;
     text-align: right;

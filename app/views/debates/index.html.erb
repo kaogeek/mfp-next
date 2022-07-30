@@ -61,7 +61,7 @@
       <% end %>
       <%= paginate @debates %>
 
-      <% unless @search_terms || @advanced_search_terms %>
+       <!-- <% unless @search_terms || @advanced_search_terms %>
         <div id="section_help" class="margin" data-magellan-target="section_help">
           <p class="lead">
             <strong><%= t("debates.index.section_footer.title") %></strong>
@@ -72,14 +72,28 @@
                     org: link_to(setting["org_name"], new_user_registration_path))) %></p>
           </p>
         </div>
-      <% end %>
+      <% end %> -->
     </div>
 
-    <div class="small-12 medium-3 column">
+    <div class="small-12 medium-3 column trending-tag">
 
       <aside class="margin-bottom">
         <%= link_to t("debates.index.start_debate"), new_debate_path, class: "button expanded" %>
-        <%= render "shared/tag_cloud", taggable: "Debate" %>
+        <!-- <%= render "shared/tag_cloud", taggable: "Debate" %> -->
+
+        <br>
+        <div class="tag-cloud">
+          <div class="sidebar-divider"></div>
+          <h1 class="sidebar-title"><%= t("shared.tags_cloud.tags") %></h1>
+          <br>
+          <a href="/debates?search=ผู้แทนฯ+ที่คุณอยากเห็น">ผู้แทนฯ ที่คุณอยากเห็น</a>
+          <a href="/debates?search=สื่อของพรรค">สื่อของพรรค</a>
+          <a href="/debates?search=การรณรงค์สื่อสารนโยบาย">การรณรงค์สื่อสารนโยบาย</a>
+          <a href="/debates?search=งานสภา">งานสภา</a>
+          <a href="/debates?search=การทำงานพื้นที่">การทำงานพื้นที่</a>
+          <a href="/debates?search=การสร้างเครือข่ายและกิจกรรมสมาชิก">การสร้างเครือข่ายและกิจกรรมสมาชิก</a>
+          <a href="/debates?search=ระดมทุน">ระดมทุน</a>
+        </div>
       </aside>
     </div>
 

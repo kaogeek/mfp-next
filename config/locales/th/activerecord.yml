@@ -32,8 +32,8 @@ th:
         one: "Comment"
         other: "Comments"
       debate:
-        one: "Debate"
-        other: "Debates"
+        one: "ข้อเสนอ"
+        other: "ข้อเสนอ"
       tag:
         one: "Tag"
         other: "Tags"
@@ -244,12 +244,13 @@ th:
       debate:
         author: "Author"
         description: "Opinion"
-        tag_list: "Topics"
+        category: "หมวดหมู่"
+        tag_list: "ติด tag"
         terms_of_service: "Terms of service"
         title: "Title"
       debate/translation:
-        title: "Debate title"
-        description: "Initial debate text"
+        title: "หัวข้อ"
+        description: "เขียนข้อเสนอ"
       proposal:
         author: "Author"
         title: "Title"

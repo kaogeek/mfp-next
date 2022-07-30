@@ -3,7 +3,7 @@ th:
     actions:
       create:
         notice: "%{resource_name} created successfully."
-        debate: "Debate created successfully."
+        debate: "สร้างข้อเสนอสำเร็จแล้ว"
         direct_message: "You message has been sent successfully."
         poll: "Poll created successfully."
         poll_booth: "Booth created successfully."
@@ -21,7 +21,7 @@ th:
         notice: Changes saved
       update:
         notice: "%{resource_name} updated successfully."
-        debate: "Debate updated successfully."
+        debate: "อัปเดตการอภิปรายเรียบร้อยแล้ว"
         poll: "Poll updated successfully."
         poll_booth: "Booth updated successfully."
         active_poll: "Polls description updated successfully."

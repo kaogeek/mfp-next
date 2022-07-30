@@ -1,51 +1,59 @@
-<% provide :title do %><%= t("devise_views.users.registrations.new.title") %><% end %>
-<h2><%= t("devise_views.users.registrations.new.title") %></h2>
+<div class="register-page">
+  <% provide :title do %><%= t("devise_views.users.registrations.new.title") %><% end %>
+  <h2><%= t("devise_views.users.registrations.new.title") %></h2>
 
-<%= render "devise/omniauth_form", action: "sign_up" %>
+  <%= render "devise/omniauth_form", action: "sign_up" %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "shared/errors", resource: resource %>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
-  <p>
-    <%= sanitize(t("devise_views.users.registrations.new.organization_signup",
-        signup_link: link_to(t("devise_views.users.registrations.new.organization_signup_link"), new_organization_registration_path))) %>
-  </p>
+    <div class="register_organisation" >
+      <%= link_to(t("devise_views.users.registrations.new.organization_signup_link"), new_organization_registration_path)
 
-  <div class="row">
-    <div class="small-12 column">
+          %>
+    </div>
+    <%= render "shared/errors", resource: resource %>
+    <div class="row">
+      <div class="small-12 column">
 
-      <%= f.hidden_field :use_redeemable_code %>
-      <%= f.hidden_field :locale, value: I18n.locale %>
+        <%= f.hidden_field :use_redeemable_code %>
+        <%= f.hidden_field :locale, value: I18n.locale %>
 
-      <%= f.text_field :username,  autofocus: true, maxlength: User.username_max_length,
-                                   hint: t("devise_views.users.registrations.new.username_note") %>
+        <%= f.text_field :username,  autofocus: true, maxlength: User.username_max_length,
+                        label: t("devise_views.users.registrations.new.username"),
+                        placeholder: t("devise_views.users.registrations.new.placeholder_username")
+                        %>
 
-      <%= f.invisible_captcha :address %>
+        <%= f.invisible_captcha :address %>
 
-      <%= f.email_field :email %>
+        <%= f.email_field :email, label: t("devise_views.users.registrations.new.email"), placeholder: t("devise_views.users.registrations.new.placeholder_email")%>
 
-      <%= f.password_field :password, autocomplete: "off" %>
+        <%= f.password_field :password, autocomplete: "off",
+                  label: t("devise_views.users.registrations.new.password"),
+                  placeholder: t("devise_views.users.registrations.new.placeholder_password")
+        %>
 
-      <%= f.password_field :password_confirmation, autocomplete: "off",
-                           label: t("devise_views.users.registrations.new.password_confirmation_label") %>
+        <%= f.password_field :password_confirmation, autocomplete: "off",
+                            label: t("devise_views.users.registrations.new.password_confirmation_label"),
+                            placeholder: t("devise_views.users.registrations.new.placeholder_confirm_password")
+                            %>
 
-      <% if resource.use_redeemable_code %>
-        <%= f.text_field :redeemable_code %>
-      <% end %>
-
-      <%= f.check_box :terms_of_service,
-        title: t("devise_views.users.registrations.new.terms_title"),
-        label: t("devise_views.users.registrations.new.terms",
-                 terms: link_to(t("devise_views.users.registrations.new.terms_link"), "/conditions",
-                                title: t("shared.target_blank"),
-                                target: "_blank")
-                ) %>
-
-      <div class="small-12 medium-6 small-centered">
-        <%= f.submit t("devise_views.users.registrations.new.submit"), class: "button expanded" %>
+        <% if resource.use_redeemable_code %>
+          <%= f.text_field :redeemable_code %>
+        <% end %>
+        <div class = "small-12 medium-12 register_bottom">
+          <%= f.check_box :terms_of_service,
+            title: t("devise_views.users.registrations.new.terms_title"),
+            label: t("devise_views.users.registrations.new.terms",
+                    terms: link_to(t("devise_views.users.registrations.new.terms_link"), "/conditions",
+                                    title: t("shared.target_blank"),
+                                    target: "_blank")
+                    ) %>
+        </div>
+        <div class="small-12 medium-7 small-centered">
+          <%= f.submit t("devise_views.users.registrations.new.submit"), class: "button expanded" %>
+        </div>
       </div>
     </div>
-  </div>
-<% end %>
-
+  <% end %>
+</div>
 <%= render "devise/shared/links" %>

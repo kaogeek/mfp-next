@@ -194,6 +194,8 @@
     font-size: $small-font-size;
     margin-bottom: $line-height / 2;
     position: relative;
+    // Override extend for MFP-NEXT
+    @extend .custom-info;
 
     span:not(.label) {
       line-height: rem-calc(32); // Same as avatar height
@@ -426,15 +428,21 @@
 
 %panel {
   background: $body-background;
+  // Override styles for MFP-NEXT
+  // border: 1px solid;
+  // border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  // border-radius: 0;
   // box-shadow: 0 1px 3px 0 $border;
+  // padding: rem-calc(12) rem-calc(12) 0;
+
   border: 1px solid #ececec;
   box-shadow: 0px 42px 28px #00000030;
   margin-bottom: rem-calc(12);
   min-height: rem-calc(192);
   border-radius: rem-calc(12);
-  // padding: rem-calc(12) rem-calc(12) 0;
 
   @include breakpoint(medium) {
+    // Override styles for MFP-NEXT
     // margin-bottom: rem-calc(-1);
     // padding-bottom: rem-calc(12);
     // border-radius: rem-calc(12);
@@ -475,6 +483,8 @@
 .budget-investment,
 .legislation,
 .communities-show {
+  // Override styles for MFP-NEXT
+  // margin: $line-height / 4 0;
   margin: $line-height / 2 0;
 
   .panel {
@@ -488,6 +498,8 @@
     margin: 0;
     min-height: rem-calc(180);
     position: relative;
+
+    // Override styles for MFP-NEXT
     padding: rem-calc(12) 0 rem-calc(12) rem-calc(24);
 
     @include breakpoint(small down) {
@@ -536,6 +548,8 @@
     color: $text-medium;
     font-size: $small-font-size;
     margin: rem-calc(6) 0 0;
+    // Override extend for MFP-NEXT
+    @extend .custom-info;
 
     .icon-comments {
       font-size: rem-calc(16);
@@ -605,6 +619,8 @@
       font-weight: bold;
       float: right;
       line-height: $line-height * 2;
+      // Override extend for MFP-NEXT
+      @extend .custom-font-anakotmai;
 
       @include breakpoint(medium) {
         display: block;
@@ -733,7 +749,9 @@
 .section-header {
   @include full-width-background;
   @include full-width-border(bottom, 1px solid #eee);
-  background: #fafafa;
+  // Override styles for MFP-NEXT
+  // background: #fafafa;
+  background: #fff;
   margin-top: -$line-height;
   margin-bottom: $line-height;
   padding-bottom: $line-height / 2;
@@ -768,6 +786,8 @@
     margin-bottom: 0;
     padding: $line-height / 4;
     width: rem-calc(36);
+
+    // Override styles for MFP-NEXT
     display: flex;
     align-items: center;
     justify-content: center;
@@ -857,6 +877,8 @@
 .featured-proposals,
 .enquiries-list {
   padding: $line-height / 2 0;
+  margin-bottom: 15px;
+  border-radius: rem-calc(12);
 
   @include breakpoint(medium) {
     margin-left: 0 !important;

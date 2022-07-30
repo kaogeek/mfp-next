@@ -3,7 +3,7 @@
 
 <% if local_assigns[:share_title].present? %>
   <div id="social-share" class="sidebar-divider"></div>
-  <p class="sidebar-title"><%= share_title %></p>
+  <p class="sidebar-title custom-font-anakotmai"><%= share_title %></p>
 <% end %>
 <div class="social-share-full">
   <%= social_share_button_tag("#{title} #{setting["twitter_hashtag"]} #{setting["twitter_handle"]}",
