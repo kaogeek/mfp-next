@@ -111,6 +111,7 @@
   -webkit-transform: translate(6px, 0);
   transform: translate(6px, 0);
   transition: all 0.15s ease;
+  user-select: none;
 }
 
 .multiSelect_option.-selected {
@@ -127,8 +128,10 @@
   cursor: pointer;
   display: block;
   padding: 5px 13px;
-  color: #525c67;
-  font-size: 16px;
+  color: #000;
+  font-size: $form-label-font-size * 1.2;
+  font-weight: $form-label-font-weight;
+  line-height: $form-label-line-height;
   text-decoration: none;
   outline: none;
   position: relative;
@@ -208,12 +211,12 @@
 .multiSelect_choice {
   background: rgba(77, 132, 254, 0.1);
   color: #000;
-  padding: 4px 8px;
+  padding: 4px 12px 4px 16px;
   margin: 5px;
   display: inline-block;
   border-radius: 30px;
   cursor: pointer;
-  font-size: $form-label-font-size;
+  font-size: $form-label-font-size * 1.2;
   font-weight: $form-label-font-weight;
   line-height: $form-label-line-height;
   flex: 0 0 auto;
