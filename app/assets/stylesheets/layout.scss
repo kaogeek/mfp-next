@@ -1225,6 +1225,26 @@ footer {
   }
 }
 
+.auth-form {
+  @include breakpoint(medium) {
+    padding-top: $line-height * 4;
+  }
+
+  .account {
+    font-size: 18px;
+  }
+
+  p,
+  .checkbox {
+    font-size: 18px;
+  }
+}
+
+.text_footer {
+  font-size: 16.2px;
+  color: #000;
+}
+
 .auth-divider {
   border-top: 1px solid $border;
   margin-top: $line-height * 1.5;
