@@ -1,21 +1,31 @@
 th:
   account:
     show:
-      change_credentials_link: Change my login details
-      erase_account_link: Erase my account
+      change_credentials_link: เปลี่ยนรายละเอียดการเข้าสู่ระบบของฉัน
+      erase_account_link: ลบบัญชี
       finish_verification: Complete verification
       notifications: Notifications
-      personal: Personal details
+      personal: ข้อมูลส่วนตัว
       public_interests_my_title_list: Tags of elements you follow
       public_interests_user_title_list: Tags of elements this user follows
       save_changes_submit: บันทึกข้อเสนอ
-      recommendations: Recommendations
-      title: My account
-      user_permission_info: With your account you can...
-      user_permission_title: Participation
-      user_permission_verify: To perform all the actions verify your account.
+      recommendations: การแนะนำ
+      recommend_debates_to_me: แนะนำข้อเสนอที่น่าสนใจ
+      recommend_proposals_to_me: แนะนำข้อเสนอให้ฉัน
+      title: จัดการบัญชี
+      user_permission_info: บัญชีของคุณสามารถ...
+      user_permission_title: การมีส่วนร่วม
+      user_permission_verify: ขอบคุณที่ช่วยยืนยันบัญชีผู้ใช้งานนะครับ
       verified_account: Account verified
       verify_my_account: Verify my account
+      username: Username
+      activities_public: เก็บรายการกิจกรรมของฉันไว้เป็นสาธารณะ
+      follow_public: เก็บองค์ประกอบที่ฉันติดตามแบบสาธารณะไว้
+      notifications: การแจ้งเตือน
+      when_someone_comments_on_my_contents: แจ้งเตือนฉันทางอีเมลเมื่อมีคนมาคอมเมนท์ในข้อเสนอ
+      when_someone_replies_to_my_comments: แจ้งเตือนฉันทางอีเมลเมื่อมีคนมาตอบคอมเมนท์
+      receive_relevant_information_by_email: รับข้อมูลอื่นๆ ทางอีเมล
+      receive_emails_about_direct_messages: แจ้งเตือนทางอีเมลเมื่อมีคนส่งข้อความ
   application:
     close: Close
     menu: Menu
