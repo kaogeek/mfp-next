@@ -21,7 +21,7 @@ th:
         notice: Changes saved
       update:
         notice: "%{resource_name} updated successfully."
-        debate: "อัปเดตการอภิปรายเรียบร้อยแล้ว"
+        debate: "อัปเดตข้อเสนอเรียบร้อยแล้ว"
         poll: "Poll updated successfully."
         poll_booth: "Booth updated successfully."
         active_poll: "Polls description updated successfully."
