@@ -604,6 +604,12 @@ body > header,
     }
   }
 
+  #responsive-menu {
+    @include breakpoint(small down) {
+      width: 100%;
+    }
+  }
+
   ul {
     background: none;
   }
@@ -686,8 +692,8 @@ body > header,
       margin: 0;
       width: auto;
 
-      @include breakpoint(medium up) {
-        height: auto;
+      @include breakpoint(medium) {
+        height: rem-calc(75);
       }
     }
   }
@@ -824,8 +830,6 @@ body > header,
     }
 
     &.is-active {
-      color: #fff;
-
       @include breakpoint(medium) {
         @include brand-text;
         border-bottom: 2px solid;
@@ -1166,62 +1170,46 @@ footer {
 // --------------
 
 .auth-page {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 33%,
-    rgba(252, 252, 252, 1) 33%
-  );
+  .footer {
+    margin-top: 0;
+  }
 }
 
-.login_button {
-  font: normal normal normal 18px/30px Pracharath;
-  letter-spacing: 0px;
-  color: #2a3d4f;
-  opacity: 1;
-}
+.auth-image {
+  background: $brand image-url("auth_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
 
-.account {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 20px;
-  .title_header {
-    padding-left: 46px;
-    display: flex;
-    padding-bottom: 30px;
-    .inline-block {
-      padding-left: 30px;
-    }
+  @include breakpoint(medium) {
+    min-height: $line-height * 42;
   }
 
-  .edit_account {
-    .personal_details {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-items: baseline;
-      align-content: stretch;
-      padding-top: 30px;
-      padding-left: 50px;
-      padding-bottom: 30px;
+  h1 {
+    margin-top: $line-height;
 
-      .checkbox-label {
-        span {
-          color: rgb(0, 0, 0);
-          font-size: 24px;
-          font-family: "Pracharath";
-        }
-      }
+    a {
+      color: inherit;
+      display: block;
+      text-align: center;
 
-      input[type="submit"] {
-        width: 369px;
-        height: 72.97px;
-        font-size: 28px;
+      @include breakpoint(medium) {
+        display: inline-block;
+        text-align: left;
       }
     }
+  }
+}
+
+.auth-form {
+  // @include breakpoint(medium) {
+  //   padding-top: $line-height * 4;
+  // }
+
+  p,
+  a,
+  .checkbox {
+    font-size: $small-font-size;
   }
 }
 
@@ -1358,6 +1346,8 @@ form {
 
   .notice {
     height: $line-height * 4;
+    // Override style for MFP-NEXT
+    width: 100%;
 
     .notice-text {
       width: 95%;
@@ -1443,11 +1433,6 @@ form {
 // ----------------
 
 .account {
-  .inline-block {
-    font-size: 35px;
-    text-align: left;
-    font-family: "Anakotmai";
-  }
   select {
     height: $line-height * 2;
     margin-right: $line-height / 2;
@@ -1475,93 +1460,14 @@ form {
       vertical-align: top;
     }
   }
-
-  h2 {
-    font-size: 26px;
-    font-weight: 400;
-    margin-top: 5px;
-    text-align: left;
-  }
-
-  p {
-    text-align: left;
-  }
-
-  .save-change-btn {
-    top: 1270px;
-    left: 83px;
-    width: 250px;
-    height: 45px;
-    font-size: medium;
-  }
-
-  .username-display {
-    display: flex;
-
-    .username-group {
-      padding-left: 25px;
-    }
-  }
-
-  .change-detail {
-    height: 124px;
-    padding-bottom: 170px;
-
-    .button.hollow.change {
-      color: black;
-      font-size: 24px;
-      font-family: "Anakotmai";
-    }
-
-    .change {
-      width: 384px;
-      height: 55px;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      border: 2px solid #f57832;
-      border-radius: 7px;
-      opacity: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 0;
-      margin-left: auto;
-      font-size: medium;
-    }
-
-    a {
-      font-size: 21px;
-      font-family: "Anakotmai";
-      color: #f57832;
-    }
-
-    .delete {
-      display: flex;
-      align-items: center;
-      justify-content: right;
-      border-bottom: none;
-      margin-top: -25px;
-      font-size: large;
-    }
-  }
-
-  .participation-list {
-    text-align: left;
-    padding-left: 15px;
-    .icon-check {
-      padding-right: 12px;
-      color: #f57832;
-    }
-  }
 }
 
 .avatar,
 .admin-avatar,
 .moderator-avatar,
-.initialjs-avatar.margin-bottom {
+.initialjs-avatar {
   border-radius: rem-calc(1000);
   position: relative;
-  width: 130px;
-  height: 130px;
 }
 
 .author-deleted,
@@ -2052,40 +1958,17 @@ table {
   }
 }
 
-.box-bottom {
-  height: 99px;
-  background: #ffceb2 0% 0% no-repeat padding-box;
-  border: 1px solid #f57832;
-  border-radius: 19px;
-  opacity: 1;
+.verify-account {
+  padding-right: $line-height / 2;
 
-  .verify-account {
-    padding-right: $line-height / 2;
+  .already-verified {
+    color: $check;
+    line-height: $line-height * 2;
 
-    .already-verified-btn {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      margin-top: 37px;
-
-      p {
-        font-size: 22px;
-        font-weight: bold;
-        font-family: "Anakotmai";
-        color: #f57832;
-      }
-    }
-
-    .already-verified {
-      color: $check;
-      line-height: $line-height * 2;
-
-      .icon-check {
-        align-content: center;
-        font-size: rem-calc(24);
-        line-height: rem-calc(45);
-        vertical-align: middle;
-      }
+    .icon-check {
+      font-size: rem-calc(24);
+      line-height: rem-calc(45);
+      vertical-align: middle;
     }
   }
 }
