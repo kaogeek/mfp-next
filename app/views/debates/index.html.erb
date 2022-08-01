@@ -1,3 +1,17 @@
+<!-- The Modal -->
+<div id="myModal" class="dialog-modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-detail">
+      <iframe src="https://www.youtube.com/embed/BVQAta4fAvo?&rel=0&autoplay=1&mute=1" frameborder="0" allowtransparency="true" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+
 <% provide :title do %><%= t("debates.index.title") %><% end %>
 <% content_for :header_addon do %>
   <%= render "shared/search_form",
@@ -99,3 +113,37 @@
 
   </div>
 </main>
+
+<script>
+  // Get the modal
+  const modal = document.getElementById("myModal");
+
+  // Get the <span> element that closes the modal
+  const close = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal 
+  function clickDialog() {
+    modal.style.display = "flex";
+    // $('#playvideo').on('click', function(ev) {
+    //   console.log(ev);
+    //   $("#video-iframe")[0].src += "&autoplay=1";
+    //   ev.preventDefault();
+    // });
+    // setTimeout($('#playvideo').click(), 5000);
+
+    // player = new YT.Player('player', {
+    //   videoId: 'oHg5SJYRHA0'
+    // });
+
+    // player.unMute();
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  close.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  $( document ).ready(function() {
+    clickDialog();
+  });
+</script>
