@@ -43,8 +43,8 @@
                   <option value="สื่อของพรรค">
                     สื่อของพรรค
                   </option>
-                  <option value="การรณรงค์สื่อสารนโยบาย">
-                    การรณรงค์สื่อสารนโยบาย
+                  <option value="นำเสนอนโยบาย">
+                    นำเสนอนโยบาย
                   </option>
                   <option value="งานสภา">
                     งานสภา
@@ -98,7 +98,7 @@
 <% end %>
 
 <script>
-$(document).ready(function () {
+  $(document).ready(function () {
     $(".multiSelect").each((e) => {
       const self = $(this);
       const field = self.find(".multiSelect_field");
@@ -106,20 +106,29 @@ $(document).ready(function () {
       const placeholder = field.attr("data-placeholder");
 
       field.hide().after(`<div class="multiSelect_dropdown"></div>
-                                <ul class="multiSelect_list"></ul>
-                                <span class="multiSelect_arrow"></span>`);
+                                  <ul class="multiSelect_list"></ul>
+                                  <span class="multiSelect_arrow"></span>`);
 
       fieldOption.each(function (e) {
         $(".multiSelect_list").append(
-          `<li id="${($(this).text().trim()
-          .toLowerCase()).replace(/\s/g, '')}" class="multiSelect_option" data-value="` +
+          `<li id="list-${e}" class="multiSelect_option" data-value="` +
             $(this).val().trim() +
             `">
-                  <a class="multiSelect_text">` +
+                    <a class="multiSelect_text">` +
             $(this).text() +
             `</a>
-              </li>`
+                </li>`
         );
+        // $(".multiSelect_list").append(
+        //   `<li id="${($(this).text().trim()
+        //   .toLowerCase()).replace(/^\s+|\s+$/gm, '')}" class="multiSelect_option" data-value="` +
+        //     $(this).val().trim() +
+        //     `">
+        //           <a class="multiSelect_text">` +
+        //     $(this).text() +
+        //     `</a>
+        //       </li>`
+        // );
       });
 
       const dropdown = self.find(".multiSelect_dropdown");
@@ -137,11 +146,17 @@ $(document).ready(function () {
         field
           .find("option:contains(" + self.children().text() + ")")
           .prop("selected", true);
-        
+
         dropdown
           .append(function (e) {
             return $(
-              '<span class="multiSelect_choice"'+'data-value="'+self.children().text().replace(/\s/g, '')+'">' +
+              '<span class="multiSelect_choice"' +
+                'data-value="' +
+                self
+                  .children()
+                  .text()
+                  .replace(/^\s+|\s+$/gm, "") +
+                '">' +
                 self.children().text() +
                 '<svg class="multiSelect_deselect -iconX"><use href="#iconX"></use></svg></span>'
             ).click(function (e) {
@@ -161,24 +176,22 @@ $(document).ready(function () {
               if (dropdown.children(":visible").length === 0) {
                 dropdown.removeClass("-hasValue");
               }
-              if($('#category span.multiSelect_choice').length < 1) {
-                $('.send-debates').attr('disabled', true)
+              if ($("#category span.multiSelect_choice").length < 1) {
+                $(".send-debates").attr("disabled", true);
               } else {
-                $('.send-debates').attr('disabled', false)
+                $(".send-debates").attr("disabled", false);
               }
             });
           })
           .addClass("-hasValue");
         list.css("top", dropdown.height() + 5);
         if (!option.not(".-selected").length) {
-          list.append(
-            '<h5 class="multiSelect_noselections">ไม่มีการเลือก</h5>'
-          );
+          list.append('<h5 class="multiSelect_noselections">ไม่มีการเลือก</h5>');
         }
-        if($('#category span.multiSelect_choice').length < 1) {
-          $('.send-debates').attr('disabled', true)
+        if ($("#category span.multiSelect_choice").length < 1) {
+          $(".send-debates").attr("disabled", true);
         } else {
-          $('.send-debates').attr('disabled', false)
+          $(".send-debates").attr("disabled", false);
         }
       });
 
@@ -200,16 +213,16 @@ $(document).ready(function () {
       });
     });
 
-    $('.send-debates').on('click', (e) => {
+    $(".send-debates").on("click", (e) => {
       let categories = [];
-      $('#category span.multiSelect_choice').map((index, elem) => { 
-        categories.push($(elem).attr('data-value').trim())
-      })
-      $('#debate_tag_list').val(categories)
+      $("#category span.multiSelect_choice").map((index, elem) => {
+        categories.push($(elem).attr("data-value").trim());
+      });
+      $("#debate_tag_list").val(categories);
     });
 
-    if($('#debate_tag_list').val()){
-      $('.send-debates').attr('disabled', false)
+    if ($("#debate_tag_list").val()) {
+      $(".send-debates").attr("disabled", false);
       $(".multiSelect").each(function (e) {
         const self = $(this);
         const field = self.find(".multiSelect_field");
@@ -221,50 +234,66 @@ $(document).ready(function () {
         const option = self.find(".multiSelect_option");
         const optionText = self.find(".multiSelect_text");
 
-        $('#debate_tag_list').val().split(',').map((elem) => {
-          dropdown.attr("data-multiple", "true");
-          const self = $('.multiSelect_list li#'+elem.trim().replace(/\s/g, ''));
-          if(self.length){
-            self.addClass("-selected");
-            field
-            .find("option:contains(" + self.children().text() + ")")
-            .prop("selected", true);
-          dropdown
-          .append(function (e) {
-            return $(
-              '<span class="multiSelect_choice"'+'data-value="'+self.children().text()+'">' +
-                self.children().text() +
-                '<svg class="multiSelect_deselect -iconX"><use href="#iconX"></use></svg></span>'
-            )        .click(function (e) {
-              const self = $(this);
-              e.stopPropagation();
-              self.remove();
-              list
-                .find(".multiSelect_option:contains(" + self.text() + ")")
-                .removeClass("-selected");
-              list
-                .css("top", dropdown.height() + 5)
-                .find(".multiSelect_noselections")
-                .remove();
-              field
-                .find("option:contains(" + self.text() + ")")
-                .prop("selected", false);
-              if (dropdown.children(":visible").length === 0) {
-                dropdown.removeClass("-hasValue");
+        $("#debate_tag_list")
+          .val()
+          .split(",")
+          .map((elem, index) => {
+            dropdown.attr("data-multiple", "true");
+            const li = $(".multiSelect_list li");
+            for (let i = 0; i < li.length; i++) {
+              if (
+                $(li[i]).data("value") === elem.trim().replace(/^\s+|\s+$/gm, "")
+              ) {
+                // const self = $('.multiSelect_list li#'+elem.trim().replace(/^\s+|\s+$/gm, ''));
+                const self = $(".multiSelect_list li#list-" + i);
+                if (self.length) {
+                  self.addClass("-selected");
+                  field
+                    .find("option:contains(" + self.children().text() + ")")
+                    .prop("selected", true);
+                  dropdown
+                    .append(function (e) {
+                      return $(
+                        '<span class="multiSelect_choice"' +
+                          'data-value="' +
+                          self.children().text() +
+                          '">' +
+                          self.children().text() +
+                          '<svg class="multiSelect_deselect -iconX"><use href="#iconX"></use></svg></span>'
+                      ).click(function (e) {
+                        const self = $(this);
+                        e.stopPropagation();
+                        self.remove();
+                        list
+                          .find(
+                            ".multiSelect_option:contains(" + self.text() + ")"
+                          )
+                          .removeClass("-selected");
+                        list
+                          .css("top", dropdown.height() + 5)
+                          .find(".multiSelect_noselections")
+                          .remove();
+                        field
+                          .find("option:contains(" + self.text() + ")")
+                          .prop("selected", false);
+                        if (dropdown.children(":visible").length === 0) {
+                          dropdown.removeClass("-hasValue");
+                        }
+                        if ($("#category span.multiSelect_choice").length < 1) {
+                          $(".send-debates").attr("disabled", true);
+                        } else {
+                          $(".send-debates").attr("disabled", false);
+                        }
+                      });
+                    })
+                    .addClass("-hasValue");
+                }
               }
-              if($('#category span.multiSelect_choice').length < 1) {
-                $('.send-debates').attr('disabled', true)
-              } else {
-                $('.send-debates').attr('disabled', false)
-              }
-            });
-          })
-          .addClass("-hasValue");
-          }
-        })
+            }
+          });
       });
     } else {
-      $('.send-debates').attr('disabled', true)
+      $(".send-debates").attr("disabled", true);
     }
-});
+  });
 </script>

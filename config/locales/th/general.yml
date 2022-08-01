@@ -1,21 +1,31 @@
 th:
   account:
     show:
-      change_credentials_link: Change my login details
-      erase_account_link: Erase my account
+      change_credentials_link: เปลี่ยนรายละเอียดการเข้าสู่ระบบของฉัน
+      erase_account_link: ลบบัญชี
       finish_verification: Complete verification
       notifications: Notifications
-      personal: Personal details
+      personal: ข้อมูลส่วนตัว
       public_interests_my_title_list: Tags of elements you follow
       public_interests_user_title_list: Tags of elements this user follows
-      save_changes_submit: บันทึกข้อเสนอ
-      recommendations: Recommendations
-      title: My account
-      user_permission_info: With your account you can...
-      user_permission_title: Participation
-      user_permission_verify: To perform all the actions verify your account.
-      verified_account: Account verified
-      verify_my_account: Verify my account
+      save_changes_submit: บันทึกการแก้ไข
+      recommendations: การแนะนำ
+      recommend_debates_to_me: แนะนำข้อเสนอที่น่าสนใจ
+      recommend_proposals_to_me: แนะนำข้อเสนอให้ฉัน
+      title: จัดการบัญชี
+      user_permission_info: บัญชีของคุณสามารถ...
+      user_permission_title: การมีส่วนร่วม
+      user_permission_verify: ขอบคุณที่ช่วยยืนยันบัญชีผู้ใช้งานนะครับ
+      verified_account: ยืนยันบัญชีแล้ว
+      verify_my_account: ยืนยันบัญชีของฉัน
+      username: ชื่อผู้ใช้
+      activities_public: เก็บรักษารายการที่แสดงความคิดเห็น
+      follow_public: เก็บรักษารายการที่ติดตาม
+      notifications: การแจ้งเตือน
+      when_someone_comments_on_my_contents: แจ้งเตือนทางอีเมลเมื่อมีคนมาคอมเมนท์ในข้อเสนอ
+      when_someone_replies_to_my_comments: แจ้งเตือนทางอีเมลเมื่อมีคนมาตอบคอมเมนท์
+      receive_relevant_information_by_email: รับข้อมูลอื่นๆ ทางอีเมล
+      receive_emails_about_direct_messages: แจ้งเตือนทางอีเมลเมื่อมีคนส่งข้อความ
   application:
     close: Close
     menu: Menu
@@ -153,7 +163,7 @@ th:
     direct_message: private message
     error: error
     errors: errors
-    not_saved: "prevented this %{resource} from being saved. <br>Please check the marked fields to know how to correct them:"
+    not_saved: "ป้องกันสิ่งนี้ %{resource} จากการได้รับความรอด <br>โปรดตรวจสอบช่องที่ทำเครื่องหมายไว้เพื่อทราบวิธีแก้ไข:"
     policy: ข้อตกลงความเป็นส่วนตัว
     banner: banner
     proposal: Proposal
@@ -219,7 +229,7 @@ th:
       administration_menu: เมนู
       administration: Administration
       collaborative_legislation: Collaborative legislation
-      debates: ข้อเสนอถึงพรรค
+      debates: หน้าหลัก
       locale: "ภาษา:"
       management: Management
       moderation: Moderation

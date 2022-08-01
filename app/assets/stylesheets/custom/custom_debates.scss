@@ -101,6 +101,14 @@
 }
 
 .trending-tag {
+  .button {
+    &.expanded {
+      @include breakpoint(medium down) {
+        display: none;
+      }
+    }
+  }
+
   .tag-cloud {
     a {
       width: 100%;
