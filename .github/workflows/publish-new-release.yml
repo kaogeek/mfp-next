@@ -3,7 +3,7 @@ name: "Publish new release"
 on:
   pull_request:
     branches:
-      - master
+      - main
     types:
       - closed
 
@@ -32,9 +32,9 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Invoke workflow in another repo with inputs
-        uses: benc-uk/workflow-dispatch@v1
-        with:
-          workflow: Some Workflow
-          repo: kaogeek/mfp-next-installer
-          token: ${{ secrets.PERSONAL_TOKEN }}
+#       - name: Invoke workflow in another repo with inputs
+#         uses: benc-uk/workflow-dispatch@v1
+#         with:
+#           workflow: Some Workflow
+#           repo: kaogeek/mfp-next-installer
+#           token: ${{ secrets.PERSONAL_TOKEN }}
