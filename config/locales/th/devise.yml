@@ -2,15 +2,15 @@
 th:
   devise:
     password_expired:
-      expire_password: "Password expired"
-      change_required: "Your password is expired"
-      change_password: "Change your password"
-      new_password: "New password"
-      updated: "Password successfully updated"
+      expire_password: "รหัสผ่านหมดอายุ"
+      change_required: "รหัสผ่านของคุณหมดอายุ"
+      change_password: "เปลี่ยนรหัสผ่าน"
+      new_password: "รหัสผ่านใหม่"
+      updated: "เปลี่ยนรหัสผ่านสำเร็จ"
     confirmations:
       confirmed: "Your account has been confirmed."
       send_instructions: "In a few minutes you will receive an email containing instructions on how to confirm your email address."
-      send_paranoid_instructions: "If your email address exists in our database, in a few minutes you will receive an email with instructions on how to confirm your email address."
+      send_paranoid_instructions: "หากที่อยู่อีเมลของคุณมีอยู่ในฐานข้อมูลของเรา คุณจะได้รับอีเมลพร้อมคำแนะนำเกี่ยวกับวิธีการยืนยันที่อยู่อีเมลของคุณในเวลาไม่กี่นาที"
     failure:
       already_authenticated: "You are already signed in."
       inactive: "Your account has not yet been activated."
@@ -23,28 +23,28 @@ th:
       unconfirmed: "To continue, please click on the confirmation link that we have sent you via email"
     mailer:
       confirmation_instructions:
-        subject: "Confirmation instructions"
+        subject: "ยืนยันอีเมล"
       reset_password_instructions:
-        subject: "Instructions for resetting your password"
+        subject: "รีเซ็ตรหัสผ่าน"
       unlock_instructions:
-        subject: "Unlocking instructions"
+        subject: "คำแนะนำในการปลดล็อก"
     omniauth_callbacks:
       failure: 'It has not been possible to authorize you as %{kind} because "%{reason}".'
       success: "Successfully identified as %{kind}."
     passwords:
-      no_token: "You cannot access this page except through a password reset link. If you have accessed it through a password reset link, please check that the URL is complete."
-      send_instructions: "In a few minutes, you will receive an email containing instructions on resetting your password."
-      send_paranoid_instructions: "If your email address is in our database, in a few minutes you will receive a link to use to reset your password."
-      updated: "Your password has been changed successfully. Authentication successful."
-      updated_not_active: "Your password has been changed successfully."
+      no_token: "คุณไม่สามารถเข้าถึงหน้านี้ได้ยกเว้นผ่านลิงก์รีเซ็ตรหัสผ่าน หากคุณเข้าถึงผ่านลิงก์รีเซ็ตรหัสผ่าน โปรดตรวจสอบว่า URL นั้นสมบูรณ์"
+      send_instructions: "ในอีกไม่กี่นาที คุณจะได้รับอีเมลพร้อมคำแนะนำในการรีเซ็ตรหัสผ่านของคุณ"
+      send_paranoid_instructions: "หากที่อยู่อีเมลของคุณอยู่ในฐานข้อมูลของเรา คุณจะได้รับลิงก์เพื่อใช้รีเซ็ตรหัสผ่านภายในไม่กี่นาที"
+      updated: "รหัสผ่านของคุณถูกเปลี่ยนเรียบร้อยแล้ว รับรองความถูกต้องสำเร็จ"
+      updated_not_active: "รหัสผ่านของคุณถูกเปลี่ยนเรียบร้อยแล้ว"
     registrations:
-      destroyed: "Goodbye! Your account has been cancelled. We hope to see you again soon."
-      signed_up: "Welcome! You have been authenticated."
-      signed_up_but_inactive: "Your registration was successful, but you could not be signed in because your account has not been activated."
-      signed_up_but_locked: "Your registration was successful, but you could not be signed in because your account is locked."
-      signed_up_but_unconfirmed: "You have been sent a message containing a verification link. Please click on this link to activate your account."
-      update_needs_confirmation: "Your account has been updated successfully; however, we need to verify your new email address. Please check your email and click on the link to complete the confirmation of your new email address."
-      updated: "Your account has been updated successfully."
+      destroyed: "ลาก่อน! บัญชีของคุณถูกยกเลิก เราหวังว่าจะได้พบคุณอีกในเร็วๆ นี้"
+      signed_up: "ยินดีต้อนรับ! คุณได้รับการพิสูจน์ตัวตนแล้ว"
+      signed_up_but_inactive: "การลงทะเบียนของคุณสำเร็จ แต่คุณไม่สามารถลงชื่อเข้าใช้ได้ เนื่องจากบัญชีของคุณยังไม่ได้เปิดใช้งาน"
+      signed_up_but_locked: "การลงทะเบียนของคุณสำเร็จ แต่คุณไม่สามารถลงชื่อเข้าใช้ได้เนื่องจากบัญชีของคุณถูกล็อค."
+      signed_up_but_unconfirmed: "คุณได้รับข้อความที่มีลิงก์ยืนยัน กรุณาคลิกที่ลิงค์นี้เพื่อเปิดใช้งานบัญชีของคุณ"
+      update_needs_confirmation: "บัญชีของคุณได้รับการอัพเดตเรียบร้อยแล้ว อย่างไรก็ตาม เราจำเป็นต้องยืนยันที่อยู่อีเมลใหม่ของคุณ โปรดตรวจสอบอีเมลของคุณและคลิกลิงก์เพื่อยืนยันที่อยู่อีเมลใหม่ของคุณ"
+      updated: "บัญชีของคุณได้รับการอัปเดตเรียบร้อยแล้ว"
     sessions:
       signed_in: "คุณลงชื่อเข้าใช้สำเร็จแล้ว"
       signed_out: "คุณออกจากระบบเรียบร้อยแล้ว"
@@ -55,12 +55,12 @@ th:
       unlocked: "Your account has been unlocked. Please sign in to continue."
   errors:
     messages:
-      already_confirmed: "You have already been verified; please attempt to sign in."
-      confirmation_period_expired: "You need to be verified within %{period}; please make a repeat request."
-      expired: "has expired; please make a repeat request."
-      not_found: "not found."
-      not_locked: "was not locked."
+      already_confirmed: "คุณได้รับการยืนยันแล้ว โปรดพยายามลงชื่อเข้าใช้"
+      confirmation_period_expired: "คุณต้องได้รับการยืนยันภายใน %{period}; กรุณาทำการร้องขอซ้ำ"
+      expired: "หมดอายุ; กรุณาทำการร้องขอซ้ำ"
+      not_found: "ไม่พบ"
+      not_locked: "ไม่ได้ล็อค"
       not_saved:
-        one: "1 error prevented this %{resource} from being saved. Please check the marked fields to know how to correct them:"
-        other: "%{count} errors prevented this %{resource} from being saved. Please check the marked fields to know how to correct them:"
-      equal_to_current_password: "must be different than the current password."
+        one: "1 ข้อผิดพลาดทำให้ไม่สามารถบันทึก %{resource} นี้ได้ โปรดตรวจสอบช่องที่ทำเครื่องหมายไว้เพื่อทราบวิธีแก้ไข:"
+        other: "%{count} ข้อผิดพลาดป้องกันไม่ให้สิ่งนี้ %{resource} จากการได้รับความรอด โปรดตรวจสอบช่องที่ทำเครื่องหมายไว้เพื่อทราบวิธีแก้ไข:"
+      equal_to_current_password: "ต้องแตกต่างจากรหัสผ่านปัจจุบัน"
