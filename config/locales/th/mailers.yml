@@ -3,9 +3,9 @@ th:
     title: "Open Government"
     no_reply: "This message was sent from an email address that does not accept replies."
     already_confirmed:
-      info: "We've received a request to send you instructions to confirm your account. However, your account is already confirmed, so there's no need to do so again."
-      new_password: "If you've forgotten your password, you can reset it at the following link:"
-      subject: Your account is already confirmed
+      info: "บัญชีของคุณได้รับการยืนยันแล้ว ขอบคุณที่มาร่วมออกแบบพรรคก้าวไกลให้เป็นพรรคที่ประชาชนร่วมออกแบบ"
+      new_password: "หากคุณลืมรหัสผ่าน คุณสามารถรีเซ็ตรหัสผ่านได้ที่:"
+      subject: บัญชีของคุณได้รับการยืนยันแล้ว
     comment:
       hi: Hi
       new_comment_by: There is a new comment from <strong>%{commenter}</strong>
@@ -35,9 +35,9 @@ th:
       unsubscribe_text: "If you don't want to receive any proposal notifications, visit %{notifications} and uncheck 'Receive a summary of proposal notifications'."
       unfollow: "Visit this proposal and unfollow it to stop receiving notifications."
     direct_message_for_receiver:
-      subject: "You have received a new private message"
-      reply: Reply to %{sender}
-      unsubscribe_text: "If you don't want to receive direct messages, visit %{notifications} and uncheck 'Receive emails about direct messages'."
+      subject: "คุณได้รับข้อความส่วนตัวใหม่"
+      reply: ตอบกลับ %{sender}
+      unsubscribe_text: "หากคุณไม่ต้องการรับข้อความส่วนตัว, ไปที่ %{notifications} และ เลือกปิด 'แจ้งเตือนทางอีเมลเมื่อมีคนส่งข้อความ'."
     direct_message_for_sender:
       subject: "You have sent a new private message"
       title: "You have sent a new private message"

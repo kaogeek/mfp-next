@@ -150,6 +150,7 @@ th:
     update:
       form:
         submit_button: บันทึกข้อเสนอ
+    show_dialog: ไม่ต้องแสดงอีก
   errors:
     messages:
       allowed_file_content_types: "content type must be one of %{types}"
@@ -223,7 +224,7 @@ th:
       participation_text: นโยบายคุ้มครองข้อมูลส่วนบุคคล (Privacy Policy)
       participation_title: Participation
       privacy: Privacy Policy
-      subtitle: สื่ออิเล็กทรอนิกส์ของพรรคก้าวไกลนี้ ได้รับการอุดหนุนงบประมาณจากกองทุนเพื่อการพัฒนาพรรคการเมือง ปี พ.ศ. 2565 ผลิตโดย บริษัท สเปกเตอร์ ซี จำกัด จำนวนที่ผลิต 1 ชิ้น งบประมาณ ……. บาท ผลิตวันที่ ……
+      subtitle: สื่ออิเล็กทรอนิกส์ของพรรคก้าวไกลนี้ ได้รับการอุดหนุนงบประมาณจากกองทุนเพื่อการพัฒนาพรรคการเมือง ปี พ.ศ. 2565 ผลิตโดย บริษัท สเปกเตอร์ ซี จำกัด จำนวนที่ผลิต 1 ชิ้น งบประมาณ 150,000 บาท ผลิตวันที่ 1 สิงหาคม 2565
     header:
       home: หน้าหลัก
       administration_menu: เมนู
@@ -280,8 +281,8 @@ th:
       sign_up: Sign up with Facebook
       name: Facebook
     finish_signup:
-      title: "Additional details"
-      username_warning: "Due to a change in the way we interact with social networks, it is possible that your username now appears as 'already in use'. If that is your case, please choose a different username."
+      title: "รายละเอียดเพิ่มเติม"
+      username_warning: "ชื่อผู้ใช้ของคุณถูกใช้งานแล้ว กรุณาเลือกชื่อผู้ใช้อื่น"
     google_oauth2:
       sign_in: Sign in with Google
       sign_up: Sign up with Google
