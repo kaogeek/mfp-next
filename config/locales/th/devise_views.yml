@@ -89,14 +89,14 @@ th:
         title: เข้าสู่ระบบ
     shared:
       links:
-        login: เข้าสู่ระบบ
-        new_confirmation: ไม่ได้รับคำแนะนำในการเปิดใช้งานบัญชีของคุณ?
+        login: Enter
+        new_confirmation: ส่งอีเมลยืนยันอีกครั้ง
         new_confirmation_organization: ป้อนยังไม่ได้รับคำแนะนำในการเปิดใช้งานบัญชีของคุณ?
         new_password: ลืมรหัสผ่าน?
         new_unlock: ยังไม่ได้รับคำแนะนำในการปลดล็อก?
-        signin_with_provider: ข้าสู่ระบบด้วย %{provider}
+        signin_with_provider: เข้าสู่ระบบด้วย %{provider}
         signup: ไม่มีบัญชี? %{signup_link}
-        signup_link: ลงชื่อ
+        signup_link: สร้างบัญชี
     unlocks:
       new:
         email_label: อีเมล

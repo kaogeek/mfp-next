@@ -29,8 +29,8 @@ th:
       unlock_instructions:
         subject: "คำแนะนำในการปลดล็อก"
     omniauth_callbacks:
-      failure: 'It has not been possible to authorize you as %{kind} because "%{reason}".'
-      success: "Successfully identified as %{kind}."
+      failure: "เข้าสู่ระบบไม่สำเร็จ"
+      success: "เข้าสู่ระบบสำเร็จ"
     passwords:
       no_token: "คุณไม่สามารถเข้าถึงหน้านี้ได้ยกเว้นผ่านลิงก์รีเซ็ตรหัสผ่าน หากคุณเข้าถึงผ่านลิงก์รีเซ็ตรหัสผ่าน โปรดตรวจสอบว่า URL นั้นสมบูรณ์"
       send_instructions: "ในอีกไม่กี่นาที คุณจะได้รับอีเมลพร้อมคำแนะนำในการรีเซ็ตรหัสผ่านของคุณ"

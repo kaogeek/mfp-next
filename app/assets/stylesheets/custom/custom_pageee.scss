@@ -243,11 +243,13 @@ $black_auth: #000;
 }
 
 .login_button {
-  font: normal normal normal 18px/30px Pracharath;
+  font: normal normal normal 18px/30px;
+  @extend .custom-font-pracharath;
   letter-spacing: 0px;
-  color: #2a3d4f;
+  color: $brand;
   opacity: 1;
 }
+
 .categories a,
 .geozone a,
 .sidebar-links a {
