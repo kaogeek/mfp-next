@@ -44,6 +44,11 @@ html {
 html,
 body {
   margin: 0;
+  overflow-x: hidden;
+
+  @include breakpoint(large) {
+    overflow-x: unset;
+  }
 }
 
 html {
@@ -1682,6 +1687,7 @@ table {
 .button.button-facebook,
 .button.button-google,
 .button.button-wordpress {
+  box-shadow: 0px 0px 2px #00000030;
   color: $text;
   font-weight: bold;
 
