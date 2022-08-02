@@ -8,11 +8,10 @@
         <%= f.email_field :email, autofocus: true,label: t("devise_views.passwords.edit.edit_password"), placeholder: t("devise_views.passwords.edit.placeholder_email"), class: "forget_password" %>
 
         <div class="small-12 medium-8 small-centered">
-          <%= f.submit t("devise_views.passwords.edit.submit"), class: "button expanded forget_password_login" %>
+          <%= f.submit t("devise_views.passwords.edit.forget_password"), class: "button expanded forget_password_login" %>
         </div>
       </div>
     </div>
   <% end %>
   <%= render "devise/shared/links" %>
 </div>
-

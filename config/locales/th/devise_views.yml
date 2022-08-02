@@ -19,17 +19,17 @@ th:
         title: Confirm my account
     mailer:
       confirmation_instructions:
-        confirm_link: Confirm my account
-        text: "You can confirm your email account at the following link:"
-        title: Welcome
-        welcome: Welcome
+        confirm_link: กดยืนยันแอคเคาท์
+        text: "ความเห็นของทุกท่านคืออิฐคนละก้อนที่สร้างพรรคก้าวไกล:"
+        title: สร้างพรรคร่วมกับเรา
+        welcome: ต้อนรับคุณ
       reset_password_instructions:
-        change_link: Change my password
-        hello: Hello
-        ignore_text: If you did not request a password change, you can ignore this email.
-        info_text: Your password will not be changed unless you access the link and edit it.
-        text: "We have received a request to change your password. You can do this at the following link:"
-        title: Change your password
+        change_link: เปลี่ยนรหัสผ่าน
+        hello: สวัสดีคุณ
+        ignore_text: ""
+        info_text: ""
+        text: "เราได้รับคำขอเปลี่ยนรหัสผ่านของคุณแล้ว กดเปลี่ยนได้ที่ link นี้เลย:"
+        title: เปลี่ยนรหัสผ่าน
       unlock_instructions:
         hello: Hello
         info_text: Your account has been blocked due to an excessive number of failed sign-in attempts.
@@ -69,19 +69,19 @@ th:
           title: Registration of organisation / collective
     passwords:
       edit:
-        change_submit: Change my password
-        password_confirmation_label: Confirm new password
-        password_label: New password
-        title: Change your password
+        change_submit: เปลี่ยนรหัสผ่าน
+        password_confirmation_label: ยืนยันรหัสผ่าน
+        password_label: รหัสผ่านใหม่
+        title: เปลี่ยนรหัสผ่าน
         email: อีเมลที่ใช้สมัคร
         placeholder_email: กรอกอีเมลที่สมัครไว้
         submit: ลงทะเบียน
         edit_password: อีเมล
-        forget_password: ส่งอีเมลแก้ไขรหัสผ่าน
+        forget_password: ส่งอีเมลยืนยันอีกครั้ง
       new:
         password: ลืมรหัสผ่าน
-        send_submit: Send instructions
-        title: Forgotten password?
+        send_submit: ส่งคำแนะนำ
+        title: ลืมรหัสผ่าน?
     sessions:
       new:
         remember_me: จดจำฉัน
@@ -89,27 +89,27 @@ th:
         title: เข้าสู่ระบบ
     shared:
       links:
-        login: Enter
+        login: เข้าสู่ระบบ
         new_confirmation: ไม่ได้รับคำแนะนำในการเปิดใช้งานบัญชีของคุณ?
         new_confirmation_organization: ป้อนยังไม่ได้รับคำแนะนำในการเปิดใช้งานบัญชีของคุณ?
         new_password: ลืมรหัสผ่าน?
-        new_unlock: Haven't received unlocking instructions?
-        signin_with_provider: Sign in with %{provider}
+        new_unlock: ยังไม่ได้รับคำแนะนำในการปลดล็อก?
+        signin_with_provider: ข้าสู่ระบบด้วย %{provider}
         signup: ไม่มีบัญชี? %{signup_link}
         signup_link: ลงชื่อ
     unlocks:
       new:
-        email_label: Email
-        submit: Re-send unlocking instructions
-        title: Re-sent unlocking instructions
+        email_label: อีเมล
+        submit: ส่งคำแนะนำในการปลดล็อกอีกครั้ง
+        title: ส่งคำแนะนำการปลดล็อกอีกครั้ง
     users:
       registrations:
         delete_form:
-          erase_reason_label: Reason
-          info: This action can not be undone. Please make sure this is what you want.
-          info_reason: If you want, leave us a reason (optional)
-          submit: Erase my account
-          title: Erase account
+          erase_reason_label: สาเหตุ
+          info: ถ้าหากได้ทำงานลบบัญชีออกไปแล้ว จะไม่สามารถย้อนกลับมาแก้ไขใหม่ได้.
+          info_reason: โปรดใส่ข้อความในช่องว่างเพื่อทำการลบบัญชี
+          submit: ลบบัญชี
+          title: ลบบัญชี
         edit:
           current_password_label: รหัสผ่านปัจจุบัน
           edit: แก้ไข
@@ -119,17 +119,17 @@ th:
           password_confirmation_label: ยืนยันรหัสผ่าน
           password_label: รหัสผ่านใหม่
           update_submit: เปลี่ยนแปลง
-          waiting_for: "Awaiting confirmation of:"
+          waiting_for: "รอการยืนยันของ:"
         new:
-          cancel: Cancel login
-          organization_signup: Do you represent an organisation or collective? %{signup_link}
+          cancel: ยกเลิกเข้าสู่ระบบ
+          organization_signup: คุณเป็นตัวแทนขององค์กรหรือส่วนรวม? %{signup_link}
           organization_signup_link: ลงทะเบียนสำหรับตัวแทนขององค์กร
           login_username: อีเมล์หรือผู้ใช้
           username: ชื่อผู้ใช้
           email: อีเมล
           password: รหัสผ่าน
           password_confirmation_label: ยืนยันรหัสผ่าน
-          placeholder_login_username: โปรดใส่ Email ที่คุณสมัคร
+          placeholder_login_username: โปรดใส่อีเมลที่คุณสมัคร
           placeholder_username: ชื่อที่ปรากฏข้างโพสต์ของคุณ
           placeholder_email: อีเมล์หรือผู้ใช้
           placeholder_password: โปรดใส่รหัสผ่าน
@@ -137,14 +137,14 @@ th:
           submit: ลงทะเบียน
           terms: การลงทะเบียนถือว่าคุณยอมรับ %{terms}
           terms_link: ข้อกำหนดและเงื่อนไขการใช้งาน
-          terms_title: By registering you accept the terms and conditions of use
+          terms_title: การลงทะเบียนถือว่าคุณยอมรับข้อกำหนดและเงื่อนไขการใช้งาน
           title: ลงทะเบียน
-          username_is_available: Username available
-          username_is_not_available: Username already in use
-          username_note: Name that appears next to your posts
+          username_is_available: มีชื่อผู้ใช้
+          username_is_not_available: ชื่อผู้ใช้นี้ถูกใช้ไปแล้ว
+          username_note: ชื่อที่ปรากฏข้างโพสต์ของคุณ
         success:
-          back_to_index: I understand; go back to main page
-          instructions_1: Please <b>check your email</b> - we have sent you a <b>link to confirm your account</b>.
-          instructions_2: Once confirmed, you may begin participation.
-          thank_you: Thank you for registering for the website. You must now <b>confirm your email address</b>.
-          title: Confirm your email address
+          back_to_index: ฉันเข้าใจ; กลับหน้าหลัก
+          instructions_1: โปรด <b>ตรวจอีเมล</b> - ที่เราได้ทำการส่งไปแล้ว <b>เพื่อยืนยันบัญชีของคุณ</b>.
+          instructions_2: เมื่อได้รับการยืนยันแล้ว คุณสามารถเริ่มเข้าร่วมได้
+          thank_you: ขอบคุณสำหรับการลงทะเบียนสำหรับเว็บไซต์ ตอนนี้คุณต้อง <b>ยืนยันที่อยู่อีเมลของคุณ</b>
+          title: ยืนยันที่อยู่อีเมล

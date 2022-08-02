@@ -269,7 +269,7 @@ th:
       user:
         login: "Email or username"
         email: "Email"
-        username: "Username"
+        username: "ชื่อผู้ใช้"
         password_confirmation: "Password confirmation"
         password: "Password"
         current_password: "Current password"

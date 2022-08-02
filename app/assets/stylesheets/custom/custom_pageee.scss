@@ -4,205 +4,244 @@ $black_auth: #000;
 .page-login {
   .wrapper_devise {
     display: grid;
-    grid-template-columns: 33% 67%;
-    .right_right {
-      background-color: #fcfcfc;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: stretch;
-      align-content: stretch;
-      .auth-form {
-        .title-login-page {
-          text-align: center;
-        }
-        .button-facebook {
-          text-align: left;
-        }
-        .button-google {
-          text-align: left;
-        }
-        .button-twitter {
-          text-align: left;
-        }
-        .auth-divider-login {
-          text-align: center;
-          margin-top: 10px;
-          margin-bottom: 10px;
-          span {
-            font-size: 22px;
-            @extend .custom-font-anakotmai;
-          }
-        }
+    grid-template-columns: 1fr;
+
+    @include breakpoint(large) {
+      grid-template-columns: 33% 67%;
+    }
+
+    .wrapper_devise_right {
+      .right_side {
+        flex: 1 1 0%;
+        background-color: #fcfcfc;
+        display: flex;
+        justify-content: center;
+
+        min-height: 100vh;
         .column {
-          label {
-            color: $black_auth;
-            font-size: 14px;
-            @extend .custom-font-anakotmai;
-            font-weight: normal;
-          }
-        }
-        .line_remember_login {
           display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content: space-between;
-          align-items: center;
-          align-content: stretch;
-          .checkbox-label {
-            span {
-              font-size: 16px;
-              @extend .custom-font-pracharath;
-              color: $black_auth;
-            }
-          }
-          .float-right {
-            padding-bottom: 13px;
-            font-size: 18px;
-            @extend .custom-font-pracharath;
-          }
-        }
-        .register-page {
-          h2 {
-            text-align: center;
-          }
-          .register_organisation {
-            background-color: rgb(255, 255, 255);
-            text-align: center;
-            @extend .custom-font-anakotmai;
-            font-size: 18px;
-            border-radius: 28px;
-            padding: 28px 28px 28px 28px;
-            margin-bottom: 15px;
-            margin-top: 20px;
-          }
-          .register_bottom {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            label {
-              border-radius: 28px;
-              padding: 28px 28px 28px 28px;
-              font-size: 16px;
-              @extend .custom-font-pracharath;
-            }
-          }
-        }
-        .register-organization-page {
-          .title_organizations {
-            @include breakpoint(medium) {
+          flex-direction: column;
+          justify-content: center;
+          .auth-form {
+            .title-login-page {
               text-align: center;
-              margin-bottom: 30px;
             }
-          }
-          .register_bottom {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            label {
-              font-size: 16px;
-              @extend .custom-font-pracharath;
+            .edit_password {
+              .actions {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                .success {
+                  background: $brand;
+                  color: #ffffff;
+                }
+              }
             }
-          }
-        }
-        .forget_password_page {
-          .new_user {
-            .row {
-              .column {
+            .button-facebook {
+              text-align: left;
+            }
+            .button-google {
+              text-align: left;
+            }
+            .button-twitter {
+              text-align: left;
+            }
+            .auth-divider-login {
+              text-align: center;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              span {
+                font-size: 22px;
+                @extend .custom-font-anakotmai;
+              }
+            }
+            .column {
+              label {
+                color: $black_auth;
+                font-size: 14px;
+                @extend .custom-font-anakotmai;
+                font-weight: normal;
+              }
+            }
+            .line_remember_login {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              justify-content: space-between;
+              align-items: center;
+              align-content: stretch;
+              .checkbox-label {
+                span {
+                  font-size: 16px;
+                  @extend .custom-font-pracharath;
+                  color: $black_auth;
+                }
+              }
+              .float-right {
+                padding-bottom: 13px;
+                font-size: 18px;
+                @extend .custom-font-pracharath;
+              }
+            }
+            .register-page {
+              h2 {
+                text-align: center;
+              }
+              .register_organisation {
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+                @extend .custom-font-anakotmai;
+                font-size: 18px;
+                border-radius: 28px;
+                padding: 28px 28px 28px 28px;
+                margin-bottom: 15px;
+                margin-top: 20px;
+              }
+              .register_bottom {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin: 0 auto;
                 label {
-                  font-size: 14px;
-                  @extend .custom-font-anakotmai;
+                  border-radius: 28px;
+                  padding: 28px 28px 28px 28px;
+                  font-size: 16px;
+                  @extend .custom-font-pracharath;
+                }
+              }
+            }
+            .register-organization-page {
+              .title_organizations {
+                @include breakpoint(medium) {
+                  text-align: center;
+                  margin-bottom: 30px;
+                }
+              }
+              .register_bottom {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin: 0 auto;
+                label {
+                  font-size: 16px;
+                  @extend .custom-font-pracharath;
+                }
+              }
+            }
+            .forget_password_page {
+              .new_user {
+                .row {
+                  .column {
+                    label {
+                      font-size: 14px;
+                      @extend .custom-font-anakotmai;
+                    }
+                  }
                 }
               }
             }
           }
-        }
-      }
-      .account {
-        font-size: 18px;
-        @extend .custom-font-pracharath;
-      }
-    }
-    .left_left {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: stretch;
-      align-content: center;
-      background-color: #ffffff;
-      .img_login {
-        .top {
-          .back {
-            clear: both;
-            color: $black_auth;
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            text-decoration: none;
-            font-size: 22px;
-            margin-top: 70px;
-            @extend .custom-font-anakotmai;
-            font-weight: normal;
-            padding-bottom: 33%;
-            .icon-angle-left {
-              padding-right: $line-height;
-              font-size: 2rem;
-            }
-          }
-          .back:not([class^="icon-"]) {
-            text-decoration: none;
-          }
-          img {
-            width: 476px;
-            padding-bottom: 33%;
+          .account {
+            font-size: 18px;
+            @extend .custom-font-pracharath;
+            text-align: center;
           }
         }
-        .title_login_header {
-          padding-top: 33%;
-          padding-bottom: 10px;
-          font-size: 22px;
-          color: #2a3d4f;
-          @extend .custom-font-anakotmai;
-        }
-        .title_login {
-          font-size: 18px;
-          color: $black_auth;
-          @extend .custom-font-pracharath;
-        }
       }
-    }
-    .forget_password {
-      margin-top: 10px;
-      margin-bottom: 18px;
-      font-size: 17.5px;
-    }
-    .forget_password_login {
-      margin-top: 35px;
-      margin-bottom: 18px;
-      font-size: 17.5px;
-    }
-    .confirmations {
-      display: block;
-      text-align: center;
-      color: black;
-    }
-    .edit_user {
-      text-align: left;
     }
   }
-  .height_password {
-    background-color: red;
-    height: 100vh;
+  .wrapper_devise_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    padding: 24px 16px;
+    position: static;
+    align-items: flex-start;
+    background-color: #ffffff;
+    @include breakpoint(large) {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+
+    @include breakpoint(medium down) {
+      min-height: 70vh;
+    }
+
+    .back {
+      clear: both;
+      color: $black_auth;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      text-decoration: none;
+      font-size: 22px;
+      @extend .custom-font-anakotmai;
+      font-weight: normal;
+      .icon-angle-left {
+        padding-right: $line-height;
+        font-size: 2rem;
+      }
+    }
+    .back:not([class^="icon-"]) {
+      text-decoration: none;
+    }
+    img {
+      width: 60%;
+      margin: 60px auto;
+    }
+    .list_rule {
+      margin: 0 auto;
+    }
+  }
+  .title_login_header {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: $brand;
+    @extend .custom-font-anakotmai;
+  }
+  .title_login {
+    font-size: 18px;
+    font-weight: lighter;
+    color: $black_auth;
+    @extend .custom-font-pracharath;
   }
 }
+
+.forget_password {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  font-size: 17.5px;
+}
+.forget_password_login {
+  margin-top: 35px;
+  margin-bottom: 18px;
+  font-size: 17.5px;
+}
+.confirmations {
+  display: block;
+  text-align: center;
+  color: black;
+}
+.edit_user {
+  text-align: left;
+}
+
+.height_password {
+  background-color: red;
+  height: 100vh;
+}
+
 .login_button {
   font: normal normal normal 18px/30px Pracharath;
   letter-spacing: 0px;
@@ -271,51 +310,8 @@ $black_auth: #000;
     top: -$line-height / 2;
   }
 }
-.public {
-  .wrapper {
-    .account {
-      .title_header {
-        margin-left: 50px;
-        margin-bottom: 20px;
-        img {
-          margin-right: 35px;
-        }
-      }
-      .edit_account {
-        .personal_details {
-          h2 {
-            font-size: 26px;
-            @extend .custom-font-anakotmai;
-            color: rgb(0, 0, 0);
-          }
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          justify-content: flex-start;
-          align-items: baseline;
-          align-content: stretch;
-          padding-top: 30px;
-          padding-left: 50px;
-          padding-bottom: 30px;
-          .checkbox-label {
-            span {
-              color: rgb(0, 0, 0);
-              font-size: 24px;
-              @extend .custom-font-pracharath;
-              margin-top: 5px;
-            }
-          }
-          input[type="submit"] {
-            width: 369px;
-            height: 72.97px;
-            font-size: 28px;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and(max-width:500px) {
+
+@include breakpoint(medium down) {
   .page-login {
     .wrapper_devise {
       display: block;
@@ -327,204 +323,10 @@ $black_auth: #000;
         justify-content: space-around;
         align-items: stretch;
         align-content: stretch;
-        .auth-form {
-          .title-login-page {
-            text-align: center;
-          }
-          .button-facebook {
-            text-align: left;
-          }
-          .button-google {
-            text-align: left;
-          }
-          .button-twitter {
-            text-align: left;
-          }
-          .auth-divider-login {
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            span {
-              font-size: 18px;
-              @extend .custom-font-anakotmai;
-            }
-          }
-          .column {
-            label {
-              color: $black_auth;
-              font-size: 14px;
-              @extend .custom-font-anakotmai;
-              font-weight: normal;
-            }
-          }
-          .line_remember_login {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: center;
-            align-content: stretch;
-            .checkbox-label {
-              span {
-                font-size: 16px;
-                @extend .custom-font-pracharath;
-                color: $black_auth;
-              }
-            }
-            .float-right {
-              padding-bottom: 13px;
-              font-size: 18px;
-              @extend .custom-font-pracharath;
-            }
-          }
-          .register-page {
-            h2 {
-              text-align: center;
-            }
-            .register_organisation {
-              background-color: rgb(255, 255, 255);
-              text-align: center;
-              @extend .custom-font-anakotmai;
-              font-size: 18px;
-              border-radius: 15px;
-              padding: 15px 15px 15px 15px;
-              margin-bottom: 15px;
-              margin-top: 20px;
-            }
-            .register_bottom {
-              display: flex;
-              flex-direction: column;
-              flex-wrap: wrap;
-              justify-content: center;
-              align-items: center;
-              align-content: center;
-              label {
-                font-size: 16px;
-                @extend .custom-font-pracharath;
-                a {
-                  display: block;
-                  text-align: center;
-                }
-              }
-            }
-          }
-          .register-organization-page {
-            .title_organizations {
-              @include breakpoint(medium) {
-                text-align: center;
-                margin-bottom: 30px;
-              }
-            }
-            .register_bottom {
-              display: flex;
-              flex-direction: column;
-              flex-wrap: wrap;
-              justify-content: center;
-              align-items: center;
-              align-content: center;
-              label {
-                font-size: 16px;
-                @extend .custom-font-pracharath;
-                a {
-                  display: block;
-                  text-align: center;
-                }
-              }
-            }
-          }
-          .forget_password_page {
-            .new_user {
-              .row {
-                .column {
-                  label {
-                    font-size: 14px;
-                    @extend .custom-font-anakotmai;
-                  }
-                }
-              }
-            }
-          }
-          .small-centered {
-            font-size: 16px;
-          }
-        }
-        .account {
-          font-size: 18px;
-          @extend .custom-font-pracharath;
-        }
+        min-height: auto;
+        max-height: auto;
+        overflow-y: auto;
       }
-      .left_left {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: center;
-        background-color: #ffffff;
-        margin-left: 20px;
-        padding-right: 20px;
-        .img_login {
-          .top {
-            .back {
-              clear: both;
-              color: black;
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              text-decoration: none;
-              font-size: 22px;
-              margin-top: 5px;
-              @extend .custom-font-anakotmai;
-              font-weight: normal;
-              padding-bottom: 15%;
-              .icon-angle-left {
-                padding-right: $line-height;
-                font-size: 2rem;
-              }
-            }
-            .back:not([class^="icon-"]) {
-              text-decoration: none;
-            }
-            img {
-              width: 476px;
-              padding-bottom: 5%;
-            }
-          }
-          .title_login_header {
-            padding-top: 8%;
-            font-size: 22px;
-            color: #2a3d4f;
-            @extend .custom-font-anakotmai;
-          }
-          .title_login {
-            font-size: 18px;
-            color: $black_auth;
-            @extend .custom-font-pracharath;
-          }
-        }
-      }
-      .forget_password {
-        margin-top: 10px;
-        margin-bottom: 18px;
-        font-size: 17.5px;
-      }
-      .forget_password_login {
-        margin-top: 35px;
-        margin-bottom: 18px;
-        font-size: 17.5px;
-      }
-      .confirmations {
-        display: block;
-        text-align: center;
-        color: black;
-      }
-      .edit_user {
-        text-align: left;
-      }
-    }
-    .height_password {
-      background-color: red;
-      height: 100vh;
     }
   }
 }

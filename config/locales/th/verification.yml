@@ -87,10 +87,10 @@ th:
     step_1: Residence
     step_2: Confirmation code
     step_3: Final verification
-    user_permission_debates: เข้าร่วมการอภิปราย
+    user_permission_debates: เขียนข้อเสนอใหม่
     user_permission_info: Verifying your information you'll be able to...
-    user_permission_proposal: สร้างข้อเสนอใหม่
-    user_permission_support_proposal: ข้อเสนอการสนับสนุน
+    user_permission_proposal: มีส่วนร่วมกับข้อเสนอ
+    user_permission_support_proposal: สนับสนุนข้อเสนอ
     user_permission_votes: โหวตโครงการงบประมาณ
     verified_user:
       form:
