@@ -1,90 +1,90 @@
 th:
   mailers:
-    title: "Open Government"
-    no_reply: "This message was sent from an email address that does not accept replies."
+    title: "ก้าวไกล Next"
+    no_reply: "อีเมลฉบับนี้ส่งจากระบบอัตโนมัติ กรุณาอย่าตอบกลับ"
     already_confirmed:
       info: "บัญชีของคุณได้รับการยืนยันแล้ว ขอบคุณที่มาร่วมออกแบบพรรคก้าวไกลให้เป็นพรรคที่ประชาชนร่วมออกแบบ"
       new_password: "หากคุณลืมรหัสผ่าน คุณสามารถรีเซ็ตรหัสผ่านได้ที่:"
       subject: บัญชีของคุณได้รับการยืนยันแล้ว
     comment:
-      hi: Hi
-      new_comment_by: There is a new comment from <strong>%{commenter}</strong>
-      subject: Someone has commented on your %{commentable}
-      title: New comment
+      hi: สวัสดี
+      new_comment_by: มีความคิดเห็นใหม่จาก <strong>%{commenter}</strong>
+      subject: มีคนแสดงความคิดเห็นเกี่ยวกับ %{commentable}
+      title: ความคิดเห็นใหม่
     config:
-      notifications_link: Notifications
-      unsubscribe_text: 'To unsubscribe from these emails, visit %{notifications} and uncheck "%{notification}".'
+      notifications_link: การแจ้งเตือน
+      unsubscribe_text: 'หากต้องการยกเลิกการสมัครรับอีเมลนี้ โปรดไปที่ %{notifications} และ เลือกปิด "การแจ้งเตือน".'
     email_verification:
-      click_here_to_verify: this link
-      instructions_2: This email will verify your account with <b>%{document_type} %{document_number}</b>. If these don't belong to you, please don't click on the previous link and ignore this email.
-      instructions: To complete the verification of your user account you must click %{verification_link}.
-      subject: Confirm your email
-      thanks: Thank you very much.
-      title: "Confirm your email"
-      text: "Confirm your account using the following link."
+      click_here_to_verify: LINK
+      instructions_2: อีเมลนี้จะตรวจสอบบัญชีของคุณด้วย <b>%{document_type} %{document_number}</b>. หากสิ่งนี้ไม่ใช่คำขอของคุณ โปรดอย่าคลิกลิงก์ก่อนหน้าและไม่ต้องสนใจอีเมลนี้
+      instructions: เพื่อให้การยืนยันบัญชีผู้ใช้ของคุณเสร็จสมบูรณ์ กรุณาคลิก %{verification_link}.
+      subject: ยืนยันอีเมลของคุณ
+      thanks: ขอบคุณครับ
+      title: "ยืนยันอีเมลของคุณ"
+      text: "ยืนยันบัญชีของคุณโดยใช้ลิงก์ต่อไปนี้"
     reply:
-      hi: Hi
-      new_reply_by: There is a new response from <strong>%{commenter}</strong> to your comment on
-      subject: Someone has responded to your comment
-      title: New response to your comment
+      hi: สวัสดี
+      new_reply_by: มีความคิดเห็นใหม่จาก <strong>%{commenter}</strong> ไปยังความคิดเห็นของคุณเกี่ยวกับ
+      subject: มีคนตอบกลับความคิดเห็นของคุณ
+      title: มีการตอบกลับความคิดเห็นของคุณ
     proposal_notification_digest:
-      info: "Here are the new notifications that have been published by authors of the proposals that you have supported in %{org_name}."
-      title: "Proposal notifications in %{org_name}"
-      share: Share proposal
-      comment: Comment proposal
-      unsubscribe_text: "If you don't want to receive any proposal notifications, visit %{notifications} and uncheck 'Receive a summary of proposal notifications'."
-      unfollow: "Visit this proposal and unfollow it to stop receiving notifications."
+      info: "แจ้งเตือนการเผยแพร่เนื้อหาโดยผู้เขียนข้อเสนอที่คุณสนับสนุนใน %{org_name}."
+      title: "การแจ้งเตือนข้อเสนอใน %{org_name}"
+      share: แบ่งปัน
+      comment: เสนอความคิดเห็น
+      unsubscribe_text: "หากคุณไม่ต้องการรับการแจ้งเตือนใด ๆ, โปรดไปที่ %{notifications} และ เลือกปิด 'แจ้งเตือนทางอีเมล'."
+      unfollow: "เข้าสู่ข้อเสนอนี้และเลิกติดตามเพื่อหยุดรับการแจ้งเตือน"
     direct_message_for_receiver:
       subject: "คุณได้รับข้อความส่วนตัวใหม่"
       reply: ตอบกลับ %{sender}
       unsubscribe_text: "หากคุณไม่ต้องการรับข้อความส่วนตัว, ไปที่ %{notifications} และ เลือกปิด 'แจ้งเตือนทางอีเมลเมื่อมีคนส่งข้อความ'."
     direct_message_for_sender:
-      subject: "You have sent a new private message"
-      title: "You have sent a new private message"
-      text: "You have sent a new private message to <strong>%{receiver}</strong> with the content:"
+      subject: "คุณได้ส่งข้อความส่วนตัว"
+      title: "คุณได้ส่งข้อความส่วนตัว"
+      text: "คุณได้ส่งข้อความส่วนตัวถึง <strong>%{receiver}</strong> โดยมีข้อความ:"
     user_invite:
-      ignore: "If you have not requested this invitation don't worry, you can ignore this email."
-      text: "Thank you for applying to join %{org}! In seconds you can start to participate, just fill the form below:"
-      thanks: "Thank you very much."
-      title: "Welcome to %{org}"
-      button: Complete registration
-      subject: "Invitation to %{org_name}"
+      ignore: "หากคุณไม่ได้ร้องขอคำเชิญนี้ ไม่ต้องกังวล คุณสามารถเพิกเฉยต่ออีเมลนี้ได้"
+      text: "ขอบคุณที่สมัครเข้าร่วม %{org}! คุณสามารถเริ่มเข้าร่วมได้ในไม่กี่วินาที เพียงกรอกแบบฟอร์มด้านล่าง:"
+      thanks: "ขอบคุณครับ."
+      title: "ยินดีต้อนรับสู่ %{org}"
+      button: ลงทะเบียน
+      subject: "ขอเชิญเข้าร่วม %{org_name}"
     budget_investment_created:
-      subject: "Thank you for creating an investment!"
-      title: "Thank you for creating an investment!"
-      intro: "Hi <strong>%{author}</strong>,"
-      text: "Thank you for creating your investment <strong>%{investment}</strong> for Participatory Budgets <strong>%{budget}</strong>."
-      follow: "We will inform you about how the process progresses, which you can also follow on <strong>%{link}</strong>."
-      follow_link: "Participatory Budgets"
-      sincerely: "Sincerely,"
-      share: "Share your project"
+      subject: "ขอบคุณที่สร้างโครงการลงทุน!"
+      title: "ขอบคุณที่สร้างโครงการลงทุน!"
+      intro: "สวัสดี <strong>%{author}</strong>,"
+      text: "ขอบคุณที่สร้างโครงการลงทุน <strong>%{investment}</strong> สำหรับงบประมาณ <strong>%{budget}</strong>."
+      follow: "เราจะแจ้งให้คุณทราบเกี่ยวกับความคืบหน้าของกระบวนการ ซึ่งคุณสามารถติดตามได้ที่ <strong>%{link}</strong>."
+      follow_link: "งบประมาณแบบมีส่วนร่วม"
+      sincerely: "ขอแสดงความนับถือ,"
+      share: "แบ่งปันโครงการของคุณ"
     budget_investment_unfeasible:
-      title: "Your investment project has been marked as unfeasible"
-      hi: "Dear user,"
-      new: "For all these, we invite you to elaborate a <strong>new investment</strong> that adjusts to the conditions of this process. You can do it following this link: %{url}."
-      new_href: "new investment project"
-      sincerely: "Sincerely"
-      sorry: "Sorry for the inconvenience and we again thank you for your invaluable participation."
-      subject: "Your investment project '%{code}' has been marked as unfeasible"
+      title: "โครงการลงทุนของคุณถูกตัดสินว่าไม่สามารถทำได้"
+      hi: "เรียนผู้ใช้งาน,"
+      new: "ขอเรียนเชิญคุณร่วมการออกความเห็นสำหรับ <strong>การลงทุนใหม่</strong> กรุณาคลิกลิงค์: %{url}."
+      new_href: "โครงการลงทุนใหม่"
+      sincerely: "ขอแสดงความนับถือ"
+      sorry: "ขออภัยในความไม่สะดวกและเราขอขอบคุณอีกครั้งสำหรับการเข้าร่วมอันมีค่าของคุณ."
+      subject: "โครงการลงทุนของคุณ '%{code}' ถูกตัดสินว่าว่าไม่สามารถทำได้"
     budget_investment_selected:
-      subject: "Your investment project '%{code}' has been selected"
-      title: "Your investment project has been selected"
-      hi: "Dear user,"
-      share: "Start to get votes, share your investment project on social networks. Share is essential to make it a reality."
-      share_button: "Share your investment project"
-      thanks: "Thank you again for participating."
-      sincerely: "Sincererly"
+      subject: "โครงการลงทุนของคุณ '%{code}' ได้รับการคัดเลือก"
+      title: "โครงการลงทุนของคุณ ได้รับการคัดเลือก"
+      hi: "เรียนผู้ใช้งาน,"
+      share: "เริ่มโหวต, แชร์โครงการของคุณ เพื่อให้ฝันของคุณเป็นตริง."
+      share_button: "แบ่งปันโครงการลงทุนของคุณ"
+      thanks: "ขอขอบคุณสำหรับการเข้าร่วม"
+      sincerely: "ขอแสดงความนับถือ"
     budget_investment_unselected:
-      subject: "Your investment project '%{code}' has not been selected"
-      title: "Your investment project has not been selected"
-      hi: "Dear user,"
-      thanks: "Thank you again for participating."
-      sincerely: "Sincererly"
+      subject: "โครงการลงทุนของคุณ '%{code}' ไม่ได้รับเลือก"
+      title: "โครงการลงทุนของคุณ ไม่ได้รับเลือก"
+      hi: "เรียนผู้ใช้งาน,"
+      thanks: "ขอขอบคุณสำหรับการเข้าร่วม"
+      sincerely: "ขอแสดงความนับถือ"
     evaluation_comment:
-      subject: "New evaluation comment"
-      title: New evaluation comment for %{investment}
-      hi: Hi
-      new_comment_by: There is a new evaluation comment from <strong>%{commenter}</strong> to the budget investment %{investment}
+      subject: "ความคิดเห็นต่อการประเมิน"
+      title: ความคิดเห็นสำหรับ %{investment}
+      hi: สวัสดี
+      new_comment_by: มีความคิดเห็นจาก <strong>%{commenter}</strong> ต่อโครงการลงทุน %{investment}
       commenter_info: "%{commenter}, %{time}:"
     machine_learning_error:
       link: "Visit Machine Learning panel"
@@ -122,7 +122,7 @@ th:
       dashboard_button: "Go ahead, discover them!"
     new_actions_notification_on_create:
       subject: "Your draft citizen proposal is created"
-      hi: "Hi %{name}!"
+      hi: "สวัสดี %{name}!"
       introduction: "Your %{title} proposal has been successfully created."
       text_1: "Take advantage that your proposal is not public yet and get ready to contact a lot of people."
       text_2: "When you are ready publish your citizen proposal from this <a href='%{link}'>link</a>."

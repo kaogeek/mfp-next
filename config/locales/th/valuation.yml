@@ -1,68 +1,70 @@
 th:
   valuation:
     header:
-      title: Valuation
+      title: การประเมินค่า
     menu:
-      title: Valuation
-      budgets: Participatory budgets
+      title: การประเมินค่า
+      budgets: งบประมาณการมีส่วนร่วม
     budgets:
       index:
-        title: Participatory budgets
+        title: งบประมาณการมีส่วนร่วม
         filters:
-          current: Open
-          finished: Finished
-        table_name: Name
-        table_phase: Phase
+          current: เปิด
+          finished: ที่เสร็จเรียบร้อย
+        table_name: ชื่อ
+        table_phase: ระยะ
         table_assigned_investments_valuation_open: Investment projects assigned with valuation open
-        table_actions: Actions
-        evaluate: Evaluate
-        no_budgets: "There are no budgets"
+        table_actions: การปฏิบัติ
+        evaluate: ประเมิน
+        no_budgets: "ไม่มีงบประมาณ"
     budget_investments:
       index:
-        headings_filter_all: All headings
+        headings_filter_all: หัวเรื่องทั้งหมด
         filters:
-          valuation_open: Open
-          valuating: Under valuation
-          valuation_finished: Valuation finished
-        assigned_to: "Assigned to %{valuator}"
-        title: Investment projects
-        edit: Edit dossier
+          valuation_open: เปิด
+          valuating: อยู่ระหว่างการประเมินมูลค่า
+          valuation_finished: ประเมินเสร็จแล้ว
+        assigned_to: "มอบหมายให้ %{valuator}"
+        title: โครงการลงทุน
+        edit: แก้ไขเอกสาร
+        # TODO
         table_id: ID
-        table_title: Title
-        table_heading_name: Heading name
-        table_actions: Actions
-        no_investments: "There are no investment projects."
+        table_title: หัวข้อ
+        table_heading_name: ชื่อหัวเรื่อง
+        table_actions: การปฏิบัติ
+        no_investments: "ไม่มีโครงการลงทุน"
       show:
-        back: Back
-        title: Investment project
-        info: Author info
-        by: Sent by
-        sent: Sent at
-        heading: Heading
-        dossier: Dossier
-        edit_dossier: Edit dossier
-        price: Price
-        price_first_year: Cost during the first year
+        back: กลับ
+        title: โครงการลงทุน
+        info: ข้อมูลผู้เขียน
+        by: ส่งโดย
+        sent: ส่งที่
+        heading: หัวเรื่อง
+        dossier: เอกสาร
+        edit_dossier: แก้ไขเอกสาร
+        price: ราคา
+        price_first_year: ค่าใช้จ่ายในปีแรก
+        # TODO
         currency: "€"
-        feasibility: Feasibility
-        feasible: Feasible
-        unfeasible: Unfeasible
-        undefined: Undefined
-        valuation_finished: Valuation finished
-        duration: Time scope
-        responsibles: Responsibles
-        assigned_admin: Assigned admin
+        feasibility: ความเป็นไปได้
+        feasible: ทำได้
+        unfeasible: เป็นไปไม่ได้
+        undefined: ไม่ได้กำหนด
+        valuation_finished: ประเมินเสร็จแล้ว
+        duration: ระยะเวลา
+        responsibles: ความรับผิดชอบ
+        assigned_admin: ผู้ดูแลระบบที่ได้รับมอบหมาย
         assigned_valuators: Assigned valuators
-        preview: Investment preview
+        preview: ดูตัวอย่างการลงทุน
       edit:
-        dossier: Dossier
-        price: "Price (%{currency})"
-        price_first_year: "Cost during the first year (%{currency}) <small>(optional, data not public)</small>"
-        feasibility: Feasibility
-        valuation_finished_alert: "Are you sure you want to mark this report as completed? If you do it, it can no longer be modified."
-        not_feasible_alert: "An email will be sent immediately to the author of the project with the report of unfeasibility."
+        dossier: เอกสาร
+        price: "ราคา (%{currency})"
+        price_first_year: "ค่าใช้จ่ายในปีแรก (%{currency}) <small>(ไม่จำเป็น ข้อมูลไม่เป็นสาธารณะ)</small>"
+        feasibility: ความเป็นไปได้
+        valuation_finished_alert: "คุณแน่ใจหรือไม่ว่าต้องการทำเครื่องหมายรายงานนี้ว่าเสร็จสมบูรณ์ หากทำแล้วจะไม่สามารถแก้ไขได้อีกต่อไป"
+        not_feasible_alert: "อีเมลจะถูกส่งไปยังผู้เขียนโครงการทันทีพร้อมรายงานความไม่สามารถทำได้"
         save: บันทึกข้อเสนอ
       notice:
-        valuate: "Dossier updated"
-      valuation_comments: Valuation comments
-      not_in_valuating_phase: Investments can only be valuated when Budget is in valuating phase
+        valuate: "อัพเดทเอกสารแล้ว"
+      valuation_comments: ความคิดเห็นเกี่ยวกับการประเมินมูลค่า
+      not_in_valuating_phase: สามารถประเมินการลงทุนได้เฉพาะเมื่องบประมาณอยู่ในขั้นตอนการประเมินค่า

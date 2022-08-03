@@ -1,24 +1,24 @@
 th:
   documents:
-    title: Documents
-    max_documents_allowed_reached: You have reached the maximum number of documents allowed! <strong>You have to delete one before you can upload another.</strong>
-    additional: Additional documentation
+    title: เอกสาร
+    max_documents_allowed_reached: เอกสารของคุณตอนนี้มีจำนวนสูงสุดแล้ว! <strong>คุณต้องลบไฟล์ออกหนึ่งไฟล์ก่อนที่คุณจะอัปโหลดไฟล์อื่น.</strong>
+    additional: เอกสารเพิ่มเติม
     form:
-      title: Documents
-      title_placeholder: Add a descriptive title for the document
-      delete_button: Remove document
-      cancel_button: Cancel
-      note: "You can upload up to a maximum of %{max_documents_allowed} documents of following content types: %{accepted_content_types}, up to %{max_file_size} MB per file."
-      add_new_document: Add new document
+      title: เอกสาร
+      title_placeholder: เพิ่มคำอธิบายสำหรับเอกสาร
+      delete_button: ลบเอกสาร
+      cancel_button: ยกเลิก
+      note: "คุณสามารถอัปโหลดได้สูงสุด %{max_documents_allowed} ชนิดของไฟล์เอกสาร: %{accepted_content_types}, up to %{max_file_size} MB ต่อไฟล์."
+      add_new_document: เพิ่มเอกสารใหม่
     actions:
       destroy:
-        notice: Document was deleted successfully.
-        alert: Cannot delete document.
-        confirm: Are you sure you want to delete the document? This action cannot be undone!
+        notice: ลบเอกสารเสร็จสมบูรณ์.
+        alert: ไม่สามารถลบเอกสารได้.
+        confirm: คุณแน่ใจไหมที่จะลบเอกสาร? หากลบแล้วจะไม่สามารถกู้คืนได้!
     buttons:
-      download_document: Download file
-      destroy_document: Delete document
+      download_document: ดาวน์โหลดไฟล์
+      destroy_document: ลบเอกสาร
     errors:
       messages:
-        in_between: must be in between %{min} and %{max}
-        wrong_content_type: content type %{content_type} does not match any of accepted content types %{accepted_content_types}
+        in_between: ค่าต้องอยู่ระหว่าง %{min} และ %{max}
+        wrong_content_type: ประเภทเนื้อหา %{content_type} ประเภทเนื้อหาที่ไม่ถูกต้อง %{accepted_content_types}

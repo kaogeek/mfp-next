@@ -6,7 +6,7 @@
       <span class="close">&times;</span>
     </div>
     <div class="modal-detail">
-      <iframe src="https://www.youtube.com/embed/BVQAta4fAvo?&rel=0&autoplay=1&mute=1" frameborder="0" allowtransparency="true" allowfullscreen>
+      <iframe src="https://www.youtube.com/embed/ilRoBBBlX4Y?&rel=0&autoplay=1&mute=1" frameborder="0" allowtransparency="true" allowfullscreen>
       </iframe>
       <div class="wrapper-show-dialog">
         <input type="checkbox" id="show-dialog" onclick="clickSub()">
@@ -52,8 +52,9 @@
         <%= render "featured_debates" %>
       <% end %>
 
-      <div class="row">
+      <div class="row row-filter">
         <div class="small-12 column">
+          <a href="../debates">ล้างค่า</a>
           <%= render "view_mode" %>
         </div>
       </div>
@@ -135,6 +136,8 @@
   function clickDialog() {
     modal.style['display'] = "flex";
     daddy[0].style['overflow-y'] = "hidden";
+    document.getElementById("show-dialog").checked = true;
+    clickSub();
   };
 
   // When the user clicks on <span> (x), close the modal
