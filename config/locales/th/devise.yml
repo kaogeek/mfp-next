@@ -9,18 +9,18 @@ th:
       updated: "เปลี่ยนรหัสผ่านสำเร็จ"
     confirmations:
       confirmed: "บัญชีของคุณได้ถูกยืนยันแล้ว"
-      send_instructions: "In a few minutes you will receive an email containing instructions on how to confirm your email address."
+      send_instructions: "ในอีกไม่กี่นาที คุณจะได้รับอีเมลพร้อมคำแนะนำเกี่ยวกับวิธียืนยันที่อยู่อีเมลของคุณ"
       send_paranoid_instructions: "หากที่อยู่อีเมลของคุณมีอยู่ในฐานข้อมูลของเรา คุณจะได้รับอีเมลพร้อมคำแนะนำเกี่ยวกับวิธีการยืนยันที่อยู่อีเมลของคุณในเวลาไม่กี่นาที"
     failure:
-      already_authenticated: "You are already signed in."
-      inactive: "Your account has not yet been activated."
-      invalid: "Invalid %{authentication_keys} or password."
-      locked: "Your account has been locked."
-      last_attempt: "You have one more attempt remaining before your account is blocked."
-      not_found_in_database: "Invalid %{authentication_keys} or password."
-      timeout: "Your session has expired. Please sign in again to continue."
+      already_authenticated: "คุณลงชื่อเข้าใช้แล้ว"
+      inactive: "บัญชีของคุณยังไม่ได้เปิดใช้งาน"
+      invalid: "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง" #"Invalid %{authentication_keys} or password."
+      locked: "บัญชีของคุณถูกล็อค."
+      last_attempt: "คุณมีโอกาสอีก 1 ครั้งก่อนที่บัญชีของคุณจะถูกบล็อก"
+      not_found_in_database: " %{authentication_keys} หรือรหัสผ่าน"
+      timeout: "เซสชั่นของคุณหมดอายุแล้ว โปรดลงชื่อเข้าใช้อีกครั้งเพื่อดำเนินการต่อ"
       unauthenticated: "คุณต้องลงชื่อเข้าใช้หรือลงทะเบียนเพื่อดำเนินการต่อ"
-      unconfirmed: "To continue, please click on the confirmation link that we have sent you via email"
+      unconfirmed: "หากต้องการดำเนินการต่อ โปรดคลิกลิงก์ยืนยันที่เราส่งให้คุณทางอีเมล"
     mailer:
       confirmation_instructions:
         subject: "ยืนยันอีเมล"
@@ -50,9 +50,9 @@ th:
       signed_out: "คุณออกจากระบบเรียบร้อยแล้ว"
       already_signed_out: "คุณออกจากระบบเรียบร้อยแล้ว"
     unlocks:
-      send_instructions: "In a few minutes, you will receive an email containing instructions on unlocking your account."
-      send_paranoid_instructions: "If you have an account, in a few minutes you will receive an email containing instructions on unlocking your account."
-      unlocked: "Your account has been unlocked. Please sign in to continue."
+      send_instructions: "ในอีกไม่กี่นาที คุณจะได้รับอีเมลพร้อมคำแนะนำในการปลดล็อกบัญชีของคุณ"
+      send_paranoid_instructions: "หากคุณมีบัญชี คุณจะได้รับอีเมลพร้อมคำแนะนำในการปลดล็อกบัญชีของคุณในไม่กี่นาที"
+      unlocked: "บัญชีของคุณถูกปลดล็อคแล้ว โปรดลงชื่อเข้าใช้เพื่อดำเนินการต่อ"
   errors:
     messages:
       already_confirmed: "คุณได้รับการยืนยันแล้ว โปรดพยายามลงชื่อเข้าใช้"

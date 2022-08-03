@@ -11,12 +11,12 @@ th:
         submit: ส่งคำแนะนำอีกครั้ง
         title: ส่งอีเมลยืนยันอีกครั้ง
       show:
-        instructions: Confirming the account with email %{email}
-        new_password_confirmation_label: Repeat access password
-        new_password_label: New access password
-        please_set_password: Please choose your new pasword (it will allow you to login with the email above)
-        submit: Confirm
-        title: Confirm my account
+        instructions: ยืนยันบัญชีด้วยอีเมล %{email}
+        new_password_confirmation_label: ยืนยันรหัสผ่านใหม่
+        new_password_label: รหัสผ่านใหม่
+        please_set_password: โปรดเลือกรหัสผ่านใหม่ของคุณ (อนุญาตให้คุณเข้าสู่ระบบด้วยอีเมล)
+        submit: ยืนยัน
+        title: ยืนยันบัญชีของฉัน
     mailer:
       confirmation_instructions:
         confirm_link: กดยืนยันแอคเคาท์
@@ -28,14 +28,14 @@ th:
         hello: สวัสดีคุณ
         ignore_text: ""
         info_text: ""
-        text: "เราได้รับคำขอเปลี่ยนรหัสผ่านของคุณแล้ว กดเปลี่ยนได้ที่ link นี้เลย:"
+        text: "เราได้รับคำขอเปลี่ยนรหัสผ่านของคุณแล้ว กดเปลี่ยนได้ที่ ลิ้ง นี้เลย:"
         title: เปลี่ยนรหัสผ่าน
       unlock_instructions:
-        hello: Hello
-        info_text: Your account has been blocked due to an excessive number of failed sign-in attempts.
-        instructions_text: "Please click on this link to unlock your account:"
-        title: Your account has been locked
-        unlock_link: Unlock my account
+        hello: สวัสดี
+        info_text: บัญชีของคุณถูกบล็อกเนื่องจากการพยายามลงชื่อเข้าใช้ที่ล้มเหลวหลายครั้งมากเกินไป
+        instructions_text: "กรุณาคลิกที่ลิงค์นี้เพื่อปลดล็อคบัญชีของคุณ:"
+        title: บัญชีของคุณถูกล็อค
+        unlock_link: ปลดล็อคบัญชีของฉัน
     menu:
       login_items:
         login: เข้าสู่ระบบ
@@ -44,8 +44,8 @@ th:
     organizations:
       registrations:
         new:
-          password_confirmation_label: Confirm password
-          responsible_name_note: This would be the person representing the association/collective in whose name the proposals are presented
+          password_confirmation_label: ยืนยันรหัสผ่าน
+          responsible_name_note: ซึ่งจะเป็นผู้แทนสมาคม/กลุ่มที่เสนอชื่อ
           submit: ลงทะเบียน
           title: ลงทะเบียนเป็นองค์กรหรือกลุ่ม
           name_organizations: ชื่อองค์กร
@@ -61,12 +61,12 @@ th:
           placeholder_password: โปรดใส่รหัสผ่าน
           placeholder_confirm_password: โปรดใส่รหัสผ่านอีกครั้ง
         success:
-          back_to_index: I understand; go back to main page
-          instructions_1: "<strong>We will contact you soon</strong> to verify that you do in fact represent this collective."
-          instructions_2: While your <strong>email is reviewed</strong>, we have sent you a <strong>link to confirm your account</strong>.
-          instructions_3: Once confirmed, you may begin to participate as an unverified collective.
-          thank_you: Thank you for registering your collective on the website. It is now <strong>pending verification</strong>.
-          title: Registration of organisation / collective
+          back_to_index: ฉันเข้าใจ; กลับไปที่หน้าหลัก
+          instructions_1: "<strong>เราจะติดต่อกลับโดยเร็วที่สุด</strong> เพื่อยืนยันว่าคุณเป็นตัวแทนของกลุ่มนี้จริงๆ"
+          instructions_2: ในขณะที่ <strong>อีเมลได้รับการตรวจสอบแล้ว</strong>, เราได้ส่งให้คุณ <strong>ลิงค์เพื่อยืนยันบัญชีของคุณ</strong>.
+          instructions_3: ทำการยืนยันอีกครั้งหนึ่ง เพราะอาจจะไม่ได้ทำการระบุตัวตน
+          thank_you: ขอขอบคุณที่ลงทะเบียนกลุ่มของคุณบนเว็บไซต์ ตอนนี้<strong>อยู่ระหว่างการตรวจสอบ</strong>.
+          title: การลงทะเบียนองค์กร / กลุ่ม
     passwords:
       edit:
         change_submit: เปลี่ยนรหัสผ่าน
@@ -89,12 +89,12 @@ th:
         title: เข้าสู่ระบบ
     shared:
       links:
-        login: Enter
+        login: เข้าสู่ระบบ
         new_confirmation: ส่งอีเมลยืนยันอีกครั้ง
-        new_confirmation_organization: ป้อนยังไม่ได้รับคำแนะนำในการเปิดใช้งานบัญชีของคุณ?
+        new_confirmation_organization: ส่งอีเมลยืนยันอีกครั้ง
         new_password: ลืมรหัสผ่าน?
         new_unlock: ยังไม่ได้รับคำแนะนำในการปลดล็อก?
-        signin_with_provider: เข้าสู่ระบบด้วย %{provider}
+        signin_with_provider: ข้าสู่ระบบด้วย %{provider}
         signup: ไม่มีบัญชี? %{signup_link}
         signup_link: สร้างบัญชี
     unlocks:
@@ -136,6 +136,7 @@ th:
           placeholder_confirm_password: โปรดใส่รหัสผ่านอีกครั้ง
           submit: ลงทะเบียน
           terms: การลงทะเบียนถือว่าคุณยอมรับ %{terms}
+          new_terms: การลงทะเบียนถือว่าคุณยอมรับ
           terms_link: ข้อกำหนดและเงื่อนไขการใช้งาน
           terms_title: การลงทะเบียนถือว่าคุณยอมรับข้อกำหนดและเงื่อนไขการใช้งาน
           title: ลงทะเบียน

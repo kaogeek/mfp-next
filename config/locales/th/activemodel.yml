@@ -1,47 +1,48 @@
+#translate By Fluke
 th:
   activemodel:
     models:
       verification:
-        residence: "Residence"
-        sms: "SMS"
+        residence: "ที่อยู่อาศัย" #Residence
+        sms: "ข้อความ"
       local_census_records/import:
-        one: Local census record import
-        other: Local census records imports
+        one: อัพโหลดไฟล์เอกสารของคุณ #Local census record import
+        other: อัพโหลดไฟล์เอกสารของคุณ
     attributes:
       verification:
         residence:
           document_type: "ประเภทเอกสาร"
           document_number: "หมายเลขเอกสาร (including letters)"
-          date_of_birth: "Date of birth"
-          postal_code: "Postcode"
+          date_of_birth: "วัดเกิด"
+          postal_code: "รหัสไปรษณีย์" #Postcode
         sms:
-          phone: "Telephone"
-          confirmation_code: "Confirmation code"
+          phone: "โทรศัพท์" #Telephone
+          confirmation_code: "รหัสยืนยัน" #Confirmation code
         email:
-          recipient: "Email"
+          recipient: "อีเมล"
       verification/letter:
-        email: "Email"
-        password: "Password"
-        verification_code: "Code you received in letter"
+        email: "อีเมล" #Email
+        password: "รหัสผ่าน" #Password
+        verification_code: "รหัสที่คุณได้รับเป็นตัวอักษร" #Code you received in letter
       verification/management/document:
-        document_type: "Document type:"
-        document_number: "Document number"
+        document_type: "ประเภทเอกสาร:" #Document type
+        document_number: "หมายเลขเอกสาร" #Document number
       verification/residence:
-        date_of_birth: "Date of birth"
-        document_type: "Document type"
-        postal_code: "Postcode"
+        date_of_birth: "วันเกิด" #Date of birth
+        document_type: "ประเภทเอกสาร"
+        postal_code: "รหัสไปรษณีย์"
       verification/sms:
-        confirmation_code: "Enter the code you received on your mobile"
+        confirmation_code: "ป้อนรหัสที่คุณได้รับบนโทรศัพท์มือถือของคุณ"
       officing/residence:
-        document_type: "Document type"
-        document_number: "Document number (including letters)"
-        year_of_birth: "Year born"
+        document_type: "ประเภทเอกสาร"
+        document_number: "หมายเลขเอกสาร (including letters)"
+        year_of_birth: "ปีเกิด"
       local_census_records/import:
-        file: File
+        file: ไฟล์
     errors:
       models:
         local_census_records/import:
           attributes:
             file:
-              extension: "Given file format is wrong. The allowed file format is: %{valid_extensions}."
-              headers: "Given file headers are wrong. The file headers must have the following names: %{required_headers}."
+              extension: "รูปแบบไฟล์ไม่ถูกต้อง รูปแบบไฟล์ที่ถูกต้องคือ: %{valid_extensions}."
+              headers: "รูปแบบไฟล์ไม่ถูกต้อง รูปแบบไฟล์ที่ถูกต้องคือ: %{required_headers}."
