@@ -63,3 +63,21 @@
     <%= yield :header_addon %>
   </div>
 </header>
+
+<script>
+  $(document).ready(function(){
+    $(".menu-button").click(function() {
+      if ($("#responsive-menu").css("display") === 'none') {
+        $(".top-bar").css("background", "#FFF");
+      } else {
+        $(".top-bar").css("background", "linear-gradient(0deg, rgba(230,229,229,1) 0%, rgba(255,255,255,1) 20%)");
+      }
+    });
+
+    $(window).resize(function(){
+      if ($(window).width() >= 640) {
+        $(".top-bar").css("background", "#FFF");
+      }
+    });
+  });
+</script>

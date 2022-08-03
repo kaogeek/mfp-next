@@ -7,7 +7,6 @@
 }
 
 .ui-datepicker-calendar {
-
   .ui-state-default {
     background: $highlight;
     color: $text;
@@ -19,7 +18,6 @@
   }
 
   thead {
-
     tr th {
       border: 1px solid $brand;
     }
@@ -94,7 +92,7 @@
   background: #fff;
 
   .ui-state-default {
-    background: #f8f8f8;
+    // background: #f8f8f8;
     color: $text-medium;
   }
 }

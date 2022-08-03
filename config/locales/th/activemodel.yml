@@ -10,8 +10,8 @@ th:
     attributes:
       verification:
         residence:
-          document_type: "Document type"
-          document_number: "Document number (including letters)"
+          document_type: "ประเภทเอกสาร"
+          document_number: "หมายเลขเอกสาร (including letters)"
           date_of_birth: "Date of birth"
           postal_code: "Postcode"
         sms:

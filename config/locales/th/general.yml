@@ -28,7 +28,7 @@ th:
       receive_emails_about_direct_messages: แจ้งเตือนทางอีเมลเมื่อมีคนส่งข้อความ
   application:
     close: Close
-    menu: Menu
+    menu: เมนู
   comments:
     actions:
       confirm_delete: "คุณแน่ใจไหม? การดำเนินการนี้จะลบความคิดเห็นนี้ คุณไม่สามารถยกเลิกการดำเนินการนี้ได้"
@@ -102,7 +102,7 @@ th:
         created_at: ล่าสุด
         hot_score: เป็นที่สนใจ
         most_commented: แสดงความคิดเห็นมากที่สุด
-        relevance: เกี่ยวข้อง
+        relevance: ผลลัพธ์การค้นหา
         recommendations: แนะนำ
       recommendations:
         without_results: There are no debates related to your interests

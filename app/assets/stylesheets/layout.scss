@@ -612,6 +612,7 @@ body > header,
   #responsive-menu {
     @include breakpoint(small down) {
       width: 100%;
+      padding-bottom: 1.5rem;
     }
   }
 
@@ -1207,15 +1208,6 @@ footer {
 }
 
 .auth-form {
-  // @include breakpoint(medium) {
-  //   padding-top: $line-height * 4;
-  // }
-
-  p,
-  a,
-  .checkbox {
-    font-size: $small-font-size;
-  }
 }
 
 .auth-divider {
@@ -1265,7 +1257,7 @@ form {
   }
 
   [type]:not([type="button"], [type="checkbox"], [type="file"], [type="radio"], [type="submit"]) {
-    background: #f8f8f8;
+    // background: #f8f8f8;
     height: $input-height;
     margin-bottom: rem-calc(16);
 
@@ -1342,11 +1334,19 @@ form {
 
 .notice-container {
   min-width: $line-height * 12;
-  right: 24px;
-  top: 24px;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  z-index: 99;
+  max-width: calc(100% - 32px);
+  @extend .custom-font-anakotmai;
 
   @include breakpoint(medium) {
-    position: absolute;
+    // Override style for MFP-NEXT
+    // position: absolute;
+    right: 24px;
+    top: 24px;
+    max-width: calc(100% - 48px);
   }
 
   .notice {
