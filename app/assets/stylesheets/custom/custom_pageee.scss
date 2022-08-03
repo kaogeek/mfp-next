@@ -23,6 +23,10 @@ $black_auth: #000;
           flex-direction: column;
           justify-content: center;
           .auth-form {
+            .callout-slide {
+              position: fixed;
+              z-index: 99;
+            }
             .title-login-page {
               text-align: center;
             }
@@ -75,13 +79,13 @@ $black_auth: #000;
               align-content: stretch;
               .checkbox-label {
                 span {
-                  font-size: 16px;
+                  font-size: 18px;
                   @extend .custom-font-pracharath;
                   color: $black_auth;
                 }
               }
               .float-right {
-                padding-bottom: 13px;
+                margin-bottom: 13px;
                 font-size: 18px;
                 @extend .custom-font-pracharath;
               }
@@ -94,11 +98,13 @@ $black_auth: #000;
                 background-color: rgb(255, 255, 255);
                 text-align: center;
                 @extend .custom-font-anakotmai;
-                font-size: 18px;
                 border-radius: 28px;
-                padding: 28px 28px 28px 28px;
+                padding: 18px 18px 18px 18px;
                 margin-bottom: 15px;
                 margin-top: 20px;
+                a {
+                  font-size: 22px;
+                }
               }
               .register_bottom {
                 display: flex;
@@ -138,7 +144,13 @@ $black_auth: #000;
               }
             }
             .forget_password_page {
+              .title_all {
+                margin-left: 16px;
+              }
               .new_user {
+                .title_all {
+                  margin-left: 16px;
+                }
                 .row {
                   .column {
                     label {
@@ -245,7 +257,7 @@ $black_auth: #000;
 .login_button {
   font: normal normal normal 18px/30px Pracharath;
   letter-spacing: 0px;
-  color: #2a3d4f;
+  color: $brand;
   opacity: 1;
 }
 .categories a,

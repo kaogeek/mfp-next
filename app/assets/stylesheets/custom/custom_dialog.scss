@@ -63,6 +63,10 @@
       > iframe {
         width: 100%;
         aspect-ratio: 16 / 9;
+
+        @include breakpoint(small down) {
+          aspect-ratio: 9 / 16;
+        }
       }
 
       > .wrapper-show-dialog {

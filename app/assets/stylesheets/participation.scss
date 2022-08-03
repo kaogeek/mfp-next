@@ -440,6 +440,7 @@
   margin-bottom: rem-calc(12);
   min-height: rem-calc(192);
   border-radius: rem-calc(12);
+  overflow: hidden;
 
   @include breakpoint(medium) {
     // Override styles for MFP-NEXT
@@ -565,13 +566,19 @@
   .proposal-description,
   .investment-project-description,
   .budget-investment-description {
-    font-size: rem-calc(13);
+    // Override style for MFP-NEXT
+    // font-size: rem-calc(13);
+    font-size: rem-calc(18);
     height: rem-calc(72);
     line-height: $line-height;
-    margin-bottom: rem-calc(12);
+    margin-bottom: rem-calc(16);
     margin-top: 0;
     overflow: hidden;
     position: relative;
+
+    > p {
+      margin-bottom: 0;
+    }
   }
 
   .truncate {
@@ -858,6 +865,7 @@
     .proposal-content,
     .budget-investment-content {
       min-height: 0;
+      box-shadow: 0px 2px 2px #00000030;
     }
 
     .panel h3 {

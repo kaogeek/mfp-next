@@ -2,6 +2,10 @@
 .debate-edit {
   .debate-form {
     .actions {
+      .checkbox-label {
+        @extend .custom-font-pracharath;
+      }
+
       input[type="submit"] {
         width: 100%;
 
@@ -17,7 +21,26 @@
   }
 }
 
+.debate-show {
+  padding-bottom: 26px;
+}
+
 .debates-list {
+  .row-filter {
+    margin-bottom: 12px;
+
+    > .column {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      > a {
+        margin-right: 16px;
+        @extend .custom-font-anakotmai;
+      }
+    }
+  }
+
   .advanced-search-form {
     .date-filters {
       width: 100%;
@@ -103,7 +126,7 @@
 .trending-tag {
   .button {
     &.expanded {
-      @include breakpoint(medium down) {
+      @include breakpoint(small down) {
         display: none;
       }
     }
