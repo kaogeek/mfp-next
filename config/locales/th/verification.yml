@@ -1,103 +1,105 @@
 th:
   verification:
     alert:
-      lock: You have reached the maximum number of attempts. Please try again later.
-    back: Return to my account
+      lock: คุณพยายามถึงจำนวนครั้งสูงสุดแล้ว โปรดลองอีกครั้งในภายหลัง.
+    back: กลับไปบัญชี
     email:
       create:
         alert:
-          failure: There was a problem with sending an email to your account
+          failure: มีปัญหาในการส่งอีเมลไปยังบัญชีของคุณ
         flash:
-          success: "We have sent a confirmation email to your account: %{email}"
+          success: "เราได้ส่งอีเมลยืนยันไปยังบัญชีของคุณ: %{email}"
       show:
         alert:
-          failure: Verification code incorrect
+          failure: รหัสยืนยันไม่ถูกต้อง
         flash:
-          success: You are a verified user
+          success: ยืนยันตัวตนสำเร็จ
     letter:
       alert:
-        unconfirmed_code: You have not yet entered the confirmation code
+        unconfirmed_code: คุณยังไม่ได้ป้อนรหัสยืนยัน
       create:
         flash:
-          success: Thank you for requesting your <b>maximum security code (only required for the final votes)</b>. In a few days we will send it to the address featuring in the data we have on file. Please remember that, if you prefer, you can collect your code from any of the Citizen Support Offices.
+          # TODO
+          success: ขอบคุณสำหรับการร้องขอของคุณ <b>maximum security code (only required for the final votes)</b>. In a few days we will send it to the address featuring in the data we have on file. Please remember that, if you prefer, you can collect your code from any of the Citizen Support Offices.
       edit:
-        see_all: See proposals
-        title: Letter requested
+        see_all: ดูข้อเสนอ
+        title: จดหมายร้องขอ
       errors:
-        incorrect_code: Verification code incorrect
+        incorrect_code: รหัสยืนยันไม่ถูกต้อง
       new:
-        explanation: "In order to vote for budget projects you can:"
-        go_to_index: See proposals
-        office: Verify in any Citizen Support Offices
-        send_letter: Send me a letter with the code
-        title: Congratulations!
-        user_permission_info: With your account you can...
+        explanation: "ในการลงคะแนนสำหรับโครงการงบประมาณคุณสามารถ:"
+        go_to_index: ดูข้อเสนอ
+        office: ตรวจสอบกับสำนักงานสนับสนุนประชาชน
+        send_letter: ส่งจดหมายพร้อมรหัส
+        title: ยินดีด้วย!
+        user_permission_info: บัญชีของคุณสามารถ...
       update:
         flash:
-          success: Code correct. Your account is now verified
+          success: รหัสถูกต้อง. บัญชีของคุณได้รับการยืนยันแล้ว
     redirect_notices:
-      already_verified: Your account is already verified
-      email_already_sent: We have already sent an email with a confirmation link. If you cannot locate the email, you can request a reissue here
+      already_verified: บัญชีของคุณได้รับการยืนยันแล้ว
+      email_already_sent: เราได้ส่งอีเมลพร้อมลิงก์ยืนยันแล้ว หากคุณหาอีเมลไม่พบ คุณสามารถขอให้ออกใหม่ได้ที่นี่
     residence:
       alert:
-        unconfirmed_residency: You have not yet confirmed your residency
+        unconfirmed_residency: คุณยังไม่ไ้ดยืนยันที่อยู่
       create:
         flash:
-          success: Residence verified
+          success: ยืนยันที่อยู่แล้ว
       new:
-        accept_terms_text: I accept %{terms_url} of the Census
-        accept_terms_text_title: I accept the terms and conditions of access of the Census
-        document_number: Document number
-        document_number_help_title: Help
-        document_number_help_text: "<strong>DNI</strong>: 12345678A<br> <strong>Passport</strong>: AAA000001<br> <strong>Residence card</strong>: X1234567P"
+        accept_terms_text: ฉันยอมรับ %{terms_url} ของการสำรวจข้อมูลเอกสาร
+        accept_terms_text_title: ฉันยอมรับข้อกำหนดและเงื่อนไขการเข้าถึงข้อมูลเอกสาร
+        document_number: หมายเลขเอกสาร
+        document_number_help_title: ช่วยเหลือ
+        document_number_help_text: "<strong>DNI</strong>: 12345678A<br> <strong>หนังสือเดินทาง</strong>: AAA000001<br> <strong>ใบอนุญาตที่อยู่อาศัย</strong>: X1234567P"
         document_type:
-          passport: Passport
-          residence_card: Residence card
+          passport: หนังสือเดินทาง
+          residence_card: ใบอนุญาตที่อยู่อาศัย
           spanish_id: DNI
-        error_not_allowed_age: You don't have the required age to participate
-        error_not_allowed_postal_code: Citizens from this postal code cannot participate
-        error_verifying_census: The Census was unable to verify your information. Please confirm that your census details are correct by calling to City Council or visit one Citizen Support Office.
-        form_errors: prevented the verification of your residence
-        postal_code_note: To verify your account you must be registered
-        terms: the terms and conditions of access
-        title: Verify residence
-        verify_residence: Verify residence
+        error_not_allowed_age: อายุไม่เกณฑ์ที่กำหนด
+        error_not_allowed_postal_code: ไม่ได้อยู่พื้นที่กำหนด
+        error_verifying_census: ข้อมูลเอกสารของคุณไม่สามรถตรวจสอบได้ กรุณาติดต่อเทศบาลหรือสำนักงานเขตเพื่อให้แน่ใจว่าเอกสารข้อมูลของคุณถูกต้อง
+        form_errors: ป้องกันการตรวจสอบที่อยู่อาศัยของคุณ
+        postal_code_note: โปรดตรวจสอบบัญชีของคุณที่ลงทะเบียน
+        terms: ข้อกำหนดและเงื่อนไขของการเข้าถึง
+        title: ยืนยันที่อยู่อาศัย
+        verify_residence: ยืนยันที่อยู่อาศัย
     sms:
       create:
         flash:
-          success: Enter the confirmation code sent to you by text message
+          success: ป้อนรหัสยืนยันที่ส่งถึงคุณผ่านทาง SMS
       edit:
-        resend_sms_link: Click here to send it again
-        resend_sms_text: Didn't get a text with your confirmation code?
-        submit_button: Send
-        title: Security code confirmation
+        resend_sms_link: คลิกที่นี่เพื่อส่งอีกครั้ง
+        resend_sms_text: หากไม่ได้รับ SMSรหัสยืนยัน
+        submit_button: ส่ง
+        title: ยืนยันรหัสสำเร็จ
       new:
-        phone: Enter your mobile phone number to receive the code
+        phone: ป้อนหมายเลขโทรศัพท์มือถือของคุณเพื่อรับรหัส
+        # TODO
         phone_format: "<strong><em>(Example: 612345678 or +34612345678)</em></strong>"
-        phone_note: We only use your phone to send you a code, never to contact you.
-        submit_button: Send
-        title: Send confirmation code
+        phone_note: ใช้หมายเลขโทรศัพท์มือถือของคุณเพื่อส่งรหัสให้คุณเท่านั้น ไม่มีการติดต่อกลับหาคุณ
+        submit_button: ส่ง
+        title: ส่งรหัสยืนยัน
       update:
-        error: Incorrect confirmation code
+        error: รหัสยืนยันไม่ถูกต้อง
         flash:
           level_three:
-            success: Code correct. Your account is now verified
+            success: รหัสถูกต้อง. บัญชีของคุณได้รับการยืนยันแล้ว
           level_two:
             success: Code correct
-    step_1: Residence
-    step_2: Confirmation code
-    step_3: Final verification
+    step_1: ที่อยู่อาศัย
+    step_2: รหัสยืนยัน
+    step_3: การตรวจสอบขั้นสุดท้าย
     user_permission_debates: เขียนข้อเสนอใหม่
-    user_permission_info: Verifying your information you'll be able to...
+    user_permission_info: การยืนยันข้อมูลของคุณคุณจะสามารถ...
     user_permission_proposal: มีส่วนร่วมกับข้อเสนอ
     user_permission_support_proposal: สนับสนุนข้อเสนอ
     user_permission_votes: โหวตโครงการงบประมาณ
     verified_user:
       form:
-        submit_button: Send code
+        submit_button: ส่งรหัส
       show:
-        email_title: Emails
-        explanation: We currently hold the following details on the Register; please select a method for your confirmation code to be sent.
-        phone_title: Phone numbers
-        title: Available information
-        use_another_phone: Use other phone
+        email_title: อีเมล
+        explanation: ได้รับรายละอียดการลงทะเบียนแล้ว โปรดเลือกวิธีการส่งรหัสยืนยันของคุณ
+        phone_title: หมายเลขโทรศัพท์มือถือ
+        title: ข้อมูลที่มีอยู่
+        use_another_phone: ใช้โทรศัพท์เครื่องอื่น
