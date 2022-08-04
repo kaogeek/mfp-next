@@ -144,7 +144,7 @@ th:
         zero: ไม่มีความคิดเห็น
       comments_title: ความคิดเห็น
       edit_debate_link: แก้ไข
-      flag: This debate has been flagged as inappropriate by several users.
+      flag: ความคิดเห็นนี้มีผู้ใช้ท่านอื่นแจ้งว่ามีเนื้อหาไม่เหมาะสม แอดมินกำลังตรวจสอบ
       share: แชร์
       author: ผู้เขียน
     update:
@@ -748,8 +748,8 @@ th:
       categories: "Categories"
     target_blank: " (link opens in new window)"
     you_are_in: "คุณกำลังอยู่ใน "
-    unflag: Unflag
-    unfollow_entity: "Unfollow %{entity}"
+    unflag: ยกเลิกแจ้ง
+    unfollow_entity: "ยกเลิกติดตาม %{entity}"
     outline:
       searcher: Searcher
     go_to_page: "ไปที่ "
