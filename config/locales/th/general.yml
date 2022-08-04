@@ -842,7 +842,7 @@ th:
       no_activity: ไม่พบข้อเสนอ และ ความคิดเห็นของคุณ
       no_private_messages: "This user doesn't accept private messages."
       private_activity: This user decided to keep the activity list private.
-      send_private_message: "Send private message"
+      send_private_message: "ส่งข้อความส่วนตัว"
       delete_alert: "Are you sure you want to delete your investment project? This action can't be undone"
     proposals:
       retired: "Withdrawn proposal"
