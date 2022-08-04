@@ -2073,9 +2073,17 @@ table {
       display: none;
     }
 
-    .divider {
-      color: $text-light;
-      display: inline-block;
+    .reply-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px 12px;
+
+      .divider {
+        color: $text-light;
+        display: inline-block;
+      }
     }
 
     .comment-form form {
@@ -2231,6 +2239,11 @@ table {
 .comment-form {
   display: inline-block;
   width: 100%;
+
+  .checkbox-label,
+  textarea {
+    @extend .custom-font-pracharath;
+  }
 }
 
 // 16. Flags
