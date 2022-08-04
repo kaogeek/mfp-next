@@ -54,9 +54,9 @@ th:
         zero: ไม่มีความคิดเห็น
       user_deleted: ผู้ใช้ถูกลบ
       votes:
-        one: 1 โหวต
-        other: "%{count} โหวต"
-        zero: ไม่มีการโหวต
+        one: 1 คะแนน
+        other: "%{count} คะแนน"
+        zero: 0 คะแนน
     form:
       comment_as_admin: แสดงความคิดเห็นในฐานะผู้ดูแลระบบ
       comment_as_moderator: แสดงความคิดเห็นในฐานะผู้ดูแล
@@ -84,9 +84,9 @@ th:
         other: "%{count} ความคิดเห็น"
         zero: ไม่มีความคิดเห็น
       votes:
-        one: 1 โหวต
-        other: "%{count} โหวต"
-        zero: ไม่มีโหวต
+        one: 1 คะแนน
+        other: "%{count} คะแนน"
+        zero: 0 คะแนน
     edit:
       editing: แก้ไขข้อเสนอ
       form:
@@ -144,7 +144,7 @@ th:
         zero: ไม่มีความคิดเห็น
       comments_title: ความคิดเห็น
       edit_debate_link: แก้ไข
-      flag: This debate has been flagged as inappropriate by several users.
+      flag: ความคิดเห็นนี้มีผู้ใช้ท่านอื่นแจ้งว่ามีเนื้อหาไม่เหมาะสม แอดมินกำลังตรวจสอบ
       share: แชร์
       author: ผู้เขียน
     update:
@@ -164,7 +164,7 @@ th:
     direct_message: ข้อความส่วนตัว
     error: ข้อผิดพลาด
     errors: ข้อผิดพลาด
-    not_saved: "ป้องกันสิ่งนี้ %{resource} จากการได้รับความรอด <br>โปรดตรวจสอบช่องที่ทำเครื่องหมายไว้เพื่อทราบวิธีแก้ไข:"
+    not_saved: "ข้อมูล %{resource} ไม่ถูกต้อง <br>โปรดตรวจสอบช่องที่ทำเครื่องหมายไว้เพื่อทราบวิธีแก้ไข:"
     policy: ข้อตกลงความเป็นส่วนตัว
     banner: แบนเนอร์
     proposal: ข้อเสนอ
@@ -228,12 +228,12 @@ th:
     header:
       home: หน้าหลัก
       administration_menu: เมนู
-      administration: การบริหาร
+      administration: Administration
       collaborative_legislation: กฎหมายความร่วมมือ
       debates: หน้าหลัก
       locale: "ภาษา:"
-      management: การจัดการ
-      moderation: การกลั่นกรอง
+      management: Management
+      moderation: Moderation
       valuation: การประเมินค่า
       officing: หน่วยเลือกตั้ง
       help: ช่วยเหลือ
@@ -748,8 +748,8 @@ th:
       categories: "Categories"
     target_blank: " (link opens in new window)"
     you_are_in: "คุณกำลังอยู่ใน "
-    unflag: Unflag
-    unfollow_entity: "Unfollow %{entity}"
+    unflag: ยกเลิกแจ้ง
+    unfollow_entity: "ยกเลิกติดตาม %{entity}"
     outline:
       searcher: Searcher
     go_to_page: "ไปที่ "
@@ -802,7 +802,7 @@ th:
     login_to_comment: "คุณต้อง %{signin} หรือ %{signup} เพื่อแสดงความคิดเห็น"
     login_to_continue: "คุณต้อง %{signin} หรือ %{signup} เพื่อจะดำเนินการต่อ"
     signin: "เข้าสู่ระบบ"
-    signup: "ลงชื่อ"
+    signup: "สร้างบัญชี"
     verify_account: "ตรวจสอบบัญชีของคุณ"
     direct_messages:
       new:
@@ -839,10 +839,10 @@ th:
         follows:
           one: 1 Following
           other: "%{count} Following"
-      no_activity: User has no public activity
+      no_activity: ไม่พบข้อเสนอ และ ความคิดเห็นของคุณ
       no_private_messages: "This user doesn't accept private messages."
       private_activity: This user decided to keep the activity list private.
-      send_private_message: "Send private message"
+      send_private_message: "ส่งข้อความส่วนตัว"
       delete_alert: "Are you sure you want to delete your investment project? This action can't be undone"
     proposals:
       retired: "Withdrawn proposal"
