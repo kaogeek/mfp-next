@@ -1,4 +1,4 @@
-<%= content_for :body_class, "custom-page" %>
+<!-- <%= content_for :body_class, "custom-page" %>
 <% provide :title do %><%= @custom_page.title %><% end %>
 
 <div class="row margin-top">
@@ -23,4 +23,50 @@
     </div>
   <% end %>
 
+</div> -->
+<style>
+  .wrapper-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 62vh;
+  }
+
+  .wrapper-spinner .spinner.loading {
+    position: relative;
+    height: 100px;
+    width: 100px;
+  }
+
+  .wrapper-spinner .spinner.loading:before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #2180c0 #ccc #ccc;
+    border-radius: 100%;
+    animation: rotation .7s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    } to {
+      transform: rotate(359deg);
+    }
+  }
+</style>
+
+<div class="wrapper-spinner">
+  <div class="spinner loading"></div>
 </div>
+
+<script>
+  $(document).ready(function () {
+    if (window.location.pathname) {
+      window.location.href = "../debates";
+    }
+  });
+</script>

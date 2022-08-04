@@ -11,7 +11,7 @@
 
           %>
     </div>
-    <%= render "shared/errors", resource: resource %>
+    <!-- <%= render "shared/errors", resource: resource %> -->
     <div class="row">
       <div class="small-12 column">
 
@@ -44,11 +44,11 @@
           <%= f.check_box :terms_of_service,
             title: t("devise_views.users.registrations.new.terms_title"),
             label: t("devise_views.users.registrations.new.terms",
-                    terms: link_to(t("devise_views.users.registrations.new.terms_link"), "https://www.moveforwardparty.org/privacy-policy/",
-                                    title: t("shared.target_blank"),
-                                    target: "_blank")
-                    ) %>
+            terms: link_to(t("devise_views.users.registrations.new.terms_link"),"https://www.moveforwardparty.org/privacy-policy/"),target: '_blank'
+          ) %>
+                
         </div>
+
         <div class="small-12 medium-7 small-centered">
           <%= f.submit t("devise_views.users.registrations.new.submit"), class: "button expanded" %>
         </div>
@@ -57,3 +57,14 @@
   <% end %>
 </div>
 <%= render "devise/shared/links" %>
+
+
+<script>
+  $(document).ready(function () {
+    $(document).on('click', '.register_bottom a', function(e){ 
+      e.preventDefault(); 
+      var url = $(this).attr('href'); 
+      window.open(url, '_blank');
+    });
+  });
+</script>
