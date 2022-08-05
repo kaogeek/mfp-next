@@ -99,7 +99,7 @@ $black_auth: #000;
                 text-align: center;
                 @extend .custom-font-anakotmai;
                 border-radius: 28px;
-                padding: 18px 18px 18px 18px;
+                margin: 18px;
                 margin-bottom: 15px;
                 margin-top: 20px;
                 a {
@@ -114,9 +114,9 @@ $black_auth: #000;
                 align-items: center;
                 align-content: center;
                 margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 22px;
                 label {
-                  border-radius: 28px;
-                  padding: 28px 28px 28px 28px;
                   font-size: 16px;
                   @extend .custom-font-pracharath;
                 }
@@ -137,6 +137,8 @@ $black_auth: #000;
                 align-items: center;
                 align-content: center;
                 margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 22px;
                 label {
                   font-size: 16px;
                   @extend .custom-font-pracharath;
@@ -255,7 +257,8 @@ $black_auth: #000;
 }
 
 .login_button {
-  font: normal normal normal 18px/30px Pracharath;
+  font: normal normal normal 18px/30px;
+  @extend .custom-font-pracharath;
   letter-spacing: 0px;
   color: $brand;
   opacity: 1;
@@ -327,7 +330,7 @@ $black_auth: #000;
   .page-login {
     .wrapper_devise {
       display: block;
-      .right_right {
+      .wrapper_devise_right {
         background-color: #fcfcfc;
         display: flex;
         flex-direction: row;
@@ -338,6 +341,59 @@ $black_auth: #000;
         min-height: auto;
         max-height: auto;
         overflow-y: auto;
+
+        .register-organization-page {
+          .row {
+            .column {
+              .register_bottom {
+                .checkbox-label {
+                  position: relative;
+                  display: flex;
+                  align-items: flex-start;
+                  margin: 0 0 0 -8px;
+                  .check_register_organization {
+                    position: absolute;
+                    margin: 0;
+                    top: 0.5vh;
+                  }
+                  .checkbox {
+                    margin-left: 24px;
+
+                    @include breakpoint(medium down) {
+                      display: flex;
+                      flex-direction: column;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .register-page {
+          .register_bottom {
+            .checkbox-label {
+              position: relative;
+              display: flex;
+              align-items: flex-start;
+              margin: 0 0 0 -8px;
+
+              .check_register_bottom {
+                position: absolute;
+                margin: 0;
+                top: 0.5vh;
+              }
+              .checkbox {
+                margin-left: 24px;
+
+                @include breakpoint(medium down) {
+                  display: flex;
+                  flex-direction: column;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
