@@ -2916,7 +2916,7 @@ table {
 // 28. font Tag label
 // ------------------------
 
-label:not([for*="search_text"]) {
+label:not([for*="search_text"]):not(.checkbox-label) {
   margin-left: 8px;
   margin-bottom: 8px;
   @extend .custom-font-anakotmai;
