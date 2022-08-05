@@ -2,11 +2,11 @@ th:
   helpers:
     page_entries_info:
       entry:
-        one: Entry
-        other: Entries
-        zero: Entries
+        one: รายการ
+        other: รายการ
+        zero: รายการ
       more_pages:
-        display_entries: Displaying <strong>%{first}&nbsp;-&nbsp;%{last}</strong> of <strong>%{total} %{entry_name}</strong>
+        display_entries: กำลังแสดง <strong>%{first}&nbsp;-&nbsp;%{last}</strong> of <strong>%{total} %{entry_name}</strong>
       one_page:
         display_entries:
           one: มี <strong>1 %{entry_name}</strong>

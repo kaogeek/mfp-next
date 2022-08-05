@@ -327,7 +327,7 @@ $black_auth: #000;
   .page-login {
     .wrapper_devise {
       display: block;
-      .right_right {
+      .wrapper_devise_right {
         background-color: #fcfcfc;
         display: flex;
         flex-direction: row;
@@ -338,6 +338,47 @@ $black_auth: #000;
         min-height: auto;
         max-height: auto;
         overflow-y: auto;
+        .register-organization-page{
+          .register_bottom{
+            .checkbox-label{
+              position: relative;
+              .check_register_organization{
+                position: absolute;
+                top:3px;
+                left:-15px
+              }
+              .checkbox{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+              }
+            }
+          }
+        }
+
+        .register-page{
+          .register_bottom{
+            .checkbox-label{
+              position: relative;
+              .check_register_bottom{
+                position: absolute;
+                left: 5px;
+                top: 32px;
+              }
+              .checkbox{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+              }
+            }
+          }
+        }
       }
     }
   }

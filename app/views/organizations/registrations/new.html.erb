@@ -31,7 +31,7 @@
                             placeholder: t("devise_views.organizations.registrations.new.placeholder_confirm_password")
                             %>
         <div class = "small-12 medium-9 large-12 register_bottom">
-          <%= f.check_box :terms_of_service,
+          <%= f.check_box :terms_of_service,class: "check_register_organization",
             title: t("devise_views.users.registrations.new.terms_title"),
             label: t("devise_views.users.registrations.new.terms",
                     terms: link_to(t("devise_views.users.registrations.new.terms_link"),
