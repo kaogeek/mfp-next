@@ -26,21 +26,6 @@
 }
 
 .debates-list {
-  .row-filter {
-    margin-bottom: 12px;
-
-    > .column {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-
-      > a {
-        margin-right: 16px;
-        @extend .custom-font-anakotmai;
-      }
-    }
-  }
-
   .advanced-search-form {
     .date-filters {
       width: 100%;

@@ -140,7 +140,7 @@ th:
           terms_link: ข้อกำหนดและเงื่อนไขการใช้งาน
           terms_title: การลงทะเบียนถือว่าคุณยอมรับข้อกำหนดและเงื่อนไขการใช้งาน
           title: ลงทะเบียน
-          username_is_available: มีชื่อผู้ใช้
+          username_is_available: ชื่อผู้ใช้สามารถใช้ได้
           username_is_not_available: ชื่อผู้ใช้นี้ถูกใช้ไปแล้ว
           username_note: ชื่อที่ปรากฏข้างโพสต์ของคุณ
         success:

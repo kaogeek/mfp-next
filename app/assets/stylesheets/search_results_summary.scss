@@ -6,4 +6,10 @@
   margin-top: -$line-height;
   padding-bottom: $line-height;
   padding-top: $line-height;
+
+  .wrapper-reset-value {
+    > a.reset-vaule-search {
+      @extend .custom-font-anakotmai;
+    }
+  }
 }
